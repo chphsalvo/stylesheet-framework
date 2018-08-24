@@ -1,2 +1,2 @@
 # css
-CSS boilerplate framework (developed by Christopher Salvo)
+CSS boilerplate framework [developed by Christopher Salvo]
