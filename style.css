@@ -1,3 +1,41 @@
+html {
+  box-sizing: border-box;
+  position: relative;
+  /*prevent bug 32px wordpress admin bar*/ }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-style: Normal;
+  font-weight: Normal; }
+
+html,
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0px;
+  margin: 0px; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  color: currentcolor; }
+
 .col {
   min-height: 1px; }
 
@@ -31,5 +69,11 @@
 .row,
 .row .col {
   display: inline-block; }
+
+.bg-image,
+.bg-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
