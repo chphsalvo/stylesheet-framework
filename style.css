@@ -1,0 +1,35 @@
+.col {
+  min-height: 1px; }
+
+.col-x1 {
+  width: 100%; }
+
+.col-x2 {
+  width: 50%; }
+
+.col-x3 {
+  width: 33.3333333333%; }
+
+.col-x4 {
+  width: 25%; }
+
+.col-x5 {
+  width: 20%; }
+
+.col-x6 {
+  width: 16.6666666667%; }
+
+.col-x7 {
+  width: 14.2857142857%; }
+
+.col-x8 {
+  width: 12.5%; }
+
+.row {
+  width: 100%; }
+
+.row,
+.row .col {
+  display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */

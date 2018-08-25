@@ -1,0 +1,17 @@
+.col{
+	min-height:1px;
+}
+
+@for $i from 1 through 8{
+		$width: percentage(1 / $i);		
+		.col-x#{$i}  {
+			width: $width;
+		}
+}
+
+.row{width:100%;}
+
+.row,
+.row .col{
+	display:inline-block;
+}
