@@ -1,4 +1,5 @@
 @import 'mixin/mixin';
+@import 'settings/colors';
 @import 'settings/breakpoints';
 
 @import 'components/reset';
@@ -6,14 +7,25 @@
 @import 'components/background';
 @import 'components/typography';
 
-/*
-@include responsive ('small'){
-	body{
-		background:#000;
-	}
+
+.wrapperPage{
+	width:100%;
+	max-width:1366px;
+	margin:0 auto;
+}
+.marginPage{
+	padding:0px 0px;
 }
 
-body .mydiv{
-	@include prefix(transform, translateY(-50%), webkit ms moz);
+body{
+	/*background-color: color(red,base);*/
+	/*background-color: $blue;*/
+	/*@include prefix(transform, translateY(-50%), webkit ms moz);*/
+	/*
+	@include responsive ('small'){
+		body{
+			background:#000;
+		}
+	}
+	*/
 }
-*/

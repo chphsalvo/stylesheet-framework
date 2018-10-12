@@ -1,0 +1,43 @@
+/* colors */
+$blue:#00f;
+/* colors */
+
+/* palettes */
+$palettes: (
+    /*blue: (
+        darker: #333333,
+        dark: #333333,
+        base: #333333,
+        light: #333333,
+        lighter: #333333,
+    ),*/
+    red: (
+        base: red
+	)
+);
+/* palettes */
+
+/*
+usage:
+background-color: color(blue,base);
+*/
+@function color($color,$tone){
+
+    /*@warn map-get($palettes,$color);*/
+
+    @if map-has-key($palettes,$color){
+        $color: map-get($palettes,$color);
+
+            @if map-has-key($color,$tone){
+                $tone: map-get($color,$tone);
+                @return $tone;
+            }
+
+            @warn "unknown tone `#{$tone}` in color";
+            @return null;        
+    }
+
+    @warn "unknown color `#{$color}` in palette";
+    @return null;
+   
+}

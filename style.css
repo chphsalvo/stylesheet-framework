@@ -22,6 +22,14 @@ usage:
 /*
 keyframes mixin
 */
+/* colors */
+/* colors */
+/* palettes */
+/* palettes */
+/*
+usage:
+background-color: color(blue,base);
+*/
 /* breakpoints */
 /* breakpoints */
 html {
@@ -65,6 +73,9 @@ a:visited {
 b {
   font-weight: bold; }
 
+i {
+  font-style: italic; }
+
 .col {
   min-height: 1px; }
 
@@ -105,16 +116,24 @@ b {
   background-position: center;
   background-repeat: no-repeat; }
 
-/*
-@include responsive ('small'){
-	body{
-		background:#000;
-	}
-}
+.wrapperPage {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto; }
 
-body .mydiv{
-	@include prefix(transform, translateY(-50%), webkit ms moz);
-}
-*/
+.marginPage {
+  padding: 0px 0px; }
+
+body {
+  /*background-color: color(red,base);*/
+  /*background-color: $blue;*/
+  /*@include prefix(transform, translateY(-50%), webkit ms moz);*/
+  /*
+	@include responsive ('small'){
+		body{
+			background:#000;
+		}
+	}
+	*/ }
 
 /*# sourceMappingURL=style.css.map */
