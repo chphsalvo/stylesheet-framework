@@ -1,0 +1,68 @@
+/*
+Mixin to prefix a property
+@author Hugo Giraudel
+@param {String} $property - Property name
+@param {*} $value - Property value
+@param {List} $prefixes (()) - List of prefixes to print
+usage:
+.mydiv{
+	@include prefix(transform, translateY(-50%), webkit ms moz);
+}
+*/
+
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+ 
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
+}
+
+/*
+Responsive breakpoint manager
+@access public
+@param {String} $breakpoint - Breakpoint
+@requires $breakpoints
+usage:
+@include responsive ('small'){
+	->code here
+}
+*/
+
+@mixin responsive($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == 'string',
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+/*
+keyframes mixin
+*/
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}

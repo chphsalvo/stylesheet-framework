@@ -1,3 +1,29 @@
+/*
+Mixin to prefix a property
+@author Hugo Giraudel
+@param {String} $property - Property name
+@param {*} $value - Property value
+@param {List} $prefixes (()) - List of prefixes to print
+usage:
+.mydiv{
+	@include prefix(transform, translateY(-50%), webkit ms moz);
+}
+*/
+/*
+Responsive breakpoint manager
+@access public
+@param {String} $breakpoint - Breakpoint
+@requires $breakpoints
+usage:
+@include responsive ('small'){
+	->code here
+}
+*/
+/*
+keyframes mixin
+*/
+/* breakpoints */
+/* breakpoints */
 html {
   box-sizing: border-box;
   position: relative;
@@ -78,5 +104,15 @@ b {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+
+@media (max-width: 640px) {
+  body {
+    background: #000; } }
+
+body .mydiv {
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
 /*# sourceMappingURL=style.css.map */

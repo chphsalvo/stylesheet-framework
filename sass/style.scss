@@ -1,3 +1,17 @@
+@import 'mixin/mixin';
+@import 'settings/breakpoints';
+
 @import 'components/reset';
 @import 'components/grids';
 @import 'components/background';
+
+
+@include responsive ('small'){
+	body{
+		background:#000;
+	}
+}
+
+body .mydiv{
+	@include prefix(transform, translateY(-50%), webkit ms moz);
+}
