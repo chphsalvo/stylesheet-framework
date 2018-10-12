@@ -4,8 +4,9 @@
 @import 'components/reset';
 @import 'components/grids';
 @import 'components/background';
+@import 'components/typography';
 
-
+/*
 @include responsive ('small'){
 	body{
 		background:#000;
@@ -15,3 +16,4 @@
 body .mydiv{
 	@include prefix(transform, translateY(-50%), webkit ms moz);
 }
+*/

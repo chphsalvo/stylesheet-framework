@@ -105,14 +105,16 @@ b {
   background-position: center;
   background-repeat: no-repeat; }
 
-@media (max-width: 640px) {
-  body {
-    background: #000; } }
+/*
+@include responsive ('small'){
+	body{
+		background:#000;
+	}
+}
 
-body .mydiv {
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  transform: translateY(-50%); }
+body .mydiv{
+	@include prefix(transform, translateY(-50%), webkit ms moz);
+}
+*/
 
 /*# sourceMappingURL=style.css.map */
