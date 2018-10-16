@@ -22,17 +22,15 @@ usage:
 /*
 keyframes mixin
 */
-/* colors */
-/* colors */
 /* palettes */
 /* palettes */
-/*
-usage:
-background-color: color(blue,base);
-*/
 /*
 usage:
 background-color: color(red);
+*/
+/*
+usage:
+background-color: color(blue,base);
 */
 /* breakpoints */
 /* breakpoints */
@@ -130,9 +128,9 @@ i {
 
 body {
   /*background-color: color(red,base);*/
-  /*background-color: $blue;*/
-  background-color: #f00;
-  background-color: #fff04b;
+  /*palette*/
+  /*background-color: color(yellow);*/
+  /*color*/
   /*@include prefix(transform, translateY(-50%), webkit ms moz);*/
   /*
 	@include responsive ('small'){
