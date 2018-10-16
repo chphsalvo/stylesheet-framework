@@ -18,9 +18,11 @@
 }
 
 body{
-	/*background-color: color(red,base);*/
-	/*background-color: $blue;*/
+	/*background-color: color(red,base);*/ /*palette*/
+	/*background-color: color(yellow);*/ /*color*/
+	
 	/*@include prefix(transform, translateY(-50%), webkit ms moz);*/
+	
 	/*
 	@include responsive ('small'){
 		body{

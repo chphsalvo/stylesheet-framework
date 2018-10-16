@@ -30,6 +30,10 @@ keyframes mixin
 usage:
 background-color: color(blue,base);
 */
+/*
+usage:
+background-color: color(red);
+*/
 /* breakpoints */
 /* breakpoints */
 html {
@@ -127,6 +131,8 @@ i {
 body {
   /*background-color: color(red,base);*/
   /*background-color: $blue;*/
+  background-color: #f00;
+  background-color: #fff04b;
   /*@include prefix(transform, translateY(-50%), webkit ms moz);*/
   /*
 	@include responsive ('small'){
