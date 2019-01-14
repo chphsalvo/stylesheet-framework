@@ -26,10 +26,6 @@ keyframes mixin
 /* palettes */
 /*
 usage:
-background-color: color(red);
-*/
-/*
-usage:
 background-color: color(blue,base);
 */
 /* breakpoints */
@@ -1067,8 +1063,6 @@ i {
 body {
   /*background-color: color(red,base);*/
   /*palette*/
-  /*background-color: color(yellow);*/
-  /*color*/
   /*@include prefix(transform, translateY(-50%), webkit ms moz);*/
   /*
 	@include responsive ('small'){
