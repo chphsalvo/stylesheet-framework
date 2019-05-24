@@ -1,14 +1,4 @@
-@import 'mixin/mixin';
-@import 'settings/colors';
-@import 'settings/breakpoints';
-
-@import 'components/reset';
-@import 'components/grids';
-@import 'components/background';
-@import 'components/buttons';
-@import 'components/modals';
-@import 'components/typography';
-
+@import 'import/import';
 
 .wrapperPage{
 	width:100%;
