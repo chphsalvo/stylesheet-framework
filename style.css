@@ -20,15 +20,22 @@ usage:
 }
 */
 /*
-keyframes mixin
-*/
-/* palettes */
-/* palettes */
-/*
+Colors manager
+@access public
+@param {String} $color - Color name
+@param {String} $tone - Color tone
 usage:
 background-color: color(blue,base);
+color: color(blue,base);
+border-color: color(blue,base);
 */
-/* breakpoints */
+/*
+palettes
+*/
+/* palettes */
+/*
+breakpoints
+*/
 /* breakpoints */
 html {
   box-sizing: border-box;
@@ -1052,7 +1059,7 @@ i {
 }
 
 body {
-  /*background-color: color(red,base);*/
+  /*background-color:color(black,base);*/
   /*palette*/
   /*@include prefix(transform, translateY(-50%), webkit ms moz);*/
   /*

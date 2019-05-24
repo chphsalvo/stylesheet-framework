@@ -49,20 +49,34 @@ usage:
   }
 }
 
+
 /*
-keyframes mixin
+Colors manager
+@access public
+@param {String} $color - Color name
+@param {String} $tone - Color tone
+usage:
+background-color: color(blue,base);
+color: color(blue,base);
+border-color: color(blue,base);
 */
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-    @content;
-  }
-  @-moz-keyframes #{$name} {
-    @content;
-  }
-  @-ms-keyframes #{$name} {
-    @content;
-  }
-  @keyframes #{$name} {
-    @content;
-  }
+@function color($color,$tone){
+
+    /*@warn map-get($palettes,$color);*/
+
+    @if map-has-key($palettes,$color){
+        $color: map-get($palettes,$color);
+
+            @if map-has-key($color,$tone){
+                $tone: map-get($color,$tone);
+                @return $tone;
+            }
+
+            @warn "unknown tone `#{$tone}` in color";
+            @return null;
+    }
+
+    @warn "unknown color `#{$color}` in palette";
+    @return null;
+
 }
