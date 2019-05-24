@@ -14,7 +14,7 @@ usage:
   @each $prefix in $prefixes {
     #{'-' + $prefix + '-' + $property}: $value;
   }
- 
+
   // Output standard non-prefixed declaration
   #{$property}: $value;
 }
@@ -54,7 +54,7 @@ keyframes mixin
 */
 @mixin keyframes($name) {
   @-webkit-keyframes #{$name} {
-    @content; 
+    @content;
   }
   @-moz-keyframes #{$name} {
     @content;
@@ -64,5 +64,5 @@ keyframes mixin
   }
   @keyframes #{$name} {
     @content;
-  } 
+  }
 }
