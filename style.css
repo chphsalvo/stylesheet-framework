@@ -1048,6 +1048,14 @@ i {
   display: inline-block;
 }
 
+.ratio {
+  height: 0px;
+}
+
+.ratio--16x9 {
+  padding-bottom: 56.25%;
+}
+
 .wrapperPage {
   width: 100%;
   max-width: 1366px;
