@@ -1,6 +1,42 @@
 @import '../../../sass/import/import';
 
+.paddingPage{
+  padding:0px 50px;
+}
+
+html,
+body{
+  height: 100%;
+}
+
 body{
   background: pink;
   /*background:;*/
+}
+
+.col{
+  border:1px solid #808080;
+}
+
+xmp{
+  background-color: #eee;
+}
+
+/*sidebar*/
+$sidebarWidth: 240px;
+
+.sidebar{
+  display: inline-block;
+  vertical-align: top;
+  width:$sidebarWidth;
+  height: 100%;
+  border-right: 1px solid #222;
+  background-color: #eee;
+}
+/*sidebar*/
+
+.content{
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - #{$sidebarWidth});
 }
