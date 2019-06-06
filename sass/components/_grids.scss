@@ -11,14 +11,14 @@
 /*col-(n)*/
 $gutter: 10px;
 @for $i from 1 through 12{
-		$width: 8.3333 * $i;
+		$width: 8.3333% * $i;
 		.col-#{$i}  {
 			@if $i == 6{
 				width: 50%; /*round up 49.9998*/
 			}@else if $i == 12{
 				width: 100%; /*round up 99.9998*/
 			}@else{
-				width: $width#{%};
+				width: $width;
 			}
 			padding-left:$gutter;
 			padding-right:$gutter;
@@ -36,7 +36,7 @@ $gutter: 10px;
 				}@else if $i == 12{
 					width: 100%; /*round up 99.9998*/
 				}@else{
-					width: $width#{%};
+					width: $width;
 				}
 				padding-left:$gutter;
 				padding-right:$gutter;
@@ -49,7 +49,7 @@ $gutter: 10px;
 				}@else if $i == 12{
 					width: 100%; /*round up 99.9998*/
 				}@else{
-					width: $width#{%};
+					width: $width;
 				}
 				padding-left:$gutter;
 				padding-right:$gutter;
@@ -62,7 +62,7 @@ $gutter: 10px;
 				}@else if $i == 12{
 					width: 100%; /*round up 99.9998*/
 				}@else{
-					width: $width#{%};
+					width: $width;
 				}
 				padding-left:$gutter;
 				padding-right:$gutter;
@@ -71,28 +71,28 @@ $gutter: 10px;
 }
 /*offset-(n)*/
 @for $i from 0 through 12{
-		$width: 8.3333 * $i;
+		$width: 8.3333% * $i;
 		.offset-#{$i}  {
-			margin-left: $width#{%};
+			margin-left: $width;
 		}
 		.offset-#{$i}:first-of-type{
 			padding-left: $gutter;
 		}
 		.offset-l-#{$i}  {
 			@include responsive ('large'){
-				margin-left: $width#{%};
+				margin-left: $width;
 				padding-left:$gutter;
 			}
 		}
 		.offset-m-#{$i}  {
 			@include responsive ('medium'){
-				margin-left: $width#{%};
+				margin-left: $width;
 				padding-left:$gutter;
 			}
 		}
 		.offset-s-#{$i}  {
 			@include responsive ('small'){
-				margin-left: $width#{%};
+				margin-left: $width;
 				padding-left:$gutter;
 			}
 		}

@@ -1056,6 +1056,10 @@ i {
   padding-bottom: 56.25%;
 }
 
+.ratio--4x3 {
+  padding-bottom: 75%;
+}
+
 .wrapperPage {
   width: 100%;
   max-width: 1366px;
