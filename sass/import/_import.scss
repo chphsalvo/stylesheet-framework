@@ -1,13 +1,23 @@
 @import '../mixin/mixin';
+
+// Settings
 @import '../settings/colors';
 @import '../settings/breakpoints';
 
-@import '../components/reset';
-@import '../components/grids';
+// Reset
+@import '../utilities/reset';
+
+// Grids
+@import '../grid/grid';
+
+// Components
 @import '../components/background';
 @import '../components/buttons';
 @import '../components/modals';
-@import '../components/typography';
 
+// Typography
+@import '../typography/typography';
+
+// Utilities
 @import '../utilities/utilities';
 @import '../utilities/functionalCSS';
