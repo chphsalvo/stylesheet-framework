@@ -1206,6 +1206,102 @@ i {
   padding-bottom: 75%;
 }
 
+.ta-l {
+  text-align: left;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-r {
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .ta-l-l {
+    text-align: left;
+  }
+  .ta-l-c {
+    text-align: center;
+  }
+  .ta-l-r {
+    text-align: right;
+  }
+}
+
+@media (max-width: 768px) {
+  .ta-m-l {
+    text-align: left;
+  }
+  .ta-m-c {
+    text-align: center;
+  }
+  .ta-m-r {
+    text-align: right;
+  }
+}
+
+@media (max-width: 640px) {
+  .ta-s-l {
+    text-align: left;
+  }
+  .ta-s-c {
+    text-align: center;
+  }
+  .ta-s-r {
+    text-align: right;
+  }
+}
+
+.va-t {
+  vertical-align: top;
+}
+
+.va-m {
+  vertical-align: middle;
+}
+
+.va-b {
+  vertical-align: bottom;
+}
+
+@media (max-width: 1024px) {
+  .va-l-t {
+    vertical-align: top;
+  }
+  .va-l-m {
+    vertical-align: middle;
+  }
+  .va-l-b {
+    vertical-align: bottom;
+  }
+}
+
+@media (max-width: 768px) {
+  .va-m-t {
+    vertical-align: top;
+  }
+  .va-m-m {
+    vertical-align: middle;
+  }
+  .va-m-b {
+    vertical-align: bottom;
+  }
+}
+
+@media (max-width: 640px) {
+  .va-s-t {
+    vertical-align: top;
+  }
+  .va-s-m {
+    vertical-align: middle;
+  }
+  .va-s-b {
+    vertical-align: bottom;
+  }
+}
+
 .wrapperPage {
   width: 100%;
   max-width: 1366px;
