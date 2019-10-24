@@ -89,6 +89,13 @@ i {
   font-style: italic;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 .col {
   min-height: 1px;
 }
@@ -1218,6 +1225,10 @@ i {
   text-align: right;
 }
 
+.ta-j {
+  text-align: justify;
+}
+
 @media (max-width: 1024px) {
   .ta-l-l {
     text-align: left;
@@ -1227,6 +1238,9 @@ i {
   }
   .ta-l-r {
     text-align: right;
+  }
+  .ta-l-j {
+    text-align: justify;
   }
 }
 
@@ -1240,6 +1254,9 @@ i {
   .ta-m-r {
     text-align: right;
   }
+  .ta-m-j {
+    text-align: justify;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1251,6 +1268,9 @@ i {
   }
   .ta-s-r {
     text-align: right;
+  }
+  .ta-s-j {
+    text-align: justify;
   }
 }
 

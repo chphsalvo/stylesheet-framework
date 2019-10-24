@@ -1,20 +1,24 @@
 .ta-l{text-align: left;}
 .ta-c{text-align: center;}
 .ta-r{text-align: right;}
+.ta-j{text-align: justify;}
 @include responsive ('large'){
   .ta-l-l{text-align: left;}
   .ta-l-c{text-align: center;}
   .ta-l-r{text-align: right;}
+  .ta-l-j{text-align: justify;}
 }
 @include responsive ('medium'){
   .ta-m-l{text-align: left;}
   .ta-m-c{text-align: center;}
   .ta-m-r{text-align: right;}
+  .ta-m-j{text-align: justify;}
 }
 @include responsive ('small'){
   .ta-s-l{text-align: left;}
   .ta-s-c{text-align: center;}
   .ta-s-r{text-align: right;}
+  .ta-s-j{text-align: justify;}
 }
 
 // vertical-align
