@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/chphsalvo/css#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5"
   }
 }
