@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap");
+/*font-family: 'Roboto', sans-serif;*/
 /*
 Mixin to prefix a property
 @author Hugo Giraudel
@@ -1322,9 +1324,94 @@ button:focus {
   }
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .col {
   border: 1px solid rgba(0, 0, 0, 0.4);
   padding: 10px;
+  margin-bottom: 10px;
 }
+
+.col.col-1,
+.col.col-2,
+.col.col-3,
+.col.col-4,
+.col.col-5,
+.col.col-6,
+.col.col-7,
+.col.col-8,
+.col.col-9,
+.col.col-10,
+.col.col-11,
+.col.col-12 {
+  border: 0px;
+}
+
+.col.col-1 > span,
+.col.col-2 > span,
+.col.col-3 > span,
+.col.col-4 > span,
+.col.col-5 > span,
+.col.col-6 > span,
+.col.col-7 > span,
+.col.col-8 > span,
+.col.col-9 > span,
+.col.col-10 > span,
+.col.col-11 > span,
+.col.col-12 > span {
+  display: block;
+  height: 200px;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+code {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/**/
+section {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+
+section > .title {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+section > .subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+/**/
+/**/
+.sidebar {
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  padding: 50px;
+  background-color: #F7F9FA;
+}
+
+.bodyContent {
+  width: 100%;
+  float: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: calc(240px + 50px);
+  padding-right: 50px;
+}
+
+/**/
 
 /*# sourceMappingURL=style.css.map */

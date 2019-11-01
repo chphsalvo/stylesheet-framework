@@ -1,6 +1,79 @@
+@import './typography/typography';
+
 @import '../../../sass/import/import';
+
+html{
+  height: 100%;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
 
 .col{
   border:1px solid rgba(0,0,0,0.4);
   padding:10px;
+  margin-bottom: 10px;
 }
+
+.col.col-1,
+.col.col-2,
+.col.col-3,
+.col.col-4,
+.col.col-5,
+.col.col-6,
+.col.col-7,
+.col.col-8,
+.col.col-9,
+.col.col-10,
+.col.col-11,
+.col.col-12{
+  border:0px;
+
+  > span{
+    display: block;
+    height: 200px;
+    background-color:rgba(255,0,0,0.3);
+  }
+}
+
+code{
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/**/
+section{
+  border-bottom:1px solid rgba(0,0,0,0.2);
+  margin-bottom: 50px;
+
+  > .title{
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+  > .subtitle{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+}
+/**/
+
+/**/
+.sidebar{
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  padding:50px;
+  background-color: #F7F9FA;
+}
+.bodyContent{
+  width: 100%;
+  float:left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left:calc(240px + 50px);
+  padding-right: 50px;
+
+}
+/**/
