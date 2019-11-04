@@ -15,11 +15,26 @@
 <body>
 
 <div class="sidebar">
-  sidebar
+  <ul class="menu menu--main">
+    <li>
+      <a href="#">Grids</a>
+      <ul>
+        <li>
+          <a href="#grids-inline">Inline</a>
+        </li>
+        <li>
+          <a href="#grids-flex">Flex</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Utilities</a>
+    </li>
+  </ul>
 </div><!--
 --><div class="bodyContent">
 
-  <section class="section section--grids-col-x">
+  <section id="grids-inline" class="section section--grids-col-x">
     <h2 class="title">Grids - col-x</h2>
 
     <div class="row">
@@ -231,7 +246,7 @@
 
   </section>
 
-  <section class="section section--grids-flex">
+  <section id="grids-flex" class="section section--grids-flex">
     <h2 class="title">Grids - flex item</h2>
 
     <div class="flex">
@@ -252,6 +267,17 @@
     <div class="flex">
       <div class="item item-1">
         .item.item-1
+      </div>
+      <div class="item item-1">
+        .item.item-1
+      </div>
+    </div>
+    <div class="flex">
+      <div class="item item-1">
+        .item.item-1
+      </div>
+      <div class="item item-2">
+        .item.item-2
       </div>
       <div class="item item-1">
         .item.item-1
@@ -336,6 +362,15 @@
       </div>
     </div>
 
+    <div class="flex">
+      <div class="col col-4">
+        <span>.col.col-4</span>
+      </div>
+      <div class="col col-7 offset-1">
+        <span>.col.col-7.offset-1</span>
+      </div>
+    </div>
+
     <pre>
       <code>
         <div class="flex">
@@ -351,23 +386,23 @@
 
     <h3 class="subtitle">Alignments</h3>
 
-    <div class="flex center">
+    <div class="flex center middle">
       <div class="col col-5">
         <span style="height:200px;">.col.col-5</span>
       </div><!--
-      --><div class="col col-7">
-        <span style="height:120px;">.col.col-7</span>
+      --><div class="col col-5">
+        <span style="height:120px;">.col.col-5</span>
       </div>
     </div>
 
     <pre>
       <code>
-        <div class="flex center">
+        <div class="flex center middle">
           <div class="col col-5">
             <span style="height:200px;">.col.col-5</span>
           </div><!--
-          --><div class="col col-7">
-            <span style="height:120px;">.col.col-7</span>
+          --><div class="col col-5">
+            <span style="height:120px;">.col.col-5</span>
           </div>
         </div>
       </code>

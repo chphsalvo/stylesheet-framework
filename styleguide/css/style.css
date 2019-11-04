@@ -1643,5 +1643,19 @@ section > .subtitle {
 }
 
 /**/
+/**/
+.menu.menu--main li a {
+  font-size: 16px;
+}
+
+.menu.menu--main li > ul li {
+  margin-left: 10px;
+}
+
+.menu.menu--main li > ul li a {
+  font-size: 14px;
+}
+
+/**/
 
 /*# sourceMappingURL=style.css.map */

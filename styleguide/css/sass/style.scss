@@ -78,3 +78,18 @@ section{
 
 }
 /**/
+
+/**/
+.menu.menu--main{
+  li a{
+    font-size: 16px;
+  }
+  li > ul li{
+    margin-left:10px;
+
+    a{
+      font-size: 14px;
+    }
+  }
+}
+/**/
