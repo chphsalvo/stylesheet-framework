@@ -4,8 +4,8 @@
   display: -ms-flexbox;
   display: flex;
 
-  -ms-flex-flow: row;
-  flex-flow: row; /* flex-direction: row; + flex-wrap: initial; s*/
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; /* flex-direction: row; + flex-wrap: wrap; s*/
 
   .item.item-1{
     flex-grow: 1;
