@@ -1196,9 +1196,9 @@ button:focus {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row;
-  flex-flow: row;
-  /* flex-direction: row; + flex-wrap: initial; s*/
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /* flex-direction: row; + flex-wrap: wrap; s*/
 }
 
 .flex .item.item-1 {
@@ -1375,6 +1375,11 @@ button:focus {
 
 .ratio--4x3 {
   padding-bottom: 75%;
+}
+
+.square {
+  width: 100%;
+  padding-bottom: 100%;
 }
 
 .ta-l {
