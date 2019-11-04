@@ -20,6 +20,6 @@ CSS boilerplate framework [developed by Christopher Salvo]
 <p>CDN link</p>
 <pre>
   <code>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chphsalvo/css@0.1-alpha/style.min.css">
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/chphsalvo/css@0.1-alpha/style.min.css&quot;&gt;
   </code>
 </pre>
