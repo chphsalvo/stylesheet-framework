@@ -18,4 +18,8 @@ CSS boilerplate framework [developed by Christopher Salvo]
 
 <h2>Installation</h2>
 <p>CDN link</p>
-<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chphsalvo/css@0.1-alpha/style.min.css"></p>
+<pre>
+  <code>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chphsalvo/css@0.1-alpha/style.min.css">
+  </code>
+</pre>
