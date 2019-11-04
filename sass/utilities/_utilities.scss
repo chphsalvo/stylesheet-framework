@@ -1,3 +1,4 @@
+
 .ratio{
   height: 0px;
 }
@@ -6,4 +7,10 @@
 }
 .ratio--4x3 {
     padding-bottom: 75%;
+}
+
+// square
+.square{
+  width: 100%;
+  padding-bottom: 100%;
 }
