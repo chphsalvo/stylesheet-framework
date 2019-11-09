@@ -1,8 +1,12 @@
-@import '../mixin/mixin';
 
 // Settings
-@import '../settings/colors';
 @import '../settings/breakpoints';
+@import '../settings/colors';
+
+// Mixin
+@import '../mixin/prefix';
+@import '../mixin/responsive';
+@import '../mixin/color';
 
 // Reset
 @import '../utilities/reset';
