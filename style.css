@@ -1162,10 +1162,16 @@ button:focus {
 
 .flex .item.item-1 {
   flex-grow: 1;
+  flex-basis: 0;
 }
 
 .flex .item.item-2 {
   flex-grow: 2;
+  flex-basis: 0;
+}
+
+.flex.nowrap {
+  flex-wrap: nowrap;
 }
 
 .flex.top {
