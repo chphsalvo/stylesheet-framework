@@ -1409,6 +1409,63 @@ button:focus {
   padding-bottom: 100%;
 }
 
+@media (max-width: 1024px) {
+  .hide-l,
+  .d-n-l {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hide-m,
+  .d-n-m {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .hide-s,
+  .d-n-s {
+    display: none;
+  }
+}
+
+.show-l,
+.d-b-l {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .show-l,
+  .d-b-l {
+    display: block;
+  }
+}
+
+.show-m,
+.d-b-m {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .show-m,
+  .d-b-m {
+    display: block;
+  }
+}
+
+.show-s,
+.d-b-s {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .show-s,
+  .d-b-s {
+    display: block;
+  }
+}
+
 .ta-l {
   text-align: left;
 }
