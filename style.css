@@ -1392,6 +1392,23 @@ button:focus {
   display: inline-block;
 }
 
+input {
+  padding: 0px;
+}
+
+.field-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.field-group > .field {
+  flex-grow: 1;
+}
+
 .ratio {
   height: 0px;
 }
