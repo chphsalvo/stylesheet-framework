@@ -103,5 +103,31 @@
 			padding-left:$gutter;
 			padding-right:$gutter;
 		}
+    .col.col-l-#{$i}  {
+			@if $i == 6{
+        @include responsive ('large'){
+          -webkit-box-flex: 0;
+          -webkit-flex: 0 0 50%; /*round up 49.9998*/
+          -ms-flex: 0 0 50%; /*round up 49.9998*/
+          flex: 0 0 50%; /*round up 49.9998*/
+        }
+			}@else if $i == 12{
+        @include responsive ('large'){
+          -webkit-box-flex: 0;
+          -webkit-flex: 0 0 100%; /*round up 99.9998*/
+          -ms-flex: 0 0 100%; /*round up 99.9998*/
+          flex: 0 0 100%; /*round up 99.9998*/
+        }
+			}@else{
+        @include responsive ('large'){
+          -webkit-box-flex: 0;
+          -webkit-flex: 0 0 $width; /*round up 49.9998*/
+          -ms-flex: 0 0 $width; /*round up 49.9998*/
+          flex: 0 0 $width; /*round up 49.9998*/
+        }
+			}
+			padding-left:$gutter;
+			padding-right:$gutter;
+		}
   }
 }
