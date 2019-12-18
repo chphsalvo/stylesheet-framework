@@ -15,6 +15,37 @@
     flex-grow: 2;
     flex-basis: 0;
   }
+  @include responsive ('large'){
+    .item.item-l-1{
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+    .item.item-l-2{
+      flex-grow: 2;
+      flex-basis: 0;
+    }
+  }
+  @include responsive ('medium'){
+    .item.item-m-1{
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+    .item.item-m-2{
+      flex-grow: 2;
+      flex-basis: 0;
+    }
+  }
+  @include responsive ('small'){
+    .item.item-s-1{
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+    .item.item-s-2{
+      flex-grow: 2;
+      flex-basis: 0;
+    }
+  }
+
 }
 
 // flex wrap

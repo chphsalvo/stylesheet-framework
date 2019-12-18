@@ -1170,6 +1170,39 @@ button:focus {
   flex-basis: 0;
 }
 
+@media (max-width: 1024px) {
+  .flex .item.item-l-1 {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  .flex .item.item-l-2 {
+    flex-grow: 2;
+    flex-basis: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex .item.item-m-1 {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  .flex .item.item-m-2 {
+    flex-grow: 2;
+    flex-basis: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .flex .item.item-s-1 {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  .flex .item.item-s-2 {
+    flex-grow: 2;
+    flex-basis: 0;
+  }
+}
+
 .flex.nowrap {
   flex-wrap: nowrap;
 }
