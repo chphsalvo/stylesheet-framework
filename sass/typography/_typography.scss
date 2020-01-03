@@ -1,0 +1,41 @@
+@for $i from 8 through 72{
+  .fs-#{$i}{
+    font-size: #{$i}px;
+  }
+  @include responsive ('large'){
+    .fs-l-#{$i}{
+      font-size: #{$i}px;
+    }
+  }
+  @include responsive ('medium'){
+    .fs-m-#{$i}{
+      font-size: #{$i}px;
+    }
+  }
+  @include responsive ('small'){
+    .fs-s-#{$i}{
+      font-size: #{$i}px;
+    }
+  }
+}
+
+@for $i from 8 through 72{
+  .le-#{$i}{
+    line-height: #{$i}px;
+  }
+  @include responsive ('large'){
+    .le-l-#{$i}{
+      line-height: #{$i}px;
+    }
+  }
+  @include responsive ('medium'){
+    .le-m-#{$i}{
+      line-height: #{$i}px;
+    }
+  }
+  @include responsive ('small'){
+    .le-s-#{$i}{
+      line-height: #{$i}px;
+    }
+  }
+}
