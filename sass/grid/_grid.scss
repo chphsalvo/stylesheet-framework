@@ -13,6 +13,14 @@
 /*col responsive*/
 @for $i from 1 through 8{
 	$width: percentage(1 / $i);
+	.col-xb-x#{$i} {
+		@include responsive ('xbig'){
+			width: $width;
+		}
+	}
+}
+@for $i from 1 through 8{
+	$width: percentage(1 / $i);
 	.col-l-x#{$i} {
 		@include responsive ('large'){
 			width: $width;
@@ -57,6 +65,19 @@ $gutter: 10px;
 		}
 		.col-#{$i}:last-of-type{
 			padding-right: 0px;
+		}
+		.col-xb-#{$i}  {
+			@include responsive ('xbig'){
+				@if $i == 6{
+					width: 50%; /*round up 49.9998*/
+				}@else if $i == 12{
+					width: 100%; /*round up 99.9998*/
+				}@else{
+					width: $width;
+				}
+				padding-left:$gutter;
+				padding-right:$gutter;
+			}
 		}
 		.col-l-#{$i}  {
 			@include responsive ('large'){
@@ -107,6 +128,12 @@ $gutter: 10px;
 		.offset-#{$i}:first-of-type{
 			padding-left: $gutter;
 		}
+		.offset-xb-#{$i}  {
+			@include responsive ('xbig'){
+				margin-left: $width;
+				padding-left:$gutter;
+			}
+		}
 		.offset-l-#{$i}  {
 			@include responsive ('large'){
 				margin-left: $width;
@@ -125,6 +152,16 @@ $gutter: 10px;
 				padding-left:$gutter;
 			}
 		}
+}
+.offset-xb-0{
+	@include responsive ('xbig'){
+		margin:0px;
+	}
+}
+.offset-xb-0:first-of-type{
+	@include responsive ('xbig'){
+		padding:0px;
+	}
 }
 .offset-l-0{
 	@include responsive ('large'){
@@ -159,6 +196,11 @@ $gutter: 10px;
 
 .col-12{
 	padding:0px;
+}
+.col-xb-12{
+	@include responsive ('xbig'){
+		padding:0px;
+	}
 }
 .col-l-12{
 	@include responsive ('large'){

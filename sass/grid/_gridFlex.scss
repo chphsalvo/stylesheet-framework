@@ -15,6 +15,16 @@
     flex-grow: 2;
     flex-basis: 0;
   }
+  @include responsive ('xbig'){
+    .item.item-xb-1{
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+    .item.item-xb-2{
+      flex-grow: 2;
+      flex-basis: 0;
+    }
+  }
   @include responsive ('large'){
     .item.item-l-1{
       flex-grow: 1;
@@ -142,6 +152,33 @@
 			padding-right: 0px;
 		}
     */
+    //Responsive xbig
+    .col.col-xb-#{$i}{
+      @if $i == 6{
+        @include responsive ('xbig'){
+          -webkit-box-flex: 0;
+          -webkit-flex: 0 0 50%; /*round up 49.9998*/
+          -ms-flex: 0 0 50%; /*round up 49.9998*/
+          flex: 0 0 50%; /*round up 49.9998*/
+        }
+      }@else if $i == 12{
+        @include responsive ('xbig'){
+          -webkit-box-flex: 0;
+          -webkit-flex: 0 0 100%; /*round up 99.9998*/
+          -ms-flex: 0 0 100%; /*round up 99.9998*/
+          flex: 0 0 100%; /*round up 99.9998*/
+        }
+      }@else{
+        @include responsive ('xbig'){
+          -webkit-box-flex: 0;
+          -webkit-flex: 0 0 $width; /*round up 49.9998*/
+          -ms-flex: 0 0 $width; /*round up 49.9998*/
+          flex: 0 0 $width; /*round up 49.9998*/
+        }
+      }
+      //padding-left:$gutter;
+      //padding-right:$gutter;
+    }
     //Responsive large
     .col.col-l-#{$i}{
 			@if $i == 6{

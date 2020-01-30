@@ -16,26 +16,45 @@
 }
 
 // hide/show responsive
+.hide-xb,
+.d-xb-n,
+.d-n-xb{
+  @include responsive ('xbig'){
+    display: none;
+  }
+}
 .hide-l,
+.d-l-n,
 .d-n-l{
   @include responsive ('large'){
     display: none;
   }
 }
 .hide-m,
+.d-m-n,
 .d-n-m{
   @include responsive ('medium'){
     display: none;
   }
 }
 .hide-s,
+.d-s-n,
 .d-n-s{
   @include responsive ('small'){
     display: none;
   }
 }
 
+.show-xb,
+.d-xb-b,
+.d-b-xb{
+  display: none;
+  @include responsive ('xbig'){
+    display: block;
+  }
+}
 .show-l,
+.d-l-b,
 .d-b-l{
   display: none;
   @include responsive ('large'){
@@ -43,6 +62,7 @@
   }
 }
 .show-m,
+.d-m-b,
 .d-b-m{
   display: none;
   @include responsive ('medium'){
@@ -50,6 +70,7 @@
   }
 }
 .show-s,
+.d-s-b,
 .d-b-s{
   display: none;
   @include responsive ('small'){
