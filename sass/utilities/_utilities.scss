@@ -1,3 +1,4 @@
+
 .ratio{
   height: 0px;
 }
@@ -6,4 +7,73 @@
 }
 .ratio--4x3 {
     padding-bottom: 75%;
+}
+
+// square
+.square{
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+// hide/show responsive
+.hide-xb,
+.d-xb-n,
+.d-n-xb{
+  @include responsive ('xbig'){
+    display: none;
+  }
+}
+.hide-l,
+.d-l-n,
+.d-n-l{
+  @include responsive ('large'){
+    display: none;
+  }
+}
+.hide-m,
+.d-m-n,
+.d-n-m{
+  @include responsive ('medium'){
+    display: none;
+  }
+}
+.hide-s,
+.d-s-n,
+.d-n-s{
+  @include responsive ('small'){
+    display: none;
+  }
+}
+
+.show-xb,
+.d-xb-b,
+.d-b-xb{
+  display: none;
+  @include responsive ('xbig'){
+    display: block;
+  }
+}
+.show-l,
+.d-l-b,
+.d-b-l{
+  display: none;
+  @include responsive ('large'){
+    display: block;
+  }
+}
+.show-m,
+.d-m-b,
+.d-b-m{
+  display: none;
+  @include responsive ('medium'){
+    display: block;
+  }
+}
+.show-s,
+.d-s-b,
+.d-b-s{
+  display: none;
+  @include responsive ('small'){
+    display: block;
+  }
 }

@@ -2,6 +2,12 @@
 .ta-c{text-align: center;}
 .ta-r{text-align: right;}
 .ta-j{text-align: justify;}
+@include responsive ('xbig'){
+  .ta-xb-l{text-align: left;}
+  .ta-xb-c{text-align: center;}
+  .ta-xb-r{text-align: right;}
+  .ta-xb-j{text-align: justify;}
+}
 @include responsive ('large'){
   .ta-l-l{text-align: left;}
   .ta-l-c{text-align: center;}
@@ -25,6 +31,11 @@
 .va-t{vertical-align: top;}
 .va-m{vertical-align: middle;}
 .va-b{vertical-align: bottom;}
+@include responsive ('xbig'){
+  .va-xb-t{vertical-align: top;}
+  .va-xb-m{vertical-align: middle;}
+  .va-xb-b{vertical-align: bottom;}
+}
 @include responsive ('large'){
   .va-l-t{vertical-align: top;}
   .va-l-m{vertical-align: middle;}
