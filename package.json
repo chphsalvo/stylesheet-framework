@@ -1,0 +1,22 @@
+{
+  "name": "front-end-framework",
+  "version": "1.0.0",
+  "description": "Front-end framework by Christopher Salvo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chphsalvo/front-end-framework.git"
+  },
+  "author": "Christopher Salvo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chphsalvo/front-end-framework/issues"
+  },
+  "homepage": "https://github.com/chphsalvo/front-end-framework#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
