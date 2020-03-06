@@ -55,14 +55,12 @@ gulp.task('sass:min', function () {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.styles.dest))
 });
-
 gulp.task('style', gulp.series('sass', 'sass:min'));
 
-
-function watch(){
-    // gulp.watch takes in the location of the files to watch for changes
-    // and the name of the function we want to run on change
-    gulp.watch(paths.styles.src, style)
-}
-// Expose the task
-exports.watch = watch
+// Watch in development mode
+gulp.task('watch', function(){
+    return gulp
+        .watch(paths.styles.src, gulp.series('style'))
+});
+// Deploy
+gulp.task('build', gulp.series('style'));
