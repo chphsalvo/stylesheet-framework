@@ -20,3 +20,19 @@ Front-end framework by Christopher Salvo
     https://cdn.jsdelivr.net/gh/chphsalvo/front-end-framework@0.1-alpha/style.min.css
   </code>
 </pre>
+
+<h2>Run project</h2>
+<pre>
+  <code>
+    # Install
+    git clone https://github.com/chphsalvo/front-end-framework.git
+    cd front-end-framework
+    npm install
+    <br>
+    # Watch
+    npm run watch
+   	<br>
+    # Deploy
+    npm run build
+  </code>
+</pre>
