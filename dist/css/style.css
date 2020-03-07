@@ -1,3 +1,43 @@
+/**
+ * style.scss Style
+ *
+ * Write a description
+ */
+/**
+ * import/_import.scss Import
+ *
+ * Write a description
+ */
+/**
+ * settings/_breackpoints.scss Breackpoints
+ *
+ * Write a description
+ */
+/**
+ * settings/_colors.scss Colors
+ *
+ * Write a description
+ */
+/**
+ * mixin/_prefix.scss Prefix
+ *
+ * Write a description
+ */
+/**
+ * mixin/_responsive.scss Responsive
+ *
+ * Write a description
+ */
+/**
+ * mixin/_color.scss Color
+ *
+ * Write a description
+ */
+/**
+ * utilities/_reset.scss Reset
+ *
+ * Write a description
+ */
 html {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -52,6 +92,11 @@ textarea:focus,
 button:focus {
   outline: none; }
 
+/**
+ * grid/_grid.scss Grid
+ *
+ * Write a description
+ */
 .col {
   min-height: 1px; }
 
@@ -1038,6 +1083,11 @@ button:focus {
 .row .col {
   display: inline-block; }
 
+/**
+ * grid/_gridFlex.scss Grid Flex
+ *
+ * Write a description
+ */
 .flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2067,16 +2117,41 @@ button:focus {
               flex: 0 0 100%;
       /*round up 99.9998*/ } }
 
+/**
+ * components/_background.scss Background
+ *
+ * Write a description
+ */
+/**
+ * Background image
+ *
+ * Write a description
+ */
 .bg-image,
 .bg-img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
 
+/**
+ * components/_buttons.scss Buttons
+ *
+ * Write a description
+ */
 .btn {
   cursor: pointer;
   display: inline-block; }
 
+/**
+ * components/_modals.scss Modals
+ *
+ * Write a description
+ */
+/**
+ * components/_forms.scss Forms
+ *
+ * Write a description
+ */
 input {
   padding: 0px; }
 
@@ -2100,6 +2175,11 @@ input {
         -ms-flex-positive: 1;
             flex-grow: 1; }
 
+/**
+ * typography/_typography.scss Typography
+ *
+ * Write a description
+ */
 .fs-8 {
   font-size: 8px; }
 
@@ -4570,6 +4650,11 @@ input {
   .le-s-72 {
     line-height: 72px; } }
 
+/**
+ * utilities/_utilities.scss Utilities
+ *
+ * Write a description
+ */
 .ratio {
   height: 0px; }
 
@@ -4647,6 +4732,11 @@ input {
     .d-b-s {
       display: block; } }
 
+/**
+ * utilities/_functionalCSS.scss Functional CSS
+ *
+ * Write a description
+ */
 .ta-l {
   text-align: left; }
 
