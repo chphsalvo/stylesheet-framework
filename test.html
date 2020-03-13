@@ -2,13 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<!--<meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no">-->
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <!-- CSS-->
 <link href="./dist/css/style.css" type="text/css" rel="stylesheet">
 <!-- CSS-->
-<title>Website Title</title>
+<title>Front-end framework</title>
 </head>
 
 <style>
@@ -17,12 +16,35 @@
     padding-right:50px;
     padding:50px;
   }
+  .col{
+    border:1px solid;
+  }
 </style>
 
 
 <body>
 
 <div class="marginPage">
+
+   <!-- functional CSS - display -->
+    <div class="d-l-n">display-large-none - d-l-n</div>
+    <pre>
+      <code>
+        <div class="d-l-n"></div>
+      </code>
+    </pre>
+    <br>
+    <div class="d-l">d-l</div>
+    <div class="d-m">d-m</div>
+    <div class="d-s">d-s</div>
+
+  <!-- grid -->
+  <div class="row">
+    <div class="col col-xb-12 col-6 col-m-12">col col-6</div><!--
+    --><div class="col col-xb-12 col-6 col-m-12">col col-6</div>
+  </div>
+
+  <!-- gridFlex -->
   <div class="flex">
     <div class="col col-xb-12 col-6 col-m-12">col col-6</div>
     <div class="col col-xb-12 col-6 col-m-12">col col-6</div>
