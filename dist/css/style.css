@@ -24,11 +24,6 @@
  * Write a description
  */
 /**
- * mixin/_prefix.scss Prefix
- *
- * Write a description
- */
-/**
  * mixin/_responsive.scss Responsive
  *
  * Write a description
@@ -4838,7 +4833,6 @@ input {
 body {
   /*background-color:color(black,base);*/
   /*palette*/
-  /*@include prefix(transform, translateY(-50%), webkit ms moz);*/
   /*
 	@include responsive ('small'){
 		body{
