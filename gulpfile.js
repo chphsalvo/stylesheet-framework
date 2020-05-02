@@ -11,7 +11,7 @@ var gulp = require("gulp"),
 var paths = {
     styles: {
         // By using sass/**/*.scss we're telling gulp to check all folders for any scss file
-        src: "sass/**/*.scss",
+        src: "src/sass/**/*.scss",
         // Compiled files will end up in whichever folder it's found in (partials are not compiled)
         dest: "dist/css"
     }
