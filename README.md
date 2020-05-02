@@ -46,8 +46,7 @@ Project Root
         ├── style.css			# Compiled style.
         ├── style.css.map		# Compiled style sourcemap.
         ├── style.min.css		# Compressed compiled style.
-        └── style.min.css.map		# Compressed compiled style sourcemap.
-    
+        └── style.min.css.map		# Compressed compiled style sourcemap.   
 └── src					# Source files
     └── sass
         └── components
