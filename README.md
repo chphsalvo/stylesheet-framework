@@ -41,35 +41,37 @@ Front-end framework by Christopher Salvo
 <pre>
   <code>
 Project Root
-└── dist 						          // Build distribution folder
-	└── css
-    	├── style.css 			    // Base compiled style.
-      ├── style.css.map 		  // Base compiled style sourcemap.
-      ├── style.min.css 		  // Base compressed compiled style.
-      └── style.min.css.map   // Base compressed compiled style sourcemap.
-└── sass
-	└── components
-    	├── _background.scss
-      ├── _buttons.scss
-      ├── _forms.scss
-      └── _modals.scss
-    └── grid
-    	├── _grid.scss
-      └── _gridFlex.scss
-    └── import
-    	└── _import.scss
-    └── mixin
-    	├── _color.scss
-      └── _responsive.scss
-    └── settings
-    	├── _breakpoints.scss
-      └── _colors.scss
-    └── typography
-    	└── _typography.scss
-    └── utilities
-    	├── _functionalCSS.scss
-      ├── _reset.scss
-      └── _utilities.scss
+└── dist				# Compiled files, build distribution folder
+    └── css
+        ├── style.css			# Compiled style.
+        ├── style.css.map		# Compiled style sourcemap.
+        ├── style.min.css		# Compressed compiled style.
+        └── style.min.css.map		# Compressed compiled style sourcemap.
+    
+└── src					# Source files
+    └── sass
+        └── components
+	    ├── _background.scss
+	    ├── _buttons.scss
+	    ├── _forms.scss
+	    └── _modals.scss
+        └── grid
+            ├── _grid.scss
+            └── _gridFlex.scss
+        └── import
+            └── _import.scss		# Import .scss list
+        └── mixin			# SASS mixin (https://scotch.io/tutorials/how-to-use-sass-mixins)
+            ├── _color.scss
+            └── _responsive.scss
+        └── settings
+    	    ├── _breakpoints.scss
+            └── _colors.scss
+        └── typography
+    	    └── _typography.scss
+        └── utilities
+    	    ├── _functionalCSS.scss
+            ├── _reset.scss		# Browser CSS reset
+            └── _utilities.scss
     └── style.scss
   </code>
 </pre>
