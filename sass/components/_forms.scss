@@ -1,0 +1,23 @@
+/**
+ * components/_forms.scss Forms
+ *
+ * Write a description
+ */
+
+//reset
+input{
+  padding:0px;
+}
+
+.field-group{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-flow:row wrap;
+  flex-flow:row wrap;
+
+  > .field{
+    flex-grow: 1;
+  }
+}

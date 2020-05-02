@@ -1,0 +1,123 @@
+/**
+ * utilities/_functionalCSS.scss Functional CSS
+ *
+ * Write a description
+ */
+
+/*
+ * INDEX
+ * - text-align
+ * - vertical-align
+ * - display
+ */
+
+/**
+ * text-align
+ */
+.ta-l{text-align: left;}
+.ta-c{text-align: center;}
+.ta-r{text-align: right;}
+.ta-j{text-align: justify;}
+@include responsive ('xbig'){
+  .ta-xb-l{text-align: left;}
+  .ta-xb-c{text-align: center;}
+  .ta-xb-r{text-align: right;}
+  .ta-xb-j{text-align: justify;}
+}
+@include responsive ('large'){
+  .ta-l-l{text-align: left;}
+  .ta-l-c{text-align: center;}
+  .ta-l-r{text-align: right;}
+  .ta-l-j{text-align: justify;}
+}
+@include responsive ('medium'){
+  .ta-m-l{text-align: left;}
+  .ta-m-c{text-align: center;}
+  .ta-m-r{text-align: right;}
+  .ta-m-j{text-align: justify;}
+}
+@include responsive ('small'){
+  .ta-s-l{text-align: left;}
+  .ta-s-c{text-align: center;}
+  .ta-s-r{text-align: right;}
+  .ta-s-j{text-align: justify;}
+}
+
+/**
+ * vertical-align
+ */
+
+.va-t{vertical-align: top;}
+.va-m{vertical-align: middle;}
+.va-b{vertical-align: bottom;}
+@include responsive ('xbig'){
+  .va-xb-t{vertical-align: top;}
+  .va-xb-m{vertical-align: middle;}
+  .va-xb-b{vertical-align: bottom;}
+}
+@include responsive ('large'){
+  .va-l-t{vertical-align: top;}
+  .va-l-m{vertical-align: middle;}
+  .va-l-b{vertical-align: bottom;}
+}
+@include responsive ('medium'){
+  .va-m-t{vertical-align: top;}
+  .va-m-m{vertical-align: middle;}
+  .va-m-b{vertical-align: bottom;}
+}
+@include responsive ('small'){
+  .va-s-t{vertical-align: top;}
+  .va-s-m{vertical-align: middle;}
+  .va-s-b{vertical-align: bottom;}
+}
+
+/**
+ * display
+ */
+
+.d-n{display: none;}
+.d-b{display: block;}
+.d-i{display: inline;}
+@include responsive ('xbig'){
+  .d-xb-n{display: none;}
+  .d-xb-b{display: block;}
+  .d-xb-i{display: inline;}
+}
+@include responsive ('large'){
+  .d-l-n{display: none;}
+  .d-l-b{display: block;}
+  .d-l-i{display: inline;}
+}
+@include responsive ('medium'){
+  .d-m-n{display: none;}
+  .d-m-b{display: block;}
+  .d-m-i{display: inline;}
+}
+@include responsive ('small'){
+  .d-s-n{display: none;}
+  .d-s-b{display: block;}
+  .d-s-i{display: inline;}
+}
+
+.d-l{display:none;}
+.d-m{display:none;}
+.d-s{display:none;}
+@include responsive ('large'){
+  .d-xb{display:none;}
+  .d-l{display:block;}
+  .d-m{display:none;}
+  .d-s{display:none;}
+}
+@include responsive ('medium'){
+  .d-xb{display:none;}
+  .d-l{display:none;}
+  .d-m{display:block;}
+  .d-s{display:none;}
+}
+@include responsive ('small'){
+  .d-xb{display:none;}
+  .d-l{display:none;}
+  .d-m{display:none;}
+  .d-s{display:block;}
+}
+

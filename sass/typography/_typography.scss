@@ -1,0 +1,84 @@
+/**
+ * typography/_typography.scss Typography
+ *
+ * Write a description
+ */
+
+
+//font-size
+@for $i from 8 through 72{
+  .fs-#{$i}{
+    font-size: #{$i}px;
+  }
+}
+
+@for $i from 8 through 72{
+  @include responsive ('xbig'){
+    .fs-xb-#{$i}{
+      font-size: #{$i}px;
+    }
+  }
+}
+
+@for $i from 8 through 72{
+  @include responsive ('large'){
+    .fs-l-#{$i}{
+      font-size: #{$i}px;
+    }
+  }
+}
+
+@for $i from 8 through 72{
+  @include responsive ('medium'){
+    .fs-m-#{$i}{
+      font-size: #{$i}px;
+    }
+  }
+}
+
+@for $i from 8 through 72{
+  @include responsive ('small'){
+    .fs-s-#{$i}{
+      font-size: #{$i}px;
+    }
+  }
+}
+
+//line-height
+@for $i from 8 through 72{
+  .le-#{$i}{
+    line-height: #{$i}px;
+  }
+}
+
+@for $i from 8 through 72{
+  @include responsive ('xbig'){
+    .le-xb-#{$i}{
+      line-height: #{$i}px;
+    }
+  }
+}
+
+@for $i from 8 through 72{
+  @include responsive ('large'){
+    .le-l-#{$i}{
+      line-height: #{$i}px;
+    }
+  }
+}
+
+@for $i from 8 through 72{
+  @include responsive ('medium'){
+    .le-m-#{$i}{
+      line-height: #{$i}px;
+    }
+  }
+}
+
+@for $i from 8 through 72{
+  @include responsive ('small'){
+    .le-s-#{$i}{
+      line-height: #{$i}px;
+    }
+  }
+}
