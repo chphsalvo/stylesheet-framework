@@ -41,36 +41,35 @@ Front-end framework by Christopher Salvo
 <pre>
   <code>
 Project Root
-└── dist 						// Build distribution folder
+└── dist 						          // Build distribution folder
 	└── css
-    	├── style.css 			// Base compiled style.
-        ├── style.css.map 		// Base compiled style sourcemap.
-        ├── style.min.css 		// Base compressed compiled style.
-        └── style.min.css.map 	// Base compressed compiled style sourcemap.
+    	├── style.css 			    // Base compiled style.
+      ├── style.css.map 		  // Base compiled style sourcemap.
+      ├── style.min.css 		  // Base compressed compiled style.
+      └── style.min.css.map   // Base compressed compiled style sourcemap.
 └── sass
 	└── components
     	├── _background.scss
-        ├── _buttons.scss
-        ├── _forms.scss
-        └── _modals.scss
+      ├── _buttons.scss
+      ├── _forms.scss
+      └── _modals.scss
     └── grid
     	├── _grid.scss
-        └── _gridFlex.scss
+      └── _gridFlex.scss
     └── import
     	└── _import.scss
     └── mixin
     	├── _color.scss
-        ├── _prefix.scss
-        └── _responsive.scss
+      └── _responsive.scss
     └── settings
     	├── _breakpoints.scss
-        └── _colors.scss
+      └── _colors.scss
     └── typography
     	└── _typography.scss
     └── utilities
     	├── _functionalCSS.scss
-        ├── _reset.scss
-        └── _utilities.scss
+      ├── _reset.scss
+      └── _utilities.scss
     └── style.scss
   </code>
 </pre>
