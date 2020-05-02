@@ -11,13 +11,25 @@ Front-end framework by Christopher Salvo
 <p>CDN CSS &lt;link&gt;</p>
 <pre>
   <code>
+    // use a specific version "@0.8"
+    // you should use this in production
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/chphsalvo/front-end-framework@0.8/dist/css/style.min.css&quot;&gt;
+    <br>
+    // use the latest version
+    // you should NOT use this in production
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/chphsalvo/front-end-framework/dist/css/style.min.css&quot;&gt;
   </code>
 </pre>
 <p>CDN URL</p>
 <pre>
   <code>
+    // use a specific version "@0.8"
+    // you should use this in production
     https://cdn.jsdelivr.net/gh/chphsalvo/front-end-framework@0.8/dist/css/style.min.css
+    <br>
+    // use the latest version
+    // you should NOT use this in production
+    https://cdn.jsdelivr.net/gh/chphsalvo/front-end-framework/dist/css/style.min.css
   </code>
 </pre>
 
