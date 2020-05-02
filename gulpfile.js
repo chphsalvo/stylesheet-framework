@@ -1,16 +1,16 @@
 // Dependencies
 var gulp = require("gulp"),
-    sass = require("gulp-sass"),
+    sass = require("gulp-sass"), // SASS manager - https://www.npmjs.com/package/gulp-sass
     postcss = require("gulp-postcss"),
-    autoprefixer = require("autoprefixer"),
-    cssnano = require("cssnano"),
-    sourcemaps = require("gulp-sourcemaps"),
-    rename = require("gulp-rename");
+    autoprefixer = require("autoprefixer"), // Add vendor prefixes to CSS - https://github.com/postcss/autoprefixer
+    cssnano = require("cssnano"), // Compression tool, compact CSS appropriately - https://github.com/cssnano/cssnano
+    sourcemaps = require("gulp-sourcemaps"), // Write inline source maps - https://www.npmjs.com/package/gulp-sourcemaps
+    rename = require("gulp-rename"); // Rename files easily - https://www.npmjs.com/package/gulp-rename
 
 // DRY
 var paths = {
     styles: {
-        // By using sass/**/*.scss we're telling gulp to check all folders for any scss file
+        // By using src/sass/**/*.scss we're telling gulp to check all folders for any scss file
         src: "src/sass/**/*.scss",
         // Compiled files will end up in whichever folder it's found in (partials are not compiled)
         dest: "dist/css"
