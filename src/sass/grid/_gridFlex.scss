@@ -4,112 +4,133 @@
  * Write a description
  */
 
-.flex{
+/*
+ * INDEX
+ * - flex item
+ * - flex wrap
+ * - flex alignments
+ * - flex col
+ * - flex offset
+ */
+
+/**
+ * flex item
+ */
+
+.flex {
   display: flex;
   flex-flow: row wrap; /* flex-direction: row; + flex-wrap: wrap; s*/
 
-  .item.item-1{
+  .item.item-1 {
     flex-grow: 1;
     flex-basis: 0;
   }
-  .item.item-2{
+  .item.item-2 {
     flex-grow: 2;
     flex-basis: 0;
   }
-  @include responsive ('xbig'){
-    .item.item-xb-1{
+  @include responsive("xbig") {
+    .item.item-xb-1 {
       flex-grow: 1;
       flex-basis: 0;
     }
-    .item.item-xb-2{
+    .item.item-xb-2 {
       flex-grow: 2;
       flex-basis: 0;
     }
   }
-  @include responsive ('large'){
-    .item.item-l-1{
+  @include responsive("large") {
+    .item.item-l-1 {
       flex-grow: 1;
       flex-basis: 0;
     }
-    .item.item-l-2{
+    .item.item-l-2 {
       flex-grow: 2;
       flex-basis: 0;
     }
   }
-  @include responsive ('medium'){
-    .item.item-m-1{
+  @include responsive("medium") {
+    .item.item-m-1 {
       flex-grow: 1;
       flex-basis: 0;
     }
-    .item.item-m-2{
+    .item.item-m-2 {
       flex-grow: 2;
       flex-basis: 0;
     }
   }
-  @include responsive ('small'){
-    .item.item-s-1{
+  @include responsive("small") {
+    .item.item-s-1 {
       flex-grow: 1;
       flex-basis: 0;
     }
-    .item.item-s-2{
+    .item.item-s-2 {
       flex-grow: 2;
       flex-basis: 0;
     }
   }
-
 }
 
-// flex wrap
-.flex.nowrap{
-  flex-wrap:nowrap;
+/**
+ * flex wrap
+ */
+
+.flex.nowrap {
+  flex-wrap: nowrap;
 }
 
-// flex alignments
-.flex.top{
+/**
+ * flex alignments
+ */
+
+.flex.top {
   align-items: flex-start;
 }
-.flex.middle{
+.flex.middle {
   align-items: center;
 }
-.flex.bottom{
+.flex.bottom {
   align-items: flex-end;
 }
-.flex.stretch{
+.flex.stretch {
   align-items: stretch;
 }
 
-.flex.left{
+.flex.left {
   justify-content: flex-start;
 }
-.flex.center{
+.flex.center {
   justify-content: center;
 }
-.flex.right{
+.flex.right {
   justify-content: flex-end;
 }
-.flex.justify{
+.flex.justify {
   justify-content: space-between;
 }
-.flex.space{
+.flex.space {
   justify-content: space-around;
 }
 
-// flex col
-.flex{
+/**
+ * flex col
+ */
+
+.flex {
   $gutter: 10px;
-  @for $i from 1 through 12{
+  @for $i from 1 through 12 {
     $width: 8.3333% * $i;
-    .col.col-#{$i}  {
-			@if $i == 6{
+    .col.col-#{$i} {
+      @if $i == 6 {
         flex: 0 0 50%; /*round up 49.9998*/
-			}@else if $i == 12{
+      } @else if $i == 12 {
         flex: 0 0 100%; /*round up 99.9998*/
-			}@else{
+      } @else {
         flex: 0 0 $width; /*round up 49.9998*/
-			}
-			//padding-left:$gutter;
-			//padding-right:$gutter;
-		}
+      }
+      //padding-left:$gutter;
+      //padding-right:$gutter;
+    }
     /*
     .col.col-#{$i}:first-of-type{
 			padding-left: 0px;
@@ -119,17 +140,17 @@
 		}
     */
     //Responsive xbig
-    .col.col-xb-#{$i}{
-      @if $i == 6{
-        @include responsive ('xbig'){
+    .col.col-xb-#{$i} {
+      @if $i == 6 {
+        @include responsive("xbig") {
           flex: 0 0 50%; /*round up 49.9998*/
         }
-      }@else if $i == 12{
-        @include responsive ('xbig'){
+      } @else if $i == 12 {
+        @include responsive("xbig") {
           flex: 0 0 100%; /*round up 99.9998*/
         }
-      }@else{
-        @include responsive ('xbig'){
+      } @else {
+        @include responsive("xbig") {
           flex: 0 0 $width; /*round up 49.9998*/
         }
       }
@@ -137,23 +158,23 @@
       //padding-right:$gutter;
     }
     //Responsive large
-    .col.col-l-#{$i}{
-			@if $i == 6{
-        @include responsive ('large'){
+    .col.col-l-#{$i} {
+      @if $i == 6 {
+        @include responsive("large") {
           flex: 0 0 50%; /*round up 49.9998*/
         }
-			}@else if $i == 12{
-        @include responsive ('large'){
+      } @else if $i == 12 {
+        @include responsive("large") {
           flex: 0 0 100%; /*round up 99.9998*/
         }
-			}@else{
-        @include responsive ('large'){
+      } @else {
+        @include responsive("large") {
           flex: 0 0 $width; /*round up 49.9998*/
         }
-			}
-			//padding-left:$gutter;
-			//padding-right:$gutter;
-		}
+      }
+      //padding-left:$gutter;
+      //padding-right:$gutter;
+    }
     /*
     .col.col-l-#{$i}:first-of-type{
 			padding-left: 0px;
@@ -163,23 +184,23 @@
 		}
     */
     //Responsive medium
-    .col.col-m-#{$i}{
-			@if $i == 6{
-        @include responsive ('medium'){
+    .col.col-m-#{$i} {
+      @if $i == 6 {
+        @include responsive("medium") {
           flex: 0 0 50%; /*round up 49.9998*/
         }
-			}@else if $i == 12{
-        @include responsive ('medium'){
+      } @else if $i == 12 {
+        @include responsive("medium") {
           flex: 0 0 100%; /*round up 99.9998*/
         }
-			}@else{
-        @include responsive ('medium'){
+      } @else {
+        @include responsive("medium") {
           flex: 0 0 $width; /*round up 49.9998*/
         }
-			}
-			//padding-left:$gutter;
-			//padding-right:$gutter;
-		}
+      }
+      //padding-left:$gutter;
+      //padding-right:$gutter;
+    }
     /*
     .col.col-m-#{$i}:first-of-type{
 			padding-left: 0px;
@@ -189,23 +210,23 @@
 		}
     */
     //Responsive small
-    .col.col-s-#{$i}{
-			@if $i == 6{
-        @include responsive ('small'){
+    .col.col-s-#{$i} {
+      @if $i == 6 {
+        @include responsive("small") {
           flex: 0 0 50%; /*round up 49.9998*/
         }
-			}@else if $i == 12{
-        @include responsive ('small'){
+      } @else if $i == 12 {
+        @include responsive("small") {
           flex: 0 0 100%; /*round up 99.9998*/
         }
-			}@else{
-        @include responsive ('small'){
+      } @else {
+        @include responsive("small") {
           flex: 0 0 $width; /*round up 49.9998*/
         }
-			}
-			//padding-left:$gutter;
-			//padding-right:$gutter;
-		}
+      }
+      //padding-left:$gutter;
+      //padding-right:$gutter;
+    }
     /*
     .col.col-s-#{$i}:first-of-type{
 			padding-left: 0px;
@@ -214,5 +235,83 @@
 			padding-right: 0px;
 		}
     */
+  }
+}
+
+/**
+ * flex offset
+ */
+
+.flex {
+  @for $i from 0 through 12 {
+    $width: 8.3333% * $i;
+    .offset-#{$i} {
+      margin-left: $width;
+    }
+    .offset-#{$i}:first-of-type {
+      padding-left: $gutter;
+    }
+  }
+  @for $i from 0 through 12 {
+    $width: 8.3333% * $i;
+    .offset-l-#{$i} {
+      @include responsive("large") {
+        margin-left: $width;
+      }
+    }
+    .offset-l-#{$i}:first-of-type {
+      @include responsive("large") {
+        padding-left: $gutter;
+      }
+    }
+  }
+  @for $i from 0 through 12 {
+    $width: 8.3333% * $i;
+    .offset-m-#{$i} {
+      @include responsive("medium") {
+        margin-left: $width;
+      }
+    }
+    .offset-m-#{$i}:first-of-type {
+      @include responsive("medium") {
+        padding-left: $gutter;
+      }
+    }
+  }
+  @for $i from 0 through 12 {
+    $width: 8.3333% * $i;
+    .offset-s-#{$i} {
+      @include responsive("small") {
+        margin-left: $width;
+      }
+    }
+    .offset-s-#{$i}:first-of-type {
+      @include responsive("small") {
+        padding-left: $gutter;
+      }
+    }
+  }
+
+  .offset-0,
+  .offset-0:first-of-type{
+    padding-left:0px;
+  }
+  .offset-l-0,
+  .offset-l-0:first-of-type{
+    @include responsive("large") {
+      padding-left:0px;
+    }
+  }
+  .offset-m-0,
+  .offset-m-0:first-of-type{
+    @include responsive("medium") {
+      padding-left:0px;
+    }
+  }
+  .offset-s-0,
+  .offset-s-0:first-of-type{
+    @include responsive("small") {
+      padding-left:0px;
+    }
   }
 }
