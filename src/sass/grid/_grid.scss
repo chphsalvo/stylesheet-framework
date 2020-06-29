@@ -4,10 +4,15 @@
  * Write a description
  */
 
-.col{
-	min-height:1px;
+$gutter: 10px;
+
+.row{
+	.col{
+		min-height:1px;
+	}
 }
 
+.row{
 /*col-x(n)*/
 @for $i from 1 through 8{
 		$width: percentage(1 / $i);
@@ -49,10 +54,11 @@
 		}
 	}
 }
+}
 /*col responsive*/
 /*col-(n)*/
 
-$gutter: 10px;
+.row{
 @for $i from 1 through 12{
 		$width: 8.3333% * $i;
 		.col-#{$i}  {
@@ -125,7 +131,10 @@ $gutter: 10px;
 			}
 		}
 }
+}
+
 /*offset-(n)*/
+.row{
 @for $i from 0 through 12{
 		$width: 8.3333% * $i;
 		.offset-#{$i}  {
@@ -222,6 +231,7 @@ $gutter: 10px;
 	@include responsive ('small'){
 		padding:0px;
 	}
+}
 }
 
 .row{width:100%;}

@@ -10,6 +10,7 @@
  * - flex wrap
  * - flex alignments
  * - flex col
+ * - flex gutter
  * - flex offset
  */
 
@@ -19,7 +20,7 @@
 
 .flex {
   display: flex;
-  flex-flow: row wrap; /* flex-direction: row; + flex-wrap: wrap; s*/
+  flex-flow: row wrap; /* flex-direction: row; + flex-wrap: wrap; */
 
   .item.item-1 {
     flex-grow: 1;
@@ -116,202 +117,214 @@
  * flex col
  */
 
-.flex {
-  $gutter: 10px;
-  @for $i from 1 through 12 {
-    $width: 8.3333% * $i;
-    .col.col-#{$i} {
-      @if $i == 6 {
-        flex: 0 0 50%; /*round up 49.9998*/
-      } @else if $i == 12 {
-        flex: 0 0 100%; /*round up 99.9998*/
-      } @else {
-        flex: 0 0 $width; /*round up 49.9998*/
-      }
-      //padding-left:$gutter;
-      //padding-right:$gutter;
-    }
-    /*
-    .col.col-#{$i}:first-of-type{
-			padding-left: 0px;
-		}
-		.col.col-#{$i}:last-of-type{
-			padding-right: 0px;
-		}
-    */
-    //Responsive xbig
-    .col.col-xb-#{$i} {
-      @if $i == 6 {
-        @include responsive("xbig") {
-          flex: 0 0 50%; /*round up 49.9998*/
-        }
-      } @else if $i == 12 {
-        @include responsive("xbig") {
-          flex: 0 0 100%; /*round up 99.9998*/
-        }
-      } @else {
-        @include responsive("xbig") {
-          flex: 0 0 $width; /*round up 49.9998*/
-        }
-      }
-      //padding-left:$gutter;
-      //padding-right:$gutter;
-    }
-    //Responsive large
-    .col.col-l-#{$i} {
-      @if $i == 6 {
-        @include responsive("large") {
-          flex: 0 0 50%; /*round up 49.9998*/
-        }
-      } @else if $i == 12 {
-        @include responsive("large") {
-          flex: 0 0 100%; /*round up 99.9998*/
-        }
-      } @else {
-        @include responsive("large") {
-          flex: 0 0 $width; /*round up 49.9998*/
-        }
-      }
-      //padding-left:$gutter;
-      //padding-right:$gutter;
-    }
-    /*
-    .col.col-l-#{$i}:first-of-type{
-			padding-left: 0px;
-		}
-		.col.col-l-#{$i}:last-of-type{
-			padding-right: 0px;
-		}
-    */
-    //Responsive medium
-    .col.col-m-#{$i} {
-      @if $i == 6 {
-        @include responsive("medium") {
-          flex: 0 0 50%; /*round up 49.9998*/
-        }
-      } @else if $i == 12 {
-        @include responsive("medium") {
-          flex: 0 0 100%; /*round up 99.9998*/
-        }
-      } @else {
-        @include responsive("medium") {
-          flex: 0 0 $width; /*round up 49.9998*/
-        }
-      }
-      //padding-left:$gutter;
-      //padding-right:$gutter;
-    }
-    /*
-    .col.col-m-#{$i}:first-of-type{
-			padding-left: 0px;
-		}
-		.col.col-m-#{$i}:last-of-type{
-			padding-right: 0px;
-		}
-    */
-    //Responsive small
-    .col.col-s-#{$i} {
-      @if $i == 6 {
-        @include responsive("small") {
-          flex: 0 0 50%; /*round up 49.9998*/
-        }
-      } @else if $i == 12 {
-        @include responsive("small") {
-          flex: 0 0 100%; /*round up 99.9998*/
-        }
-      } @else {
-        @include responsive("small") {
-          flex: 0 0 $width; /*round up 49.9998*/
-        }
-      }
-      //padding-left:$gutter;
-      //padding-right:$gutter;
-    }
-    /*
-    .col.col-s-#{$i}:first-of-type{
-			padding-left: 0px;
-		}
-		.col.col-s-#{$i}:last-of-type{
-			padding-right: 0px;
-		}
-    */
+$gutter: 20px; // Define columns gutter
+
+.flex{
+
+  .col{
+    min-height: 1px;
   }
+
+  @for $i from 0 through 12{
+    $width: 100% / 12 * $i;
+
+    .col-#{$i}{
+      flex: 0 0 $width;
+      @if $i == 12 {
+        padding-left: 0px;
+        padding-right: 0px;
+      } @else{
+        padding-left: $gutter / 2;
+        padding-right: $gutter / 2;
+      }
+
+      &:first-of-type{padding-left: 0px;}
+      &:last-of-type{padding-right: 0px;}
+    }
+  }
+
+  @include responsive("xbig") {
+    @for $i from 0 through 12{
+      $width: 100% / 12 * $i;
+  
+      .col-xb-#{$i}{
+        flex: 0 0 $width;
+        @if $i == 12 {
+          padding-left: 0px;
+          padding-right: 0px;
+        } @else{
+          padding-left: $gutter / 2;
+          padding-right: $gutter / 2;
+        }
+  
+        &:first-of-type{padding-left: 0px;}
+        &:last-of-type{padding-right: 0px;}
+      }
+    }
+  }
+
+  @include responsive("large") {
+    @for $i from 0 through 12{
+      $width: 100% / 12 * $i;
+  
+      .col-l-#{$i}{
+        flex: 0 0 $width;
+        @if $i == 12 {
+          padding-left: 0px;
+          padding-right: 0px;
+        } @else{
+          padding-left: $gutter / 2;
+          padding-right: $gutter / 2;
+        }
+  
+        &:first-of-type{padding-left: 0px;}
+        &:last-of-type{padding-right: 0px;}
+      }
+    }
+  }
+
+  @include responsive("medium") {
+    @for $i from 0 through 12{
+      $width: 100% / 12 * $i;
+  
+      .col-m-#{$i}{
+        flex: 0 0 $width;
+        @if $i == 12 {
+          padding-left: 0px;
+          padding-right: 0px;
+        } @else{
+          padding-left: $gutter / 2;
+          padding-right: $gutter / 2;
+        }
+  
+        &:first-of-type{padding-left: 0px;}
+        &:last-of-type{padding-right: 0px;}
+      }
+    }
+  }
+
+  @include responsive("small") {
+    @for $i from 0 through 12{
+      $width: 100% / 12 * $i;
+  
+      .col-s-#{$i}{
+        flex: 0 0 $width;
+        @if $i == 12 {
+          padding-left: 0px;
+          padding-right: 0px;
+        } @else{
+          padding-left: $gutter / 2;
+          padding-right: $gutter / 2;
+        }
+  
+        &:first-of-type{padding-left: 0px;}
+        &:last-of-type{padding-right: 0px;}
+      }
+    }
+  }
+
+}
+
+/**
+ * flex gutter
+ * Fix left responsive gutter
+ */
+
+.flex{
+
+  .gutter-0{
+    padding-left: 0px;
+  }
+  @include responsive("xbig") {
+    .gutter-xb-0{
+      padding-left: 0px;
+    }
+  }
+  @include responsive("large") {
+    .gutter-l-0{
+      padding-left: 0px;
+    }
+  }
+  @include responsive("medium") {
+    .gutter-m-0{
+      padding-left: 0px;
+    }
+  }
+  @include responsive("small") {
+    .gutter-s-0{
+      padding-left: 0px;
+    }
+  }
+
 }
 
 /**
  * flex offset
  */
 
-.flex {
-  @for $i from 0 through 12 {
-    $width: 8.3333% * $i;
-    .offset-#{$i} {
-      margin-left: $width;
-    }
-    .offset-#{$i}:first-of-type {
-      padding-left: $gutter;
-    }
-  }
-  @for $i from 0 through 12 {
-    $width: 8.3333% * $i;
-    .offset-l-#{$i} {
-      @include responsive("large") {
-        margin-left: $width;
-      }
-    }
-    .offset-l-#{$i}:first-of-type {
-      @include responsive("large") {
-        padding-left: $gutter;
-      }
+ .flex{
+
+  @for $i from 0 through 12{
+    $marginLeft: 100% / 12 * $i;
+
+    .offset-#{$i}{
+      margin-left: $marginLeft;
+
+      //&:first-of-type{padding-left: 0px;}
+      //&:last-of-type{padding-right: 0px;}
     }
   }
-  @for $i from 0 through 12 {
-    $width: 8.3333% * $i;
-    .offset-m-#{$i} {
-      @include responsive("medium") {
-        margin-left: $width;
-      }
-    }
-    .offset-m-#{$i}:first-of-type {
-      @include responsive("medium") {
-        padding-left: $gutter;
-      }
-    }
-  }
-  @for $i from 0 through 12 {
-    $width: 8.3333% * $i;
-    .offset-s-#{$i} {
-      @include responsive("small") {
-        margin-left: $width;
-      }
-    }
-    .offset-s-#{$i}:first-of-type {
-      @include responsive("small") {
-        padding-left: $gutter;
+
+  @include responsive("xbig") {
+    @for $i from 0 through 12{
+      $marginLeft: 100% / 12 * $i;
+  
+      .offset-xb-#{$i}{
+        margin-left: $marginLeft;
+  
+        //&:first-of-type{padding-left: 0px;}
+        //&:last-of-type{padding-right: 0px;}
       }
     }
   }
 
-  .offset-0,
-  .offset-0:first-of-type{
-    padding-left:0px;
-  }
-  .offset-l-0,
-  .offset-l-0:first-of-type{
-    @include responsive("large") {
-      padding-left:0px;
+  @include responsive("large") {
+    @for $i from 0 through 12{
+      $marginLeft: 100% / 12 * $i;
+  
+      .offset-l-#{$i}{
+        margin-left: $marginLeft;
+  
+        //&:first-of-type{padding-left: 0px;}
+        //&:last-of-type{padding-right: 0px;}
+      }
     }
   }
-  .offset-m-0,
-  .offset-m-0:first-of-type{
-    @include responsive("medium") {
-      padding-left:0px;
+
+  @include responsive("medium") {
+    @for $i from 0 through 12{
+      $marginLeft: 100% / 12 * $i;
+  
+      .offset-m-#{$i}{
+        margin-left: $marginLeft;
+  
+        //&:first-of-type{padding-left: 0px;}
+        //&:last-of-type{padding-right: 0px;}
+      }
     }
   }
-  .offset-s-0,
-  .offset-s-0:first-of-type{
-    @include responsive("small") {
-      padding-left:0px;
+
+  @include responsive("small") {
+    @for $i from 0 through 12{
+      $marginLeft: 100% / 12 * $i;
+  
+      .offset-s-#{$i}{
+        margin-left: $marginLeft;
+  
+        //&:first-of-type{padding-left: 0px;}
+        //&:last-of-type{padding-right: 0px;}
+      }
     }
   }
-}
+
+ }
