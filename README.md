@@ -42,9 +42,9 @@ Front-end framework by Christopher Salvo
     cd front-end-framework
     npm install
     <br>
-    # Watch
-    npm run watch
-   	<br>
+    # Dev
+    npm run dev
+    <br>
     # Deploy
     npm run build
   </code>

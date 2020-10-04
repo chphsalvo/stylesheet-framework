@@ -58,7 +58,7 @@ gulp.task('sass:min', function () {
 gulp.task('style', gulp.series('sass', 'sass:min'));
 
 // Watch in development mode
-gulp.task('watch', function(){
+gulp.task('dev', function(){
     return gulp
         .watch(paths.styles.src, gulp.series('style'))
 });
