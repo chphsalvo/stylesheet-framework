@@ -1,4 +1,5 @@
 # Front-end framework
+
 Front-end framework by Christopher Salvo
 
 <ul>
@@ -46,6 +47,25 @@ Front-end framework by Christopher Salvo
    	<br>
     # Deploy
     npm run build
+  </code>
+</pre>
+
+<h2>Run docs</h2>
+<pre>
+  <code>
+    # Install
+    git clone https://github.com/chphsalvo/front-end-framework.git
+    cd front-end-framework
+    npm install
+    <br>
+    # Starts Next.js in development mode
+    npm run dev-docs
+   	<br>
+    # Builds the application for production usage
+    npm run build-docs
+    <br>
+    # Starts a Next.js production server
+    npm run start-docs
   </code>
 </pre>
 
