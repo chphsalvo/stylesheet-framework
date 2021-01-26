@@ -1,21 +1,15 @@
 import Head from "next/head";
 import Link from "next/link";
 
+import Header from "../components/header/header";
+
 //import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className="">
-      HOMEPAGE
+    <>
+      <Header></Header>
 
-      <ul>
-        <li>
-            <Link href="/grid">
-                <a>Grid</a>
-            </Link>
-        </li>
-      </ul>
-
-    </div>
+    </>
   );
 }

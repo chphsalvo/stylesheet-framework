@@ -1,0 +1,13 @@
+.menuMain{
+
+    > li{
+        padding:0px 25px;
+
+        &:first-child{
+            padding-left: 0px;
+        }
+        &:last-child{
+            padding-right: 0px;
+        }
+    }
+}

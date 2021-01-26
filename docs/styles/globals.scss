@@ -1,17 +1,27 @@
 html,
 body {
   background-color: #ffffff;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.row{
+.row,
+.flex{
   
-  .col{
+  .col,
+  .item{
 
-    > span{
+    height: 50px;
+    border: 1px solid blue;
+    /*
+    &::before{
+      content: '';
       display: block;
       width: 100%;
       height: 100%;
+      min-height: 20px;
       border: 1px solid blue;
     }
+    */
   }
 }
