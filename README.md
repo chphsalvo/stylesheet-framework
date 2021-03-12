@@ -1,5 +1,5 @@
-# Front-end framework
-Front-end framework by Christopher Salvo
+# Stylesheet Framework
+Stylesheet framework by Christopher Salvo
 
 <ul>
   <li>Consistency between overall quality of the projects</li>
@@ -13,11 +13,11 @@ Front-end framework by Christopher Salvo
   <code>
     // use a specific version "@0.8"
     // you should use this in production
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/chphsalvo/front-end-framework@0.8/dist/css/style.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework@0.8/dist/css/style.min.css&quot;&gt;
     <br>
     // use the latest version
     // you should NOT use this in production
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/chphsalvo/front-end-framework/dist/css/style.min.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework/dist/css/style.min.css&quot;&gt;
   </code>
 </pre>
 <p>CDN URL</p>
@@ -25,11 +25,11 @@ Front-end framework by Christopher Salvo
   <code>
     // use a specific version "@0.8"
     // you should use this in production
-    https://cdn.jsdelivr.net/gh/chphsalvo/front-end-framework@0.8/dist/css/style.min.css
+    https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework@0.8/dist/css/style.min.css
     <br>
     // use the latest version
     // you should NOT use this in production
-    https://cdn.jsdelivr.net/gh/chphsalvo/front-end-framework/dist/css/style.min.css
+    https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework/dist/css/style.min.css
   </code>
 </pre>
 
@@ -37,8 +37,8 @@ Front-end framework by Christopher Salvo
 <pre>
   <code>
     # Install
-    git clone https://github.com/chphsalvo/front-end-framework.git
-    cd front-end-framework
+    git clone https://github.com/chphsalvo/stylesheet-framework.git
+    cd stylesheet-framework
     npm install
     <br>
     # Watch
