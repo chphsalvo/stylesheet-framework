@@ -21,53 +21,44 @@
 .flex {
   display: flex;
   flex-flow: row wrap; /* flex-direction: row; + flex-wrap: wrap; */
-
-  .item.item-1 {
-    flex-grow: 1;
-    flex-basis: 0;
-  }
-  .item.item-2 {
-    flex-grow: 2;
-    flex-basis: 0;
-  }
-  @include responsive("xbig") {
-    .item.item-xb-1 {
-      flex-grow: 1;
+  
+  @for $i from 0 through 12 {
+    .item.item-#{$i} {
+      flex-grow: #{$i};
       flex-basis: 0;
     }
-    .item.item-xb-2 {
-      flex-grow: 2;
-      flex-basis: 0;
+  }
+
+  @include responsive("xbig") {
+    @for $i from 0 through 12 {
+      .item.item-xb-#{$i} {
+        flex-grow: #{$i};
+        flex-basis: 0;
+      }
     }
   }
   @include responsive("large") {
-    .item.item-l-1 {
-      flex-grow: 1;
-      flex-basis: 0;
-    }
-    .item.item-l-2 {
-      flex-grow: 2;
-      flex-basis: 0;
+    @for $i from 0 through 12 {
+      .item.item-l-#{$i} {
+        flex-grow: #{$i};
+        flex-basis: 0;
+      }
     }
   }
   @include responsive("medium") {
-    .item.item-m-1 {
-      flex-grow: 1;
-      flex-basis: 0;
-    }
-    .item.item-m-2 {
-      flex-grow: 2;
-      flex-basis: 0;
+    @for $i from 0 through 12 {
+      .item.item-m-#{$i} {
+        flex-grow: #{$i};
+        flex-basis: 0;
+      }
     }
   }
   @include responsive("small") {
-    .item.item-s-1 {
-      flex-grow: 1;
-      flex-basis: 0;
-    }
-    .item.item-s-2 {
-      flex-grow: 2;
-      flex-basis: 0;
+    @for $i from 0 through 12 {
+      .item.item-s-#{$i} {
+        flex-grow: #{$i};
+        flex-basis: 0;
+      }
     }
   }
 }

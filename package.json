@@ -1,7 +1,7 @@
 {
-  "name": "front-end-framework",
+  "name": "stylesheet-framework",
   "version": "1.0.0",
-  "description": "Front-end framework by Christopher Salvo",
+  "description": "Stylesheet Framework by Christopher Salvo",
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chphsalvo/front-end-framework.git"
+    "url": "git+https://github.com/chphsalvo/stylesheet-framework.git"
   },
   "author": "Christopher Salvo",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chphsalvo/front-end-framework/issues"
+    "url": "https://github.com/chphsalvo/stylesheet-framework/issues"
   },
-  "homepage": "https://github.com/chphsalvo/front-end-framework#readme",
+  "homepage": "https://github.com/chphsalvo/stylesheet-framework#readme",
   "devDependencies": {
     "@iconify/icons-uim": "^1.1.1",
     "@iconify/react": "^1.1.4",
