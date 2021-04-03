@@ -1,0 +1,17 @@
+main{
+    > .content{
+        h1,
+        h2,
+        h3,
+        h4{
+            margin: 24px 0px;
+        }
+
+        h1{
+            font-size: 28px;
+        }
+        h2{
+            font-size: 21px;
+        }
+    }
+}

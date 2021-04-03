@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import Header from "../components/header/header";
+import Layout from "../pages/layout/layout";
 
 //import styles from '../styles/Home.module.css'
 
@@ -10,6 +11,7 @@ export default function Grid() {
     <>
     <Header></Header>
 
+    <Layout>
       <h1>GRID</h1>
       <h2>12 Columns</h2>
       <div className="row">
@@ -60,6 +62,7 @@ export default function Grid() {
         <div className="col col-4 va-b" style={{height:'100px'}}>col col-4 va-b</div>
       </div>
 
+    </Layout>
     </>
   );
 }
