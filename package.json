@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/chphsalvo/front-end-framework#readme",
   "devDependencies": {
+    "@iconify/icons-uim": "^1.1.1",
+    "@iconify/react": "^1.1.4",
     "autoprefixer": "^9.7.6",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
