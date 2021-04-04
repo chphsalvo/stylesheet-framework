@@ -97,6 +97,12 @@ button:focus {
  *
  * Write a description
  */
+/*
+ * INDEX
+ * - row col
+ * - row offset
+ * - row alignment
+ */
 .row .col {
   min-height: 1px; }
 
@@ -216,8 +222,9 @@ button:focus {
     .row .col-s-x8 {
       width: 12.5%; } }
 
-/*col responsive*/
-/*col-(n)*/
+/**
+  * row col
+  */
 .row .col-1 {
   width: 8.3333%;
   padding-left: 10px;
@@ -648,7 +655,9 @@ button:focus {
     padding-left: 10px;
     padding-right: 10px; } }
 
-/*offset-(n)*/
+/**
+  * row offset
+  */
 .row .offset-0 {
   margin-left: 0%; }
 
@@ -1037,6 +1046,33 @@ button:focus {
 @media (max-width: 640px) {
   .row .col-s-12 {
     padding: 0px; } }
+
+/**
+  * row alignment
+  */
+.row.top > .col {
+  vertical-align: top; }
+
+.row.middle > .col {
+  vertical-align: middle; }
+
+.row.bottom > .col {
+  vertical-align: bottom; }
+
+.row.left {
+  text-align: left; }
+  .row.left > .col {
+    text-align: left; }
+
+.row.center {
+  text-align: center; }
+  .row.center > .col {
+    text-align: left; }
+
+.row.right {
+  text-align: right; }
+  .row.right > .col {
+    text-align: left; }
 
 .row {
   width: 100%; }
