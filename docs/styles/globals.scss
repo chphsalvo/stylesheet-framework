@@ -20,6 +20,11 @@ body {
 .paddingPage{padding: 0px 50px;}
 .marginSection{margin: 24px 0px;}
 
+@include responsive('small'){
+  .marginPage{margin: 0px 25px;}
+  .paddingPage{padding: 0px 25px;}
+}
+
 pre{
   margin: 0px;
 }
@@ -28,20 +33,6 @@ main{
   display: flex;
   justify-content: flex-start;
   max-width: 100%;
-
-  > .sidebar{
-    position: relative;
-    min-width: 280px;
-    border-right: 1px solid $c_light;
-    transition: all 0.5s ease-in;
-
-    &.closed{
-      margin-left: -280px;
-    }
-    @include responsive('large'){
-      margin-left: -280px;
-    }
-  }
   
   > .content{
     width: 100%;
@@ -59,7 +50,7 @@ main{
     .col,
     .item{
 
-      height: 50px;
+      min-height: 50px;
       border: 1px solid blue;
       /*
       &::before{

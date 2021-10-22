@@ -3,15 +3,15 @@ import Link from "next/link";
 
 import styles from './layout.module.scss'
 
+import Sidebar from "../../components/sidebar/sidebar";
+
 export default function Layout({children}) {
 
   return (
     <>
     <main className="headerFixed">
 
-        <div className={'sidebar paddingPage'}>
-            menu
-        </div>
+      <Sidebar></Sidebar>
 
         <div className={'content paddingPage'}>
             {children}

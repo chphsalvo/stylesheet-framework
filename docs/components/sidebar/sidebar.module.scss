@@ -1,0 +1,102 @@
+@import "../../styles/settings/colors";
+
+@import "../../../src/sass/settings/breakpoints";
+@import "../../../src/sass/mixin/responsive";
+
+.sidebar {
+  position: relative;
+  border-right: 1px solid $c_light;
+  transition: all 0.5s ease-in;
+
+  .sidebarContent {
+    position: fixed;
+    overflow-y: auto;
+    height: 100vh;
+
+    .menu {
+      width: 100%;
+      padding: 50px;
+      height: 1000px;
+
+      @include responsive('small'){
+          padding: 25px;
+      }
+
+      ul {
+        li {
+          a {
+            display: block;
+            padding: 4px 0px;
+          }
+
+          > * {
+            font-size: 16px;
+            color: #777;
+          }
+
+          &.active {
+            > * {
+              font-weight: bold;
+              color: blue;
+            }
+          }
+        }
+      }
+    }
+    .submenu {
+      padding-left: 4px;
+    }
+  }
+}
+
+.sidebar,
+.sidebarContent {
+  min-width: 280px;
+
+  &.closed {
+    margin-left: -280px;
+  }
+  @include responsive("large") {
+    margin-left: -280px;
+
+    &.open {
+        margin-left: 0px;
+      }
+  }
+}
+
+.sidebarHamburger {
+  display: none;
+  color: blue;
+  border: 1px solid currentColor;
+  background-color: #ffffff;
+  width: 38px;
+  box-shadow: 0px 0px 8px 0px #0000ff40;
+
+  @include responsive("large") {
+    display: block;
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+  }
+
+  .hamburger {
+    position: relative;
+
+    > * {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      height: 1px;
+      background-color: currentColor;
+    }
+    > *:nth-child(1) {
+      top: 36%;
+    }
+    > *:nth-child(3) {
+      top: 64%;
+    }
+  }
+}

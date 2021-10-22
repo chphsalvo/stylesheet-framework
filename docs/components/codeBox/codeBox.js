@@ -6,7 +6,7 @@ import styles from './codeBox.module.scss'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { stackoverflowLight } from '../../../node_modules/react-syntax-highlighter/dist/esm/styles/hljs';
 
-export default function CodeBox({children}) {
+export default function CodeBox(props) {
 
     const codeString = `
     <div class="example">
@@ -15,17 +15,17 @@ export default function CodeBox({children}) {
     `;
 
     // debug
-    // console.log(children);
+    // console.log(props.children);
 
   return (
     <>
         <section className={styles.codeBox + ' marginSection'}>
         <SyntaxHighlighter
-            language="xml"
+            language={!props.lang ? "xml" : props.lang}
             style={stackoverflowLight}
             showLineNumbers="true"
         >
-            {children}
+            {props.children}
         </SyntaxHighlighter>
         </section>
     </>
