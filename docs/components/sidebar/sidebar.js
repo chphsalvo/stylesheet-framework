@@ -35,6 +35,9 @@ export default function Sidebar() {
                     <li className={router.pathname == "/" ? styles.active : ""}>
                         <Link href="/">Index</Link>
                     </li>
+                    <li className={router.pathname == "/responsive" ? styles.active : ""}>
+                        <Link href="/responsive">Responsive</Link>
+                    </li>
                     <li className={router.pathname == "/grid" ? styles.active : ""}>
                         <Link href="/" className={styles.hasChildren}>Grid</Link>
                         <ul className={styles.submenu}>
@@ -50,7 +53,7 @@ export default function Sidebar() {
                         <Link href="/" className={styles.hasChildren}>Components</Link>
                         <ul className={styles.submenu}>
                             <li className={router.pathname == "/components/background" ? styles.active : ""}>
-                                <Link href="/components/background">background</Link>
+                                <Link href="/components/background">Background</Link>
                             </li>
                         </ul>
                     </li>
@@ -58,13 +61,21 @@ export default function Sidebar() {
                         <Link href="/" className={styles.hasChildren}>Utilities</Link>
                         <ul className={styles.submenu}>
                             <li className={router.pathname == "/utilities/utilities" ? styles.active : ""}>
-                                <Link href="/utilities/utilities">utilities</Link>
-                            </li>
-                            <li className={router.pathname == "/utilities/functionalcss" ? styles.active : ""}>
-                                <Link href="/utilities/functionalcss">functional CSS</Link>
+                                <Link href="/utilities/utilities">Utilities</Link>
                             </li>
                         </ul>
-                    </li>                
+                    </li>
+                    <li className={router.pathname == "/utilities/functionalcss" ? styles.active : ""}>
+                        <Link href="/utilities/functionalcss">Functional CSS</Link>
+                        <ul className={styles.submenu}>
+                            <li className={router.pathname == "/utilities/functionalcss/text-alignment" ? styles.active : ""}>
+                                <Link href="/utilities/functionalcss/text-alignment">Text align</Link>
+                            </li>
+                            <li className={router.pathname == "/utilities/functionalcss/vertical-align" ? styles.active : ""}>
+                                <Link href="/utilities/functionalcss/vertical-align">Vertical align</Link>
+                            </li>
+                        </ul>
+                    </li>           
                 </ul>
             </nav>
         </div>

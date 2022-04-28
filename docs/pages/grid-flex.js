@@ -55,6 +55,12 @@ export default function GridFlex() {
         `}
         </CodeBox>
 
+        <CodeBox lang="css">
+        {`
+        .flex{display: flex;}
+        `}
+        </CodeBox>
+
         <div className={'divider'}></div>
 
         <h2>Offset</h2>
@@ -141,6 +147,14 @@ export default function GridFlex() {
           <div className="item item-1">item item-1</div>
         </div>
 
+        <CodeBox lang="css">
+        {`
+        .flex.item-1{flex-grow: 1; flex-basis: 0;}
+        .flex.item-2{flex-grow: 2; flex-basis: 0;}
+        .flex.item-3{flex-grow: 3; flex-basis: 0;}
+        `}
+        </CodeBox>
+
         <div className={'divider'}></div>
 
         <h2>Vertical Alignments</h2>
@@ -158,6 +172,12 @@ export default function GridFlex() {
         `}
         </CodeBox>
 
+        <CodeBox lang="css">
+        {`
+        .flex.top{align-items: flex-start;}
+        `}
+        </CodeBox>
+
         <h3>flex middle</h3>
         <div className="flex middle">
           <div className="col col-6"></div>
@@ -172,6 +192,12 @@ export default function GridFlex() {
         `}
         </CodeBox>
 
+        <CodeBox lang="css">
+        {`
+        .flex.middle{align-items: center;}
+        `}
+        </CodeBox>
+
         <h3>flex bottom</h3>
         <div className="flex bottom">
           <div className="col col-6"></div>
@@ -183,6 +209,12 @@ export default function GridFlex() {
           <div class="col col-6"></div>
           <div class="col col-6" style="height: 100px;"></div>
         </div>
+        `}
+        </CodeBox>
+
+        <CodeBox lang="css">
+        {`
+        .flex.middle{align-items: flex-end;}
         `}
         </CodeBox>
 
