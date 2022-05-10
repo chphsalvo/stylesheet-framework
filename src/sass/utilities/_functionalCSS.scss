@@ -9,6 +9,7 @@
  * - text-align
  * - vertical-align
  * - display
+ * - position
  */
 
 /**
@@ -120,4 +121,33 @@
   .d-m{display:none;}
   .d-s{display:block;}
 }
+
+/**
+ * position
+ */
+
+ .p-relative, .relative{position: relative;}
+ .p-absolute, .absolute{position: absolute;}
+ .p-fixed, .fixed{position: fixed;}
+ @include responsive ('xbig'){
+   .p-xb-relative, .xb\:relative{position: relative;}
+   .p-xb-absolute, .xb\:absolute{position: absolute;}
+   .p-xb-fixed, .xb\:fixed{position: fixed;}
+ }
+ @include responsive ('large'){
+  .p-l-relative, .l\:relative{position: relative;}
+  .p-l-absolute, .l\:absolute{position: absolute;}
+  .p-l-fixed, .l\:fixed{position: fixed;}
+ }
+ @include responsive ('medium'){
+   .p-m-relative, .m\:relative{position: relative;}
+   .p-m-absolute, .m\:absolute{position: absolute;}
+   .p-m-fixed, .m\:fiixed{position: fixed;}
+ }
+ @include responsive ('small'){
+   .p-s-relative, .s\:relative{position: relative;}
+   .p-s-absolute, .s\:absolute{position: absolute;}
+   .p-s-fixed, .s\:fixed{position: fixed;}
+ }
+
 
