@@ -5580,6 +5580,7 @@ input {
  * - text-align
  * - vertical-align
  * - display
+ * - position
  */
 /**
  * text-align
@@ -5762,6 +5763,50 @@ input {
     display: none; }
   .d-s {
     display: block; } }
+
+/**
+ * position
+ */
+.p-relative, .relative {
+  position: relative; }
+
+.p-absolute, .absolute {
+  position: absolute; }
+
+.p-fixed, .fixed {
+  position: fixed; }
+
+@media (min-width: 1600px) {
+  .p-xb-relative, .xb\:relative {
+    position: relative; }
+  .p-xb-absolute, .xb\:absolute {
+    position: absolute; }
+  .p-xb-fixed, .xb\:fixed {
+    position: fixed; } }
+
+@media (max-width: 1024px) {
+  .p-l-relative, .l\:relative {
+    position: relative; }
+  .p-l-absolute, .l\:absolute {
+    position: absolute; }
+  .p-l-fixed, .l\:fixed {
+    position: fixed; } }
+
+@media (max-width: 768px) {
+  .p-m-relative, .m\:relative {
+    position: relative; }
+  .p-m-absolute, .m\:absolute {
+    position: absolute; }
+  .p-m-fixed, .m\:fiixed {
+    position: fixed; } }
+
+@media (max-width: 640px) {
+  .p-s-relative, .s\:relative {
+    position: relative; }
+  .p-s-absolute, .s\:absolute {
+    position: absolute; }
+  .p-s-fixed, .s\:fixed {
+    position: fixed; } }
 
 body {
   /*background-color:color(black,base);*/
