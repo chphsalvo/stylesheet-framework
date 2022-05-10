@@ -5,7 +5,10 @@ var gulp = require("gulp"),
     autoprefixer = require("autoprefixer"), // Add vendor prefixes to CSS - https://github.com/postcss/autoprefixer
     cssnano = require("cssnano"), // Compression tool, compact CSS appropriately - https://github.com/cssnano/cssnano
     sourcemaps = require("gulp-sourcemaps"), // Write inline source maps - https://www.npmjs.com/package/gulp-sourcemaps
-    rename = require("gulp-rename"); // Rename files easily - https://www.npmjs.com/package/gulp-rename
+    rename = require("gulp-rename"), // Rename files easily - https://www.npmjs.com/package/gulp-rename
+    uglify = require("gulp-uglify"),
+    concat = require("gulp-concat"),
+    jsimport = require('gulp-js-import');
 
 // DRY
 var paths = {
@@ -14,6 +17,10 @@ var paths = {
         src: "src/sass/**/*.scss",
         // Compiled files will end up in whichever folder it's found in (partials are not compiled)
         dest: "dist/css"
+    },
+    javascripts: {
+        src: "src/js/main.js",
+        dest: "dist/js",
     }
     // Easily add additional paths
     // ,html: {
@@ -57,10 +64,23 @@ gulp.task('sass:min', function () {
 });
 gulp.task('style', gulp.series('sass', 'sass:min'));
 
+gulp.task('js', function () {
+    return gulp
+        .src(paths.javascripts.src)
+        .pipe(sourcemaps.init())
+        // .pipe(concat('main.min.js'))
+        .pipe(jsimport({hideConsole: true}))
+        .pipe(uglify())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(paths.javascripts.dest))
+});
+
 // Watch in development mode
 gulp.task('watch', function(){
     return gulp
         .watch(paths.styles.src, gulp.series('style'))
+        .watch(paths.javascripts.src, gulp.series('js'))
 });
 // Deploy
-gulp.task('build', gulp.series('style'));
+gulp.task('build', gulp.series('style', 'js'));
