@@ -19,8 +19,9 @@ var paths = {
         dest: "dist/css"
     },
     javascripts: {
-        src: "src/js/main.js",
+        src: "src/js/**/*.js",
         dest: "dist/js",
+        main: "src/js/main.js"
     }
     // Easily add additional paths
     // ,html: {
@@ -62,13 +63,20 @@ gulp.task('sass:min', function () {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.styles.dest))
 });
-gulp.task('style', gulp.series('sass', 'sass:min'));
 
 gulp.task('js', function () {
     return gulp
-        .src(paths.javascripts.src)
+        .src(paths.javascripts.main)
         .pipe(sourcemaps.init())
-        // .pipe(concat('main.min.js'))
+        .pipe(jsimport({hideConsole: true}))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(paths.javascripts.dest))
+});
+
+gulp.task('js:min', function () {
+    return gulp
+        .src(paths.javascripts.main)
+        .pipe(sourcemaps.init())
         .pipe(jsimport({hideConsole: true}))
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
@@ -76,11 +84,14 @@ gulp.task('js', function () {
         .pipe(gulp.dest(paths.javascripts.dest))
 });
 
+// Define series
+gulp.task('style', gulp.series('sass', 'sass:min'));
+gulp.task('javascript', gulp.series('js', 'js:min'));
+
 // Watch in development mode
 gulp.task('watch', function(){
     return gulp
-        .watch(paths.styles.src, gulp.series('style'))
-        .watch(paths.javascripts.src, gulp.series('js'))
+        .watch([paths.styles.src, paths.javascripts.src], gulp.series('style', 'javascript'));
 });
 // Deploy
-gulp.task('build', gulp.series('style', 'js'));
+gulp.task('build', gulp.series('style', 'javascript'));
