@@ -1,37 +1,56 @@
 # Stylesheet Framework
+
 Stylesheet framework by Christopher Salvo
 
-<ul>
-  <li>Consistency between overall quality of the projects</li>
-  <li>Full control and light customizable</li>
-  <li>Avoidance of code and style redundancies</li>  
-</ul>
+* Consistency between overall quality of the projects
+* Full control and light customizable
+* Avoidance of code and style redundancies
 
-<h2>Installation</h2>
-<p>CDN CSS &lt;link&gt;</p>
-<pre>
-  <code>
-    // use a specific version "@0.8"
-    // you should use this in production
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework@0.8/dist/css/style.min.css&quot;&gt;
-    <br>
-    // use the latest version
-    // you should NOT use this in production
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework/dist/css/style.min.css&quot;&gt;
-  </code>
-</pre>
-<p>CDN URL</p>
-<pre>
-  <code>
-    // use a specific version "@0.8"
-    // you should use this in production
-    https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework@0.8/dist/css/style.min.css
-    <br>
-    // use the latest version
-    // you should NOT use this in production
-    https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework/dist/css/style.min.css
-  </code>
-</pre>
+## Installation
+
+CDN &lt;link&gt;
+
+// use a specific version "@0.9.5"
+// you should use this in production
+
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework@0.9.5/dist/css/style.min.css">
+```
+```
+<script src="https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework@0.9.5/dist/js/main.min.js"></script> 
+```
+
+// use the latest version
+// you should NOT use this in production
+
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework/dist/css/style.min.css">
+```
+```
+<script src="https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework/dist/js/main.min.js"></script> 
+```
+
+CDN URL
+
+// use a specific version "@0.9.5"
+// you should use this in production
+
+```
+https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework@0.9.5/dist/css/style.min.css
+```
+```
+https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework@0.9.5/dist/js/main.min.js
+```
+
+// use the latest version
+// you should NOT use this in production
+
+```
+https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework/dist/css/style.min.css
+```
+```
+https://cdn.jsdelivr.net/gh/chphsalvo/stylesheet-framework/dist/js/main.min.js
+```
 
 <h2>Run project</h2>
 <pre>
