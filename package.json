@@ -30,7 +30,8 @@
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
-    "gulp-sourcemaps": "^2.6.5"
+    "gulp-sourcemaps": "^2.6.5",
+    "next": "^9.5.5"
   },
   "browserslist": [
     "> 0.3%",
@@ -40,7 +41,6 @@
     "iOS >= 8"
   ],
   "dependencies": {
-    "next": "^9.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-syntax-highlighter": "^15.4.3"
