@@ -7,290 +7,321 @@
 /*
  * INDEX
  * - row col
+ * - row col x
  * - row offset
  * - row alignment
  */
 
- $gutter: 10px;
+$gutter: 20px; // Define columns gutter
 
- .row {
-   .col {
-	 min-height: 1px;
-   }
- }
- 
- .row {
-   /*col-x(n)*/
-   @for $i from 1 through 8 {
-	 $width: percentage(1 / $i);
- 
-	 .col-x#{$i} {
-	   width: $width;
-	 }
-   }
-   /*col responsive*/
-   @for $i from 1 through 8 {
-	 $width: percentage(1 / $i);
-	 .col-xb-x#{$i} {
-	   @include responsive("xbig") {
-		 width: $width;
-	   }
-	 }
-   }
-   @for $i from 1 through 8 {
-	 $width: percentage(1 / $i);
-	 .col-l-x#{$i} {
-	   @include responsive("large") {
-		 width: $width;
-	   }
-	 }
-   }
-   @for $i from 1 through 8 {
-	 $width: percentage(1 / $i);
-	 .col-m-x#{$i} {
-	   @include responsive("medium") {
-		 width: $width;
-	   }
-	 }
-   }
-   @for $i from 1 through 8 {
-	 $width: percentage(1 / $i);
-	 .col-s-x#{$i} {
-	   @include responsive("small") {
-		 width: $width;
-	   }
-	 }
-   }
- }
- 
- /**
-  * row col
-  */
- .row {
-   @for $i from 1 through 12 {
-	 $width: 8.3333% * $i;
-	 .col-#{$i} {
-	   @if $i == 6 {
-		 width: 50%; /*round up 49.9998*/
-	   } @else if $i == 12 {
-		 width: 100%; /*round up 99.9998*/
-	   } @else {
-		 width: $width;
-	   }
-	   padding-left: $gutter;
-	   padding-right: $gutter;
-	 }
-	 .col-#{$i}:first-of-type {
-	   padding-left: 0px;
-	 }
-	 .col-#{$i}:last-of-type {
-	   padding-right: 0px;
-	 }
-	 .col-xb-#{$i} {
-	   @include responsive("xbig") {
-		 @if $i == 6 {
-		   width: 50%; /*round up 49.9998*/
-		 } @else if $i == 12 {
-		   width: 100%; /*round up 99.9998*/
-		 } @else {
-		   width: $width;
-		 }
-		 padding-left: $gutter;
-		 padding-right: $gutter;
-	   }
-	 }
-	 .col-l-#{$i} {
-	   @include responsive("large") {
-		 @if $i == 6 {
-		   width: 50%; /*round up 49.9998*/
-		 } @else if $i == 12 {
-		   width: 100%; /*round up 99.9998*/
-		 } @else {
-		   width: $width;
-		 }
-		 padding-left: $gutter;
-		 padding-right: $gutter;
-	   }
-	 }
-	 .col-m-#{$i} {
-	   @include responsive("medium") {
-		 @if $i == 6 {
-		   width: 50%; /*round up 49.9998*/
-		 } @else if $i == 12 {
-		   width: 100%; /*round up 99.9998*/
-		 } @else {
-		   width: $width;
-		 }
-		 padding-left: $gutter;
-		 padding-right: $gutter;
-	   }
-	 }
-	 .col-s-#{$i} {
-	   @include responsive("small") {
-		 @if $i == 6 {
-		   width: 50%; /*round up 49.9998*/
-		 } @else if $i == 12 {
-		   width: 100%; /*round up 99.9998*/
-		 } @else {
-		   width: $width;
-		 }
-		 padding-left: $gutter;
-		 padding-right: $gutter;
-	   }
-	 }
-   }
- }
- 
- /**
-  * row offset
-  */
- .row {
-   @for $i from 0 through 12 {
-	 $width: 8.3333% * $i;
-	 .offset-#{$i} {
-	   margin-left: $width;
-	 }
-	 .offset-#{$i}:first-of-type {
-	   padding-left: $gutter;
-	 }
-	 .offset-xb-#{$i} {
-	   @include responsive("xbig") {
-		 margin-left: $width;
-		 padding-left: $gutter;
-	   }
-	 }
-	 .offset-l-#{$i} {
-	   @include responsive("large") {
-		 margin-left: $width;
-		 padding-left: $gutter;
-	   }
-	 }
-	 .offset-m-#{$i} {
-	   @include responsive("medium") {
-		 margin-left: $width;
-		 padding-left: $gutter;
-	   }
-	 }
-	 .offset-s-#{$i} {
-	   @include responsive("small") {
-		 margin-left: $width;
-		 padding-left: $gutter;
-	   }
-	 }
-   }
-   .offset-xb-0 {
-	 @include responsive("xbig") {
-	   margin: 0px;
-	 }
-   }
-   .offset-xb-0:first-of-type {
-	 @include responsive("xbig") {
-	   padding: 0px;
-	 }
-   }
-   .offset-l-0 {
-	 @include responsive("large") {
-	   margin: 0px;
-	 }
-   }
-   .offset-l-0:first-of-type {
-	 @include responsive("large") {
-	   padding: 0px;
-	 }
-   }
-   .offset-m-0 {
-	 @include responsive("medium") {
-	   margin: 0px;
-	 }
-   }
-   .offset-m-0:first-of-type {
-	 @include responsive("medium") {
-	   padding: 0px;
-	 }
-   }
-   .offset-s-0 {
-	 @include responsive("small") {
-	   margin: 0px;
-	 }
-   }
-   .offset-s-0:first-of-type {
-	 @include responsive("small") {
-	   padding: 0px;
-	 }
-   }
- 
-   .col-12 {
-	 padding: 0px;
-   }
-   .col-xb-12 {
-	 @include responsive("xbig") {
-	   padding: 0px;
-	 }
-   }
-   .col-l-12 {
-	 @include responsive("large") {
-	   padding: 0px;
-	 }
-   }
-   .col-m-12 {
-	 @include responsive("medium") {
-	   padding: 0px;
-	 }
-   }
-   .col-s-12 {
-	 @include responsive("small") {
-	   padding: 0px;
-	 }
-   }
- }
- 
- /**
-  * row alignment
-  */
- 
- .row {
-   &.top {
-	 > .col {
-	   vertical-align: top;
-	 }
-   }
-   &.middle {
-	 > .col {
-	   vertical-align: middle;
-	 }
-   }
-   &.bottom {
-	 > .col {
-	   vertical-align: bottom;
-	 }
-   }
- 
-   &.left {
-	 text-align: left;
-	 > .col {
-	   text-align: left;
-	 }
-   }
-   &.center {
-	 text-align: center;
-	 > .col {
-	   text-align: left;
-	 }
-   }
-   &.right {
-	 text-align: right;
-	 > .col {
-	   text-align: left;
-	 }
-   }
- }
- 
- .row {
-   width: 100%;
- }
- 
- .row,
- .row .col {
-   display: inline-block;
- }
- 
+.row{
+    width: 100%;
+
+    .col {
+        display: inline-block;
+        min-height: 1px;
+    }
+}
+
+/**
+* row col
+*/
+
+.row {
+
+    /*col-x(n)*/
+    @for $i from 1 through 8 {
+        $width: 100% / $i;
+
+        .col-x#{$i} {
+            width: $width;
+        }
+    }
+
+    /*col-x(n) responsive*/
+    @for $i from 1 through 8 {
+        $width: 100% / $i;
+
+        .col-xb-x#{$i},
+        .xb\:col-x#{$i} {
+            @include responsive("xbig") {
+                width: $width;
+            }
+        }
+    }
+
+    @for $i from 1 through 8 {
+        $width: 100% / $i;
+
+        .col-l-x#{$i},
+        .lg\:col-x#{$i} {
+            @include responsive("large") {
+                width: $width;
+            }
+        }
+    }
+
+    @for $i from 1 through 8 {
+        $width: 100% / $i;
+
+        .col-m-x#{$i},
+        .md\:col-x#{$i} {
+            @include responsive("medium") {
+                width: $width;
+            }
+        }
+    }
+
+    @for $i from 1 through 8 {
+        $width: 100% / $i;
+
+        .col-s-x#{$i},
+        .sm\:col-x#{$i} {
+            @include responsive("small") {
+                width: $width;
+            }
+        }
+    }
+}
+
+/**
+* row col x
+*/
+
+.row {
+
+    @for $i from 1 through 12 {
+        $width: 8.3333% * $i;
+
+        @if $i ==6 { $width: 50%; /*round up 49.9998*/ }
+        @else if $i ==12 { $width: 100%; /*round up 99.9998*/ }
+        
+        .col-#{$i} {
+            width: $width;
+            padding-left: $gutter / 2;
+	        padding-right: $gutter / 2;
+        }
+    }
+
+    @include responsive("xbig") {
+
+        @for $i from 1 through 12 {
+            $width: 8.3333% * $i;
+    
+            @if $i ==6 { $width: 50%; /*round up 49.9998*/ }
+            @else if $i ==12 { $width: 100%; /*round up 99.9998*/ }
+            
+            .col-xb-#{$i},
+            .xb\:col-#{$i} {
+                width: $width;
+                padding-left: $gutter / 2;
+                padding-right: $gutter / 2;
+            }
+        }
+
+    }
+
+    @include responsive("large") {
+
+        @for $i from 1 through 12 {
+            $width: 8.3333% * $i;
+    
+            @if $i ==6 { $width: 50%; /*round up 49.9998*/ }
+            @else if $i ==12 { $width: 100%; /*round up 99.9998*/ }
+            
+            .col-l-#{$i},
+            .lg\:col-#{$i} {
+                width: $width;
+                padding-left: $gutter / 2;
+                padding-right: $gutter / 2;
+            }
+        }
+
+    }
+
+    @include responsive("medium") {
+
+        @for $i from 1 through 12 {
+            $width: 8.3333% * $i;
+    
+            @if $i ==6 { $width: 50%; /*round up 49.9998*/ }
+            @else if $i ==12 { $width: 100%; /*round up 99.9998*/ }
+            
+            .col-m-#{$i},
+            .md\:col-#{$i} {
+                width: $width;
+                padding-left: $gutter / 2;
+                padding-right: $gutter / 2;
+            }
+        }
+
+    }
+
+    @include responsive("small") {
+
+        @for $i from 1 through 12 {
+            $width: 8.3333% * $i;
+    
+            @if $i ==6 { $width: 50%; /*round up 49.9998*/ }
+            @else if $i ==12 { $width: 100%; /*round up 99.9998*/ }
+            
+            .col-s-#{$i},
+            .sm\:col-#{$i} {
+                width: $width;
+                padding-left: $gutter / 2;
+                padding-right: $gutter / 2;
+            }
+        }
+
+    }
+
+    .col-12 {
+        padding: 0px;
+    }
+    
+    .col-xb-12,
+    .xb\:col-12 {
+        @include responsive("xbig") {
+            padding: 0px;
+        }
+    }
+    
+    .col-l-12,
+    .lg\:col-12 {
+        @include responsive("large") {
+            padding: 0px;
+        }
+    }
+    
+    .col-m-12,
+    .md\:col-12 {
+        @include responsive("medium") {
+                padding: 0px;
+        }
+    }
+    
+    .col-s-12,
+    .sm\:col-12 {
+        @include responsive("small") {
+            padding: 0px;
+        }
+    }
+
+    .col:first-of-type{padding-left: 0px;}
+    .col:last-of-type{padding-right: 0px;}
+
+}
+
+/**
+* row offset
+*/
+
+.row{
+
+    @for $i from 0 through 12 {
+        $colWidth: 8.3333% * $i;
+
+        .offset-#{$i} {
+            margin-left: $colWidth;
+        }
+    }
+
+    @include responsive("xbig") {
+        @for $i from 0 through 12 {
+            $colWidth: 8.3333% * $i;
+    
+            .offset-xb-#{$i},
+	        .xb\:offset-#{$i} {
+                margin-left: $colWidth;
+            }
+        } 
+    }
+
+    @include responsive("large") {
+        @for $i from 0 through 12 {
+            $colWidth: 8.3333% * $i;
+    
+            .offset-l-#{$i},
+	        .lg\:offset-#{$i} {
+                margin-left: $colWidth;
+            }
+        } 
+    }
+
+    @include responsive("medium") {
+        @for $i from 0 through 12 {
+            $colWidth: 8.3333% * $i;
+    
+            .offset-m-#{$i},
+	        .md\:offset-#{$i} {
+                margin-left: $colWidth;
+            }
+        } 
+    }
+
+    @include responsive("small") {
+        @for $i from 0 through 12 {
+            $colWidth: 8.3333% * $i;
+    
+            .offset-s-#{$i},
+	        .sm\:offset-#{$i} {
+                margin-left: $colWidth;
+            }
+        } 
+    }
+
+}
+
+/**
+* row alignment
+*/
+
+.row{
+    &.top > .col { vertical-align: top; }
+    &.middle > .col { vertical-align: middle; }
+    &.bottom > .col { vertical-align: bottom; }
+
+    &.left { text-align: left; }
+    &.center { text-align: center; }
+    &.right { text-align: right; }
+
+    @include responsive("xbig") {
+        &.xb\:top > .col { vertical-align: top; }
+        &.xb\:middle > .col { vertical-align: middle; }
+        &.xb\:bottom > .col { vertical-align: bottom; }
+
+        &.xb\:left { text-align: left; }
+        &.xb\:center { text-align: center; }
+        &.xb\:right { text-align: right; }
+    }
+
+    @include responsive("large") {
+        &.lg\:top > .col { vertical-align: top; }
+        &.lg\:middle > .col { vertical-align: middle; }
+        &.lg\:bottom > .col { vertical-align: bottom; }
+
+        &.lg\:left { text-align: left; }
+        &.lg\:center { text-align: center; }
+        &.lg\:right { text-align: right; }
+    }
+
+    @include responsive("medium") {
+        &.md\:top > .col { vertical-align: top; }
+        &.md\:middle > .col { vertical-align: middle; }
+        &.md\:bottom > .col { vertical-align: bottom; }
+
+        &.md\:left { text-align: left; }
+        &.md\:center { text-align: center; }
+        &.md\:right { text-align: right; }
+    }
+
+    @include responsive("small") {
+        &.sm\:top > .col { vertical-align: top; }
+        &.sm\:middle > .col { vertical-align: middle; }
+        &.sm\:bottom > .col { vertical-align: bottom; }
+
+        &.sm\:left { text-align: left; }
+        &.sm\:center { text-align: center; }
+        &.sm\:right { text-align: right; }
+    }
+}
