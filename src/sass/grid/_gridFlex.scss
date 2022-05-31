@@ -141,7 +141,8 @@ $gutter: 20px; // Define columns gutter
     @for $i from 0 through 12 {
       $width: 100% / 12 * $i;
 
-      .col-xb-#{$i} {
+      .col-xb-#{$i},
+      .xb\:col-#{$i} {
         flex: 0 0 $width;
         @if $i == 12 {
           padding-left: 0px;
@@ -165,7 +166,8 @@ $gutter: 20px; // Define columns gutter
     @for $i from 0 through 12 {
       $width: 100% / 12 * $i;
 
-      .col-l-#{$i} {
+      .col-l-#{$i},
+      .lg\:col-#{$i} {
         flex: 0 0 $width;
         @if $i == 12 {
           padding-left: 0px;
@@ -189,7 +191,8 @@ $gutter: 20px; // Define columns gutter
     @for $i from 0 through 12 {
       $width: 100% / 12 * $i;
 
-      .col-m-#{$i} {
+      .col-m-#{$i},
+      .md\:col-#{$i} {
         flex: 0 0 $width;
         @if $i == 12 {
           padding-left: 0px;
@@ -213,7 +216,8 @@ $gutter: 20px; // Define columns gutter
     @for $i from 0 through 12 {
       $width: 100% / 12 * $i;
 
-      .col-s-#{$i} {
+      .col-s-#{$i},
+      .sm\:col-#{$i}{
         flex: 0 0 $width;
         @if $i == 12 {
           padding-left: 0px;
@@ -285,7 +289,8 @@ $gutter: 20px; // Define columns gutter
     @for $i from 0 through 12 {
       $marginLeft: 100% / 12 * $i;
 
-      .offset-xb-#{$i} {
+      .offset-xb-#{$i},
+      .xb\:offset-#{$i} {
         margin-left: $marginLeft;
 
         //&:first-of-type{padding-left: 0px;}
@@ -298,7 +303,8 @@ $gutter: 20px; // Define columns gutter
     @for $i from 0 through 12 {
       $marginLeft: 100% / 12 * $i;
 
-      .offset-l-#{$i} {
+      .offset-l-#{$i},
+      .lg\:offset-#{$i} {
         margin-left: $marginLeft;
 
         //&:first-of-type{padding-left: 0px;}
@@ -311,7 +317,8 @@ $gutter: 20px; // Define columns gutter
     @for $i from 0 through 12 {
       $marginLeft: 100% / 12 * $i;
 
-      .offset-m-#{$i} {
+      .offset-m-#{$i},
+      .md\:offset-#{$i} {
         margin-left: $marginLeft;
 
         //&:first-of-type{padding-left: 0px;}
@@ -324,7 +331,8 @@ $gutter: 20px; // Define columns gutter
     @for $i from 0 through 12 {
       $marginLeft: 100% / 12 * $i;
 
-      .offset-s-#{$i} {
+      .offset-s-#{$i},
+      .sm\:offset-#{$i}{
         margin-left: $marginLeft;
 
         //&:first-of-type{padding-left: 0px;}
@@ -350,7 +358,8 @@ $gutter: 20px; // Define columns gutter
   @for $i from 1 through 6 {
     $width: 100% / $i;
   
-    .col-xb-x#{$i} {
+    .col-xb-x#{$i},
+    .xb\:col-x{
       flex: 0 0 $width;
     }
   }
@@ -359,7 +368,8 @@ $gutter: 20px; // Define columns gutter
   @for $i from 1 through 6 {
     $width: 100% / $i;
   
-    .col-l-x#{$i} {
+    .col-l-x#{$i},
+    .lg\:col-x#{$i} {
       flex: 0 0 $width;
     }
   }
@@ -368,7 +378,8 @@ $gutter: 20px; // Define columns gutter
   @for $i from 1 through 6 {
     $width: 100% / $i;
   
-    .col-m-x#{$i} {
+    .col-m-x#{$i},
+    .md\:col-x {
       flex: 0 0 $width;
     }
   }
@@ -377,7 +388,8 @@ $gutter: 20px; // Define columns gutter
   @for $i from 1 through 6 {
     $width: 100% / $i;
   
-    .col-s-x#{$i} {
+    .col-s-x#{$i},
+    .sm\:col-x {
       flex: 0 0 $width;
     }
   }
