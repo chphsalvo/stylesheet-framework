@@ -7,6 +7,7 @@
 /*
  * INDEX
  * - text-align
+ * - text-transform
  * - vertical-align
  * - display
  * - position
@@ -43,6 +44,13 @@
   .ta-s-r{text-align: right;}
   .ta-s-j{text-align: justify;}
 }
+
+/**
+ * text-transform
+ */
+.tt-uppercase{ text-transform: uppercase; }
+.tt-lowercase{ text-transform: lowercase; }
+.tt-capitalize{ text-transform: capitalize; }
 
 /**
  * vertical-align
