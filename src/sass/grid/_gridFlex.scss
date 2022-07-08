@@ -78,145 +78,146 @@
 .flex.top {
   align-items: flex-start;
 }
-@include responsive ('xbig'){
-  .flex.top, .flex.xb\:top{align-items: flex-start;}
-}
-@include responsive ('large'){
-  .flex.top, .flex.l\:top{align-items: flex-start;}
-}
-@include responsive ('medium'){
-  .flex.top, .flex.m\:top{align-items: flex-start;}
-}
-@include responsive ('small'){
-  .flex.top, .flex.s\:top{align-items: flex-start;}
-}
-
 .flex.middle {
   align-items: center;
 }
-@include responsive ('xbig'){
-  .flex.middle, .flex.xb\:middle{align-items: center;}
-}
-@include responsive ('large'){
-  .flex.middle, .flex.l\:middle{align-items: center;}
-}
-@include responsive ('medium'){
-  .flex.middle, .flex.m\:middle{align-items: center;}
-}
-@include responsive ('small'){
-  .flex.middle, .flex.s\:middle{align-items: center;}
-}
-
 .flex.bottom {
   align-items: flex-end;
 }
-@include responsive ('xbig'){
-  .flex.bottom, .flex.xb\:bottom{align-items: flex-end;}
-}
-@include responsive ('large'){
-  .flex.bottom, .flex.l\:bottom{align-items: flex-end;}
-}
-@include responsive ('medium'){
-  .flex.bottom, .flex.m\:bottom{align-items: flex-end;}
-}
-@include responsive ('small'){
-  .flex.bottom, .flex.s\:bottom{align-items: flex-end;}
-}
-
 .flex.stretch {
   align-items: stretch;
 }
-@include responsive ('xbig'){
-  .flex.stretch, .flex.xb\:stretch{align-items: stretch;}
-}
-@include responsive ('large'){
-  .flex.stretch, .flex.l\:stretch{align-items: stretch;}
-}
-@include responsive ('medium'){
-  .flex.stretch, .flex.m\:stretch{align-items: stretch;}
-}
-@include responsive ('small'){
-  .flex.stretch, .flex.s\:stretch{align-items: stretch;}
-}
-
 .flex.left {
   justify-content: flex-start;
 }
-@include responsive ('xbig'){
-  .flex.left, .flex.xb\:left{justify-content: flex-start;}
-}
-@include responsive ('large'){
-  .flex.left, .flex.l\:left{justify-content: flex-start;}
-}
-@include responsive ('medium'){
-  .flex.left, .flex.m\:left{justify-content: flex-start;}
-}
-@include responsive ('small'){
-  .flex.left, .flex.s\:left{justify-content: flex-start;}
-}
-
 .flex.center {
   justify-content: center;
 }
-@include responsive ('xbig'){
-  .flex.center, .flex.xb\:center{justify-content: center;}
-}
-@include responsive ('large'){
-  .flex.center, .flex.l\:center{justify-content: center;}
-}
-@include responsive ('medium'){
-  .flex.center, .flex.m\:center{justify-content: center;}
-}
-@include responsive ('small'){
-  .flex.center, .flex.s\:center{justify-content: center;}
-}
-
 .flex.right {
   justify-content: flex-end;
 }
-@include responsive ('xbig'){
-  .flex.right, .flex.xb\:right{justify-content: flex-end;}
-}
-@include responsive ('large'){
-  .flex.right, .flex.l\:right{justify-content: flex-end;}
-}
-@include responsive ('medium'){
-  .flex.right, .flex.m\:right{justify-content: flex-end;}
-}
-@include responsive ('small'){
-  .flex.right, .flex.s\:right{justify-content: flex-end;}
-}
-
 .flex.justify {
   justify-content: space-between;
 }
-@include responsive ('xbig'){
-  .flex.justify, .flex.xb\:justify{justify-content: space-between;}
-}
-@include responsive ('large'){
-  .flex.justify, .flex.l\:justify{justify-content: space-between;}
-}
-@include responsive ('medium'){
-  .flex.justify, .flex.m\:justify{justify-content: space-between;}
-}
-@include responsive ('small'){
-  .flex.justify, .flex.s\:justify{justify-content: space-between;}
-}
-
 .flex.space {
   justify-content: space-around;
 }
+
 @include responsive ('xbig'){
-  .flex.space, .flex.xb\:space{justify-content: space-around;}
+  .flex.xb\:top{align-items: flex-start;}
 }
 @include responsive ('large'){
-  .flex.space, .flex.l\:space{justify-content: space-around;}
+  .flex.l\:top{align-items: flex-start;}
 }
 @include responsive ('medium'){
-  .flex.space, .flex.m\:space{justify-content: space-around;}
+  .flex.m\:top{align-items: flex-start;}
 }
 @include responsive ('small'){
-  .flex.space, .flex.s\:space{justify-content: space-around;}
+  .flex.s\:top{align-items: flex-start;}
+}
+
+@include responsive ('xbig'){
+  .flex.xb\:middle{align-items: center;}
+}
+@include responsive ('large'){
+  .flex.l\:middle{align-items: center;}
+}
+@include responsive ('medium'){
+  .flex.m\:middle{align-items: center;}
+}
+@include responsive ('small'){
+  .flex.s\:middle{align-items: center;}
+}
+
+@include responsive ('xbig'){
+  .flex.xb\:bottom{align-items: flex-end;}
+}
+@include responsive ('large'){
+  .flex.l\:bottom{align-items: flex-end;}
+}
+@include responsive ('medium'){
+  .flex.m\:bottom{align-items: flex-end;}
+}
+@include responsive ('small'){
+  .flex.s\:bottom{align-items: flex-end;}
+}
+
+@include responsive ('xbig'){
+  .flex.xb\:stretch{align-items: stretch;}
+}
+@include responsive ('large'){
+  .flex.l\:stretch{align-items: stretch;}
+}
+@include responsive ('medium'){
+  .flex.m\:stretch{align-items: stretch;}
+}
+@include responsive ('small'){
+  .flex.s\:stretch{align-items: stretch;}
+}
+
+@include responsive ('xbig'){
+  .flex.xb\:left{justify-content: flex-start;}
+}
+@include responsive ('large'){
+  .flex.l\:left{justify-content: flex-start;}
+}
+@include responsive ('medium'){
+  .flex.m\:left{justify-content: flex-start;}
+}
+@include responsive ('small'){
+  .flex.s\:left{justify-content: flex-start;}
+}
+
+@include responsive ('xbig'){
+  .flex.xb\:center{justify-content: center;}
+}
+@include responsive ('large'){
+  .flex.l\:center{justify-content: center;}
+}
+@include responsive ('medium'){
+  .flex.m\:center{justify-content: center;}
+}
+@include responsive ('small'){
+  .flex.s\:center{justify-content: center;}
+}
+
+@include responsive ('xbig'){
+  .flex.xb\:right{justify-content: flex-end;}
+}
+@include responsive ('large'){
+  .flex.l\:right{justify-content: flex-end;}
+}
+@include responsive ('medium'){
+  .flex.m\:right{justify-content: flex-end;}
+}
+@include responsive ('small'){
+  .flex.s\:right{justify-content: flex-end;}
+}
+
+@include responsive ('xbig'){
+  .flex.xb\:justify{justify-content: space-between;}
+}
+@include responsive ('large'){
+  .flex.l\:justify{justify-content: space-between;}
+}
+@include responsive ('medium'){
+  .flex.m\:justify{justify-content: space-between;}
+}
+@include responsive ('small'){
+  .flex.s\:justify{justify-content: space-between;}
+}
+
+@include responsive ('xbig'){
+  .flex.xb\:space{justify-content: space-around;}
+}
+@include responsive ('large'){
+  .flex.l\:space{justify-content: space-around;}
+}
+@include responsive ('medium'){
+  .flex.m\:space{justify-content: space-around;}
+}
+@include responsive ('small'){
+  .flex.s\:space{justify-content: space-around;}
 }
 
 /**
