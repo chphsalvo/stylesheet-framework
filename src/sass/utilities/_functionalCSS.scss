@@ -143,19 +143,19 @@
    .p-xb-fixed, .xb\:fixed{position: fixed;}
  }
  @include responsive ('large'){
-  .p-l-relative, .l\:relative{position: relative;}
-  .p-l-absolute, .l\:absolute{position: absolute;}
-  .p-l-fixed, .l\:fixed{position: fixed;}
+  .p-l-relative, .lg\:relative{position: relative;}
+  .p-l-absolute, .lg\:absolute{position: absolute;}
+  .p-l-fixed, .lg\:fixed{position: fixed;}
  }
  @include responsive ('medium'){
-   .p-m-relative, .m\:relative{position: relative;}
-   .p-m-absolute, .m\:absolute{position: absolute;}
-   .p-m-fixed, .m\:fiixed{position: fixed;}
+   .p-m-relative, .md\:relative{position: relative;}
+   .p-m-absolute, .md\:absolute{position: absolute;}
+   .p-m-fixed, .md\:fiixed{position: fixed;}
  }
  @include responsive ('small'){
-   .p-s-relative, .s\:relative{position: relative;}
-   .p-s-absolute, .s\:absolute{position: absolute;}
-   .p-s-fixed, .s\:fixed{position: fixed;}
+   .p-s-relative, .sm\:relative{position: relative;}
+   .p-s-absolute, .sm\:absolute{position: absolute;}
+   .p-s-fixed, .sm\:fixed{position: fixed;}
  }
 
 
