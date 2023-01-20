@@ -462,7 +462,7 @@ $gutter: 20px; // Define columns gutter
  * flex col xN
  */
 
-@for $i from 1 through 6 {
+@for $i from 1 through 8 {
   $width: 100% / $i;
 
   .col-x#{$i} {
@@ -471,7 +471,7 @@ $gutter: 20px; // Define columns gutter
 }
 
 @include responsive("xbig") {
-  @for $i from 1 through 6 {
+  @for $i from 1 through 8 {
     $width: 100% / $i;
   
     .col-xb-x#{$i},
@@ -481,7 +481,7 @@ $gutter: 20px; // Define columns gutter
   }
 }
 @include responsive("large") {
-  @for $i from 1 through 6 {
+  @for $i from 1 through 8 {
     $width: 100% / $i;
   
     .col-l-x#{$i},
@@ -491,7 +491,7 @@ $gutter: 20px; // Define columns gutter
   }
 }
 @include responsive("medium") {
-  @for $i from 1 through 6 {
+  @for $i from 1 through 8 {
     $width: 100% / $i;
   
     .col-m-x#{$i},
@@ -501,7 +501,7 @@ $gutter: 20px; // Define columns gutter
   }
 }
 @include responsive("small") {
-  @for $i from 1 through 6 {
+  @for $i from 1 through 8 {
     $width: 100% / $i;
   
     .col-s-x#{$i},

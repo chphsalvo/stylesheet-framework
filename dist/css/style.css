@@ -3129,6 +3129,20 @@ button:focus {
       -ms-flex: 0 0 16.66667%;
           flex: 0 0 16.66667%; }
 
+.col-x7 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 14.28571%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 14.28571%;
+          flex: 0 0 14.28571%; }
+
+.col-x8 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 12.5%;
+     -moz-box-flex: 0;
+      -ms-flex: 0 0 12.5%;
+          flex: 0 0 12.5%; }
+
 @media (min-width: 1600px) {
   .col-xb-x1,
   .xb\:col-x {
@@ -3171,7 +3185,21 @@ button:focus {
     -webkit-flex: 0 0 16.66667%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 16.66667%;
-            flex: 0 0 16.66667%; } }
+            flex: 0 0 16.66667%; }
+  .col-xb-x7,
+  .xb\:col-x {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 14.28571%;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 14.28571%;
+            flex: 0 0 14.28571%; }
+  .col-xb-x8,
+  .xb\:col-x {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 12.5%;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 12.5%;
+            flex: 0 0 12.5%; } }
 
 @media (max-width: 1024px) {
   .col-l-x1,
@@ -3215,7 +3243,21 @@ button:focus {
     -webkit-flex: 0 0 16.66667%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 16.66667%;
-            flex: 0 0 16.66667%; } }
+            flex: 0 0 16.66667%; }
+  .col-l-x7,
+  .lg\:col-x7 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 14.28571%;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 14.28571%;
+            flex: 0 0 14.28571%; }
+  .col-l-x8,
+  .lg\:col-x8 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 12.5%;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 12.5%;
+            flex: 0 0 12.5%; } }
 
 @media (max-width: 768px) {
   .col-m-x1,
@@ -3259,7 +3301,21 @@ button:focus {
     -webkit-flex: 0 0 16.66667%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 16.66667%;
-            flex: 0 0 16.66667%; } }
+            flex: 0 0 16.66667%; }
+  .col-m-x7,
+  .md\:col-x {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 14.28571%;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 14.28571%;
+            flex: 0 0 14.28571%; }
+  .col-m-x8,
+  .md\:col-x {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 12.5%;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 12.5%;
+            flex: 0 0 12.5%; } }
 
 @media (max-width: 640px) {
   .col-s-x1,
@@ -3303,7 +3359,21 @@ button:focus {
     -webkit-flex: 0 0 16.66667%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 16.66667%;
-            flex: 0 0 16.66667%; } }
+            flex: 0 0 16.66667%; }
+  .col-s-x7,
+  .sm\:col-x {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 14.28571%;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 14.28571%;
+            flex: 0 0 14.28571%; }
+  .col-s-x8,
+  .sm\:col-x {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 12.5%;
+       -moz-box-flex: 0;
+        -ms-flex: 0 0 12.5%;
+            flex: 0 0 12.5%; } }
 
 /**
  * components/_background.scss Background
