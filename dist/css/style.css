@@ -5839,6 +5839,155 @@ input {
     line-height: 72px; } }
 
 /**
+ * typography/_article.scss Article
+ *
+ * Write a description
+ */
+/*
+ * INDEX
+ * - listings
+ * - table
+ * - blockquote
+ * - hr
+ * - figure
+ */
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6,
+article p,
+article ul,
+article ol,
+article blockquote,
+article figure,
+article figure img {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  margin-left: 0px;
+  margin-right: 0px; }
+  article h1:first-child,
+  article h2:first-child,
+  article h3:first-child,
+  article h4:first-child,
+  article h5:first-child,
+  article h6:first-child,
+  article p:first-child,
+  article ul:first-child,
+  article ol:first-child,
+  article blockquote:first-child,
+  article figure:first-child,
+  article figure img:first-child {
+    margin-top: 0px; }
+  article h1:last-child,
+  article h2:last-child,
+  article h3:last-child,
+  article h4:last-child,
+  article h5:last-child,
+  article h6:last-child,
+  article p:last-child,
+  article ul:last-child,
+  article ol:last-child,
+  article blockquote:last-child,
+  article figure:last-child,
+  article figure img:last-child {
+    margin-bottom: 0px; }
+
+article h1, article h2, article h3, article h4, article h5, article h6, article thead tr th {
+  font-weight: 700; }
+
+article h1 {
+  font-size: 36px;
+  line-height: 38px; }
+
+article h2 {
+  font-size: 24px;
+  line-height: 26px; }
+
+article h3 {
+  font-size: 21px;
+  line-height: 24px; }
+
+article h4 {
+  font-size: 18px;
+  line-height: 21px; }
+
+article h5 {
+  font-size: 16px;
+  line-height: 18px; }
+
+article h6 {
+  font-size: 14px;
+  line-height: 16px; }
+
+article p {
+  font-size: 16px;
+  line-height: 24px; }
+
+article a {
+  text-decoration: underline; }
+
+article b, article strong {
+  font-weight: bolder; }
+
+article i, article em {
+  font-style: italic; }
+
+article ol, article ul {
+  padding-left: 1.625em; }
+  article ol > li, article ul > li {
+    padding-left: 0.375em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
+
+article ol > li {
+  list-style-type: decimal; }
+
+article ul > li {
+  list-style-type: disc; }
+
+article table {
+  width: 100%;
+  table-layout: auto;
+  text-align: left;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-indent: 0;
+  border-color: inherit;
+  border-collapse: collapse; }
+  article table thead,
+  article table tbody tr {
+    border-bottom: 1px solid #e5e7eb; }
+  article table thead tr th,
+  article table tbody tr td {
+    padding: 0.5714286em; }
+    article table thead tr th:first-child,
+    article table tbody tr td:first-child {
+      padding-left: 0; }
+
+article blockquote {
+  font-style: italic;
+  border-left: 0.25rem solid #e5e7eb;
+  padding-left: 1em; }
+  article blockquote * {
+    font-style: italic; }
+
+article hr {
+  border-top: 0px solid #e5e7eb;
+  margin-top: 3em;
+  margin-bottom: 3em; }
+
+article figure img {
+  max-width: 100%;
+  height: auto; }
+
+article figcaption {
+  margin: 0px;
+  margin-top: 0.8571429em;
+  color: #888888; }
+
+/**
  * utilities/_utilities.scss Utilities
  *
  * Write a description

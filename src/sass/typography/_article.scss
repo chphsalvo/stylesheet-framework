@@ -1,0 +1,148 @@
+/**
+ * typography/_article.scss Article
+ *
+ * Write a description
+ */
+
+/*
+ * INDEX
+ * - listings
+ * - table
+ * - blockquote
+ * - hr
+ * - figure
+ */
+
+article{
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul,
+    ol,
+    blockquote,
+    figure,
+    figure img{
+        &:first-child{ margin-top: 0px; }
+        &:last-child{ margin-bottom: 0px; }
+
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    h1, h2, h3, h4, h5, h6, thead tr th{ font-weight: 700; }
+
+    h1{
+        font-size: 36px;
+        line-height: 38px;
+    }
+    h2{
+        font-size: 24px;
+        line-height: 26px;
+    }
+    h3{
+        font-size: 21px;
+        line-height: 24px;
+    }
+    h4{
+        font-size: 18px;
+        line-height: 21px;
+    }
+    h5{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    h6{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    a{ text-decoration: underline; }
+
+    b, strong{ font-weight: bolder; }
+
+    i, em{ font-style: italic; }
+
+    // listings
+
+    ol, ul{
+        padding-left: 1.625em;
+
+        > li{
+            padding-left: 0.375em;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+    }
+
+    ol > li{ list-style-type: decimal; }
+    ul > li{ list-style-type: disc; }
+
+    // table
+    
+    table{
+        width: 100%;
+        table-layout: auto;
+        text-align: left;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        // font-size: 0.875em;
+        text-indent: 0;
+        border-color: inherit;
+        border-collapse: collapse;
+
+        thead,
+        tbody tr{
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        thead tr th,
+        tbody tr td{
+            &:first-child{ padding-left: 0; }
+
+            padding: 0.5714286em;
+        }
+    }
+
+    // blockquote
+
+    blockquote{
+        & *{ font-style: italic; }
+
+        font-style: italic;
+        border-left: 0.25rem solid #e5e7eb;
+        padding-left: 1em;
+    }
+
+    // hr
+
+    hr{
+        border-top: 0px solid #e5e7eb;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    // figure
+
+    figure img{
+        max-width: 100%;
+        height: auto;
+    }
+    figcaption{
+        margin: 0px;
+        margin-top: 0.8571429em;
+        // font-size: 0.875em;
+        color: #888888;
+    }
+
+}
