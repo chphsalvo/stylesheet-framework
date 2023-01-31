@@ -6069,13 +6069,18 @@ article figcaption {
 .ratio {
   height: 0px; }
 
-.ratio--16x9 {
+.ratio--16x9,
+.aspect-video {
+  width: 100%;
   padding-bottom: 56.25%; }
 
-.ratio--4x3 {
+.ratio--4x3,
+.aspect-screen {
+  width: 100%;
   padding-bottom: 75%; }
 
-.square {
+.square,
+.aspect-square {
   width: 100%;
   padding-bottom: 100%; }
 
