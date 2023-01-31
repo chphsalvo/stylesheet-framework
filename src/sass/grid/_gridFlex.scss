@@ -356,31 +356,47 @@ $gutter: 20px; // Define columns gutter
 
 /**
  * flex gutter
- * Fix left responsive gutter
  */
 
 .flex {
-  .gutter-0 {
+  &.gutter-0 .col{
     padding-left: 0px;
+    padding-right: 0px;
   }
   @include responsive("xbig") {
-    .gutter-xb-0 {
-      padding-left: 0px;
+    &.xb\:gutter-0,
+    &.gutter-xb-0{
+      .col{
+        padding-left: 0px;
+        padding-right: 0px;
+      }
     }
   }
   @include responsive("large") {
-    .gutter-l-0 {
-      padding-left: 0px;
+    &.lg\:gutter-0,
+    &.gutter-l-0{
+      .col{
+        padding-left: 0px;
+        padding-right: 0px;
+      }
     }
   }
   @include responsive("medium") {
-    .gutter-m-0 {
-      padding-left: 0px;
+    &.md\:gutter-0,
+    &.gutter-m-0{
+      .col{
+        padding-left: 0px;
+        padding-right: 0px;
+      }
     }
   }
   @include responsive("small") {
-    .gutter-s-0 {
-      padding-left: 0px;
+    &.sm\:gutter-0,
+    &.gutter-s-0{
+      .col{
+        padding-left: 0px;
+        padding-right: 0px;
+      }
     }
   }
 }

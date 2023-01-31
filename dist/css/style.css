@@ -2857,26 +2857,30 @@ button:focus {
 
 /**
  * flex gutter
- * Fix left responsive gutter
  */
-.flex .gutter-0 {
-  padding-left: 0px; }
+.flex.gutter-0 .col {
+  padding-left: 0px;
+  padding-right: 0px; }
 
 @media (min-width: 1600px) {
-  .flex .gutter-xb-0 {
-    padding-left: 0px; } }
+  .flex.xb\:gutter-0 .col, .flex.gutter-xb-0 .col {
+    padding-left: 0px;
+    padding-right: 0px; } }
 
 @media (max-width: 1024px) {
-  .flex .gutter-l-0 {
-    padding-left: 0px; } }
+  .flex.lg\:gutter-0 .col, .flex.gutter-l-0 .col {
+    padding-left: 0px;
+    padding-right: 0px; } }
 
 @media (max-width: 768px) {
-  .flex .gutter-m-0 {
-    padding-left: 0px; } }
+  .flex.md\:gutter-0 .col, .flex.gutter-m-0 .col {
+    padding-left: 0px;
+    padding-right: 0px; } }
 
 @media (max-width: 640px) {
-  .flex .gutter-s-0 {
-    padding-left: 0px; } }
+  .flex.sm\:gutter-0 .col, .flex.gutter-s-0 .col {
+    padding-left: 0px;
+    padding-right: 0px; } }
 
 /**
  * flex offset
