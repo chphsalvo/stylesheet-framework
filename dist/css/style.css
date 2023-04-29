@@ -3149,56 +3149,56 @@ button:focus {
 
 @media (min-width: 1600px) {
   .col-xb-x1,
-  .xb\:col-x {
+  .xb\:col-x1 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
   .col-xb-x2,
-  .xb\:col-x {
+  .xb\:col-x2 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%; }
   .col-xb-x3,
-  .xb\:col-x {
+  .xb\:col-x3 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 33.33333%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%; }
   .col-xb-x4,
-  .xb\:col-x {
+  .xb\:col-x4 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 25%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%; }
   .col-xb-x5,
-  .xb\:col-x {
+  .xb\:col-x5 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 20%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 20%;
             flex: 0 0 20%; }
   .col-xb-x6,
-  .xb\:col-x {
+  .xb\:col-x6 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 16.66667%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 16.66667%;
             flex: 0 0 16.66667%; }
   .col-xb-x7,
-  .xb\:col-x {
+  .xb\:col-x7 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 14.28571%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 14.28571%;
             flex: 0 0 14.28571%; }
   .col-xb-x8,
-  .xb\:col-x {
+  .xb\:col-x8 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 12.5%;
        -moz-box-flex: 0;
@@ -3265,56 +3265,56 @@ button:focus {
 
 @media (max-width: 768px) {
   .col-m-x1,
-  .md\:col-x {
+  .md\:col-x1 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
   .col-m-x2,
-  .md\:col-x {
+  .md\:col-x2 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%; }
   .col-m-x3,
-  .md\:col-x {
+  .md\:col-x3 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 33.33333%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%; }
   .col-m-x4,
-  .md\:col-x {
+  .md\:col-x4 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 25%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%; }
   .col-m-x5,
-  .md\:col-x {
+  .md\:col-x5 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 20%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 20%;
             flex: 0 0 20%; }
   .col-m-x6,
-  .md\:col-x {
+  .md\:col-x6 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 16.66667%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 16.66667%;
             flex: 0 0 16.66667%; }
   .col-m-x7,
-  .md\:col-x {
+  .md\:col-x7 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 14.28571%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 14.28571%;
             flex: 0 0 14.28571%; }
   .col-m-x8,
-  .md\:col-x {
+  .md\:col-x8 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 12.5%;
        -moz-box-flex: 0;
@@ -3323,56 +3323,56 @@ button:focus {
 
 @media (max-width: 640px) {
   .col-s-x1,
-  .sm\:col-x {
+  .sm\:col-x1 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
   .col-s-x2,
-  .sm\:col-x {
+  .sm\:col-x2 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%; }
   .col-s-x3,
-  .sm\:col-x {
+  .sm\:col-x3 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 33.33333%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%; }
   .col-s-x4,
-  .sm\:col-x {
+  .sm\:col-x4 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 25%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%; }
   .col-s-x5,
-  .sm\:col-x {
+  .sm\:col-x5 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 20%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 20%;
             flex: 0 0 20%; }
   .col-s-x6,
-  .sm\:col-x {
+  .sm\:col-x6 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 16.66667%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 16.66667%;
             flex: 0 0 16.66667%; }
   .col-s-x7,
-  .sm\:col-x {
+  .sm\:col-x7 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 14.28571%;
        -moz-box-flex: 0;
         -ms-flex: 0 0 14.28571%;
             flex: 0 0 14.28571%; }
   .col-s-x8,
-  .sm\:col-x {
+  .sm\:col-x8 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 12.5%;
        -moz-box-flex: 0;

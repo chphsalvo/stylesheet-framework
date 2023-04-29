@@ -491,7 +491,7 @@ $gutter: 20px; // Define columns gutter
     $width: 100% / $i;
   
     .col-xb-x#{$i},
-    .xb\:col-x{
+    .xb\:col-x#{$i}{
       flex: 0 0 $width;
     }
   }
@@ -511,7 +511,7 @@ $gutter: 20px; // Define columns gutter
     $width: 100% / $i;
   
     .col-m-x#{$i},
-    .md\:col-x {
+    .md\:col-x#{$i}{
       flex: 0 0 $width;
     }
   }
@@ -521,7 +521,7 @@ $gutter: 20px; // Define columns gutter
     $width: 100% / $i;
   
     .col-s-x#{$i},
-    .sm\:col-x {
+    .sm\:col-x#{$i}{
       flex: 0 0 $width;
     }
   }
