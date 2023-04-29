@@ -12,13 +12,14 @@
  * - flex col
  * - flex gutter
  * - flex offset
+ * - flex gap
  */
 
 /**
  * flex item
  */
 
-.flex {
+ .flex {
   display: flex;
   flex-flow: row wrap; /* flex-direction: row; + flex-wrap: wrap; */
   
@@ -524,5 +525,58 @@ $gutter: 20px; // Define columns gutter
     .sm\:col-x#{$i}{
       flex: 0 0 $width;
     }
+  }
+}
+
+/**
+ * flex gap
+ */
+
+.flex{
+  &.gap{
+    flex-wrap: nowrap;
+
+    @for $i from 0 through 12 {
+      &.gap-#{$i * 5} {
+        gap: #{$i * 5}px;
+      }
+    }
+
+    @include responsive("xbig") {
+      @for $i from 0 through 12 {
+        &.gap-xb-#{$i * 5},
+        &.xb\:gap-#{$i * 5}{
+          gap: #{$i * 5}px;
+        }
+      }
+    }
+
+    @include responsive("large") {
+      @for $i from 0 through 12 {
+        &.gap-l-#{$i * 5},
+        &.lg\:gap-#{$i * 5}{
+          gap: #{$i * 5}px;
+        }
+      }
+    }
+
+    @include responsive("medium") {
+      @for $i from 0 through 12 {
+        &.gap-m-#{$i * 5},
+        &.md\:gap-#{$i * 5}{
+          gap: #{$i * 5}px;
+        }
+      }
+    }
+
+    @include responsive("small") {
+      @for $i from 0 through 12 {
+        &.gap-s-#{$i * 5},
+        &.sm\:gap-#{$i * 5}{
+          gap: #{$i * 5}px;
+        }
+      }
+    }
+
   }
 }
