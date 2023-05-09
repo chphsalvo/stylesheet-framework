@@ -539,6 +539,7 @@ $gutter: 20px; // Define columns gutter
     @for $i from 0 through 12 {
       &.gap-#{$i * 5} {
         gap: #{$i * 5}px;
+        @if $i == 0 { flex-wrap: wrap; }
       }
     }
 
@@ -547,6 +548,7 @@ $gutter: 20px; // Define columns gutter
         &.gap-xb-#{$i * 5},
         &.xb\:gap-#{$i * 5}{
           gap: #{$i * 5}px;
+          @if $i == 0 { flex-wrap: wrap; }
         }
       }
     }
@@ -556,6 +558,7 @@ $gutter: 20px; // Define columns gutter
         &.gap-l-#{$i * 5},
         &.lg\:gap-#{$i * 5}{
           gap: #{$i * 5}px;
+          @if $i == 0 { flex-wrap: wrap; }
         }
       }
     }
@@ -565,6 +568,7 @@ $gutter: 20px; // Define columns gutter
         &.gap-m-#{$i * 5},
         &.md\:gap-#{$i * 5}{
           gap: #{$i * 5}px;
+          @if $i == 0 { flex-wrap: wrap; }
         }
       }
     }
@@ -574,6 +578,7 @@ $gutter: 20px; // Define columns gutter
         &.gap-s-#{$i * 5},
         &.sm\:gap-#{$i * 5}{
           gap: #{$i * 5}px;
+          @if $i == 0 { flex-wrap: wrap; }
         }
       }
     }

@@ -3388,7 +3388,10 @@ button:focus {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap; }
   .flex.gap.gap-0 {
-    gap: 0px; }
+    gap: 0px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .flex.gap.gap-5 {
     gap: 5px; }
   .flex.gap.gap-10 {
@@ -3415,7 +3418,10 @@ button:focus {
     gap: 60px; }
   @media (min-width: 1600px) {
     .flex.gap.gap-xb-0, .flex.gap.xb\:gap-0 {
-      gap: 0px; }
+      gap: 0px;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
     .flex.gap.gap-xb-5, .flex.gap.xb\:gap-5 {
       gap: 5px; }
     .flex.gap.gap-xb-10, .flex.gap.xb\:gap-10 {
@@ -3442,7 +3448,10 @@ button:focus {
       gap: 60px; } }
   @media (max-width: 1024px) {
     .flex.gap.gap-l-0, .flex.gap.lg\:gap-0 {
-      gap: 0px; }
+      gap: 0px;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
     .flex.gap.gap-l-5, .flex.gap.lg\:gap-5 {
       gap: 5px; }
     .flex.gap.gap-l-10, .flex.gap.lg\:gap-10 {
@@ -3469,7 +3478,10 @@ button:focus {
       gap: 60px; } }
   @media (max-width: 768px) {
     .flex.gap.gap-m-0, .flex.gap.md\:gap-0 {
-      gap: 0px; }
+      gap: 0px;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
     .flex.gap.gap-m-5, .flex.gap.md\:gap-5 {
       gap: 5px; }
     .flex.gap.gap-m-10, .flex.gap.md\:gap-10 {
@@ -3496,7 +3508,10 @@ button:focus {
       gap: 60px; } }
   @media (max-width: 640px) {
     .flex.gap.gap-s-0, .flex.gap.sm\:gap-0 {
-      gap: 0px; }
+      gap: 0px;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
     .flex.gap.gap-s-5, .flex.gap.sm\:gap-5 {
       gap: 5px; }
     .flex.gap.gap-s-10, .flex.gap.sm\:gap-10 {
