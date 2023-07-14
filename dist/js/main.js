@@ -1,23 +1,19 @@
 
-var viewpoertEls = document.querySelectorAll('.viewport');
+var viewportEls = document.querySelectorAll('.viewport');
 
-if (viewpoertEls) {
+if (viewportEls.length > 0) {
 
     var observer = new IntersectionObserver(function (entries) {
         // isIntersecting is true when element and viewport are overlapping
         // isIntersecting is false when element and viewport don't overlap
 
-        entries.forEach((entry) => {
-            if (entry.isIntersecting === true) {
-                entry.target.classList.add('is-in-viewport');
-            } else {
-                entry.target.classList.remove('is-in-viewport');
-            }
-        })
+        entries.forEach(function (entry) {
+            entry.target.classList.toggle('is-in-viewport', entry.isIntersecting);
+        });
+        
+    }, { threshold: [0] }); // rootMargin: half ? '0px 0px -50% 0px' : '0px'
 
-    }, { threshold: [0] });
-
-    viewpoertEls.forEach((el) => {
+    viewportEls.forEach(function (el) {
         observer.observe(el);
     });
 
