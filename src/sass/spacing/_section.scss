@@ -1,0 +1,19 @@
+.margin-section{
+    margin-top: var(--margin-section, 80px);
+    margin-bottom: var(--margin-section, 80px);
+
+    @include responsive('small'){
+        margin-top: var(--margin-section-sm, 40px);
+        margin-bottom: var(--margin-section-sm, 40px);
+    }
+}
+
+.padding-section{
+    padding-top: var(--padding-section, 80px);
+    padding-bottom: var(--padding-section, 80px);
+
+    @include responsive('small'){
+        padding-top: var(--padding-section-sm, 40px);
+        padding-bottom: var(--padding-section-sm, 40px);
+    }
+}

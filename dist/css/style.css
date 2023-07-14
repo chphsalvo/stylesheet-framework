@@ -3851,6 +3851,38 @@ button:focus {
     .flex.gap .sm\:col-x8 {
       width: 12.5%; } }
 
+.margin-section {
+  margin-top: var(--margin-section, 80px);
+  margin-bottom: var(--margin-section, 80px); }
+  @media (max-width: 640px) {
+    .margin-section {
+      margin-top: var(--margin-section-sm, 40px);
+      margin-bottom: var(--margin-section-sm, 40px); } }
+
+.padding-section {
+  padding-top: var(--padding-section, 80px);
+  padding-bottom: var(--padding-section, 80px); }
+  @media (max-width: 640px) {
+    .padding-section {
+      padding-top: var(--padding-section-sm, 40px);
+      padding-bottom: var(--padding-section-sm, 40px); } }
+
+.margin-page {
+  margin-left: var(--margin-page, 50px);
+  margin-right: var(--margin-page, 50px); }
+  @media (max-width: 640px) {
+    .margin-page {
+      margin-left: var(--margin-page-sm, 25px);
+      margin-right: var(--margin-page-sm, 25px); } }
+
+.padding-page {
+  padding-left: var(--padding-page, 50px);
+  padding-right: var(--padding-page, 50px); }
+  @media (max-width: 640px) {
+    .padding-page {
+      padding-left: var(--padding-page-sm, 25px);
+      padding-right: var(--padding-page-sm, 25px); } }
+
 /**
  * components/_background.scss Background
  *
