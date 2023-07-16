@@ -10,29 +10,25 @@
 
 // Mixin
 @import '../mixin/responsive';
-@import '../mixin/color';
 
-// Reset
+// Utilities
 @import '../utilities/reset';
 
 // Grids
 @import '../grid/grid';
 @import '../grid/gridFlex';
 
-// Spacing
-@import '../spacing/section';
-@import '../spacing/page';
+// Helpers
+@import '../helpers/spacing';
+@import '../helpers/colors';
+@import '../helpers/backgrounds';
+@import '../helpers/layout';
+@import '../helpers/typography';
+
+// Elements
+@import '../elements/buttons';
+@import '../elements/forms';
+@import '../elements/article';
 
 // Components
-@import '../components/background';
-@import '../components/buttons';
 @import '../components/modals';
-@import '../components/forms';
-
-// Typography
-@import '../typography/typography';
-@import '../typography/article';
-
-// Utilities
-@import '../utilities/utilities';
-@import '../utilities/functionalCSS';

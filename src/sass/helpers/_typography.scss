@@ -1,0 +1,167 @@
+/**
+ * helpers/_typography.scss Helpers - Typography
+ *
+ * Write a description
+ */
+
+/**
+ * INDEX
+ * - font-size
+ * - line-height
+ * - text-align
+ * - text-transform
+ * - vertical-align
+ */
+
+// font-size
+
+@for $i from 8 through 72 {
+    .fs-#{$i} {
+        font-size: #{$i}px;
+    }
+}
+
+@for $i from 8 through 72 {
+    @include responsive ('xbig') {
+        .fs-xb-#{$i} {
+            font-size: #{$i}px;
+        }
+    }
+}
+
+@for $i from 8 through 72 {
+    @include responsive ('large') {
+        .fs-l-#{$i} {
+            font-size: #{$i}px;
+        }
+    }
+}
+
+@for $i from 8 through 72 {
+    @include responsive ('medium') {
+        .fs-m-#{$i} {
+            font-size: #{$i}px;
+        }
+    }
+}
+
+@for $i from 8 through 72 {
+    @include responsive ('small') {
+        .fs-s-#{$i} {
+            font-size: #{$i}px;
+        }
+    }
+}
+
+//line-height
+
+@for $i from 8 through 72 {
+    .le-#{$i} {
+        line-height: #{$i}px;
+    }
+}
+
+@for $i from 8 through 72 {
+    @include responsive ('xbig') {
+        .le-xb-#{$i} {
+            line-height: #{$i}px;
+        }
+    }
+}
+
+@for $i from 8 through 72 {
+    @include responsive ('large') {
+        .le-l-#{$i} {
+            line-height: #{$i}px;
+        }
+    }
+}
+
+@for $i from 8 through 72 {
+    @include responsive ('medium') {
+        .le-m-#{$i} {
+            line-height: #{$i}px;
+        }
+    }
+}
+
+@for $i from 8 through 72 {
+    @include responsive ('small') {
+        .le-s-#{$i} {
+            line-height: #{$i}px;
+        }
+    }
+}
+
+
+/**
+ * text-align
+ */
+
+.ta-l{text-align: left;}
+.ta-c{text-align: center;}
+.ta-r{text-align: right;}
+.ta-j{text-align: justify;}
+
+@include responsive ('xbig'){
+    .ta-xb-l{text-align: left;}
+    .ta-xb-c{text-align: center;}
+    .ta-xb-r{text-align: right;}
+    .ta-xb-j{text-align: justify;}
+}
+@include responsive ('large'){
+    .ta-l-l{text-align: left;}
+    .ta-l-c{text-align: center;}
+    .ta-l-r{text-align: right;}
+    .ta-l-j{text-align: justify;}
+}
+@include responsive ('medium'){
+    .ta-m-l{text-align: left;}
+    .ta-m-c{text-align: center;}
+    .ta-m-r{text-align: right;}
+    .ta-m-j{text-align: justify;}
+}
+@include responsive ('small'){
+    .ta-s-l{text-align: left;}
+    .ta-s-c{text-align: center;}
+    .ta-s-r{text-align: right;}
+    .ta-s-j{text-align: justify;}
+}
+ 
+/**
+ * text-transform
+ */
+
+.tt-uppercase{ text-transform: uppercase; }
+.tt-lowercase{ text-transform: lowercase; }
+.tt-capitalize{ text-transform: capitalize; }
+
+/**
+ * vertical-align
+ */
+
+.va-t{vertical-align: top;}
+.va-m{vertical-align: middle;}
+.va-b{vertical-align: bottom;}
+
+@include responsive ('xbig'){
+    .va-xb-t{vertical-align: top;}
+    .va-xb-m{vertical-align: middle;}
+    .va-xb-b{vertical-align: bottom;}
+}
+@include responsive ('large'){
+    .va-l-t{vertical-align: top;}
+    .va-l-m{vertical-align: middle;}
+    .va-l-b{vertical-align: bottom;}
+}
+@include responsive ('medium'){
+    .va-m-t{vertical-align: top;}
+    .va-m-m{vertical-align: middle;}
+    .va-m-b{vertical-align: bottom;}
+}
+@include responsive ('small'){
+    .va-s-t{vertical-align: top;}
+    .va-s-m{vertical-align: middle;}
+    .va-s-b{vertical-align: bottom;}
+}
+ 

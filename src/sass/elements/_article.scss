@@ -1,19 +1,22 @@
 /**
- * typography/_article.scss Article
+ * elements/_article.scss Elements - Article
  *
  * Write a description
  */
 
-/*
+/**
  * INDEX
- * - listings
- * - table
- * - blockquote
- * - hr
- * - figure
+ * - article
+ * -- listings
+ * -- table
+ * -- blockquote
+ * -- hr
+ * -- figure
  */
 
-article{
+// article
+
+article {
 
     h1,
     h2,
@@ -26,9 +29,14 @@ article{
     ol,
     blockquote,
     figure,
-    figure img{
-        &:first-child{ margin-top: 0px; }
-        &:last-child{ margin-bottom: 0px; }
+    figure img {
+        &:first-child {
+            margin-top: 0px;
+        }
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
 
         margin-top: 1.25em;
         margin-bottom: 1.25em;
@@ -36,61 +44,89 @@ article{
         margin-right: 0px;
     }
 
-    h1, h2, h3, h4, h5, h6, thead tr th{ font-weight: 700; }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    thead tr th {
+        font-weight: 700;
+    }
 
-    h1{
+    h1 {
         font-size: 36px;
         line-height: 38px;
     }
-    h2{
+
+    h2 {
         font-size: 24px;
         line-height: 26px;
     }
-    h3{
+
+    h3 {
         font-size: 21px;
         line-height: 24px;
     }
-    h4{
+
+    h4 {
         font-size: 18px;
         line-height: 21px;
     }
-    h5{
+
+    h5 {
         font-size: 16px;
         line-height: 18px;
     }
-    h6{
+
+    h6 {
         font-size: 14px;
         line-height: 16px;
     }
-    p{
+
+    p {
         font-size: 16px;
         line-height: 24px;
     }
 
-    a{ text-decoration: underline; }
+    a {
+        text-decoration: underline;
+    }
 
-    b, strong{ font-weight: bolder; }
+    b,
+    strong {
+        font-weight: bolder;
+    }
 
-    i, em{ font-style: italic; }
+    i,
+    em {
+        font-style: italic;
+    }
 
     // listings
 
-    ol, ul{
+    ol,
+    ul {
         padding-left: 1.625em;
 
-        > li{
+        >li {
             padding-left: 0.375em;
             margin-top: 0.5em;
             margin-bottom: 0.5em;
         }
     }
 
-    ol > li{ list-style-type: decimal; }
-    ul > li{ list-style-type: disc; }
+    ol>li {
+        list-style-type: decimal;
+    }
+
+    ul>li {
+        list-style-type: disc;
+    }
 
     // table
-    
-    table{
+
+    table {
         width: 100%;
         table-layout: auto;
         text-align: left;
@@ -102,13 +138,15 @@ article{
         border-collapse: collapse;
 
         thead,
-        tbody tr{
+        tbody tr {
             border-bottom: 1px solid #e5e7eb;
         }
 
         thead tr th,
-        tbody tr td{
-            &:first-child{ padding-left: 0; }
+        tbody tr td {
+            &:first-child {
+                padding-left: 0;
+            }
 
             padding: 0.5714286em;
         }
@@ -116,8 +154,10 @@ article{
 
     // blockquote
 
-    blockquote{
-        & *{ font-style: italic; }
+    blockquote {
+        & * {
+            font-style: italic;
+        }
 
         font-style: italic;
         border-left: 0.25rem solid #e5e7eb;
@@ -126,7 +166,7 @@ article{
 
     // hr
 
-    hr{
+    hr {
         border-top: 0px solid #e5e7eb;
         margin-top: 3em;
         margin-bottom: 3em;
@@ -134,11 +174,12 @@ article{
 
     // figure
 
-    figure img{
+    figure img {
         max-width: 100%;
         height: auto;
     }
-    figcaption{
+
+    figcaption {
         margin: 0px;
         margin-top: 0.8571429em;
         // font-size: 0.875em;

@@ -4,44 +4,7 @@
  * Write a description
  */
 
- /*
- * INDEX
- * - text
- * - background
- * - border
- */
-
-$palettes: (
-  black: (
-    base: #000000
-  )
-	/*
-	blue: (
-    darker: #333333,
-    dark: #333333,
-    base: #333333,
-    light: #333333,
-    lighter: #333333
-  )
-	*/
-);
-
 $black : #000000;
 $white : #FFFFFF;
 $red : #ff0000;
 $blue : #0000ff;
-
-.text-black, .t-black {color: $black;}
-.text-white, .t-white {color: $white;}
-.text-red, .t-red {color: $red;}
-.text-blue, .t-blue {color: $blue;}
-
-.background-black, .bg-black { background-color: $black; }
-.background-white, .bg-white { background-color: $white; }
-.background-red, .bg-red { background-color: $red; }
-.background-blue, .bg-blue { background-color: $blue; }
-
-.border-black, .b-black { border: 1px solid $black; }
-.border-white, .b-white { border: 1px solid $white; }
-.border-red, .b-red { border: 1px solid $red; }
-.border-blue, .b-blue { border: 1px solid $blue; }
