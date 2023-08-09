@@ -1,5 +1,9 @@
+import BackgroundImage from '../components/helpers/backgrounds/backgroundImage/backgroundImage'
+
 export default function Home() {
   return (
-      <div>HOMEPAGE</div>
+      <main>
+        <BackgroundImage></BackgroundImage>
+      </main>
   )
 }
