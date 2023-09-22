@@ -9,6 +9,7 @@
  * - flex item
  * - flex wrap
  * - flex alignments
+ * - flex directions
  * - flex col
  * - flex gutter
  * - flex offset
@@ -219,6 +220,43 @@
 }
 @include responsive ('small'){
   .flex.sm\:space{justify-content: space-around;}
+}
+
+/**
+ * flex directions
+ */
+
+.flex.row{flex-direction: row}
+.flex.row-reverse{flex-direction: row-reverse}
+.flex.column{flex-direction: column}
+.flex.column-reverse{flex-direction: column-reverse}
+
+@include responsive ('xbig'){
+  .flex.xb\:row{flex-direction: row}
+  .flex.xb\:row-reverse{flex-direction: row-reverse}
+  .flex.xb\:column{flex-direction: column}
+  .flex.xb\:column-reverse{flex-direction: column-reverse}
+}
+
+@include responsive ('large'){
+  .flex.lg\:row{flex-direction: row}
+  .flex.lg\:row-reverse{flex-direction: row-reverse}
+  .flex.lg\:column{flex-direction: column}
+  .flex.lg\:column-reverse{flex-direction: column-reverse}
+}
+
+@include responsive ('medium'){
+  .flex.md\:row{flex-direction: row}
+  .flex.md\:row-reverse{flex-direction: row-reverse}
+  .flex.md\:column{flex-direction: column}
+  .flex.md\:column-reverse{flex-direction: column-reverse}
+}
+
+@include responsive ('small'){
+  .flex.sm\:row{flex-direction: row}
+  .flex.sm\:row-reverse{flex-direction: row-reverse}
+  .flex.sm\:column{flex-direction: column}
+  .flex.sm\:column-reverse{flex-direction: column-reverse}
 }
 
 /**
@@ -587,6 +625,8 @@ $gutter: 20px; // Define columns gutter
       flex-grow: unset;
       flex-basis: unset;
       flex-shrink: unset;
+      padding-left: 0px;
+      padding-right: 0px;
     }
 
     @for $i from 0 through 12 {
