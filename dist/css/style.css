@@ -14,22 +14,22 @@
  * Write a description
  */
 /**
- * settings/_breackpoints.scss Breackpoints
+ * settings/_breackpoints.scss Settings - Breackpoints
  *
  * Write a description
  */
 /**
- * settings/_colors.scss Colors
+ * settings/_colors.scss Settings - Colors
  *
  * Write a description
  */
 /**
- * mixin/_responsive.scss Responsive
+ * mixin/_responsive.scss Mixin - Responsive
  *
  * Write a description
  */
 /**
- * utilities/_reset.scss Reset
+ * utilities/_reset.scss Utilities - Reset
  *
  * Write a description
  */
@@ -88,7 +88,7 @@ button:focus {
   outline: none; }
 
 /**
- * grid/_grid.scss Grid
+ * grids/_gridRow.scss Grids - Grid Row
  *
  * Write a description
  */
@@ -873,7 +873,7 @@ button:focus {
     text-align: right; } }
 
 /**
- * grid/_gridFlex.scss Grid Flex
+ * grids/_gridFlex.scss Grids - Grid Flex
  *
  * Write a description
  */
@@ -6994,7 +6994,7 @@ article figcaption {
   color: #888888; }
 
 /**
- * components/_modals.scss Modals
+ * components/_modals.scss Components - Modals
  *
  * Write a description
  */
