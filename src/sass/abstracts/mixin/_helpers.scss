@@ -1,0 +1,10 @@
+/// @example
+/// @include opacity-helpers(0, 100, 5, "lg\\:"); // .lg:opacity-0, .lg:opacity-5
+
+@mixin opacity-helpers($start, $end, $step, $prefix: "", $suffix: "") {
+    $i: $start;
+    @while $i <= $end {
+        .#{$prefix}opacity-#{$suffix}#{$i}{ opacity: $i / 100; }
+        $i: $i + $step;
+    }
+}
