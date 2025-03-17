@@ -19,12 +19,17 @@
 @import '../../grids/gridRow';
 @import '../../grids/gridFlex';
 
+// Animations
+@import '../../animations/keyframes';
+@import '../../animations/animations';
+
 // Helpers
 @import '../../helpers/spacing';
 @import '../../helpers/colors';
 @import '../../helpers/backgrounds';
 @import '../../helpers/layout';
 @import '../../helpers/typography';
+@import '../../helpers/animation';
 
 // Elements
 @import '../../elements/buttons';

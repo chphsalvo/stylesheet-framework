@@ -1,0 +1,44 @@
+/**
+ * animations/_animations.scss Animations - Animations
+ *
+ * Write a description
+ */
+
+/**
+ * INDEX
+ * - animation
+ * - viewport
+ */
+
+// animation
+
+.animation-fadeIn,
+.animation-scaleUp,
+.animation-slideTop,
+.animation-slideBottom,
+.animation-slideLeft,
+.animation-slideRight{
+    opacity: 0;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.43, 0.2, 0.02, 1);
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.animation-fadeIn{ animation-name: fadeIn; }
+.animation-scaleUp{ animation-name: scaleUp; }
+.animation-slideTop{ animation-name: slideTop; }
+.animation-slideBottom{ animation-name: slideBottom; }
+.animation-slideLeft{ animation-name: slideLeft; }
+.animation-slideRight{ animation-name: slideRight; }
+
+// viewport
+
+.viewport{ animation-name: none; animation-delay: 0s; }
+.viewport.is-in-viewport.animation-fadeIn{ animation-name: fadeIn; }
+.viewport.is-in-viewport.animation-scaleUp{ animation-name: scaleUp; }
+.viewport.is-in-viewport.animation-slideTop{ animation-name: slideTop; }
+.viewport.is-in-viewport.animation-slideBottom{ animation-name: slideBottom; }
+.viewport.is-in-viewport.animation-slideLeft{ animation-name: slideLeft; }
+.viewport.is-in-viewport.animation-slideRight{ animation-name: slideRight; }
+
