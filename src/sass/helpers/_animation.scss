@@ -1,23 +1,9 @@
-.duration-400{ animation-duration: 4s; }
-.duration-350{ animation-duration: 3.5s; }
-.duration-300{ animation-duration: 3s; }
-.duration-250{ animation-duration: 2.5s; }
-.duration-200{ animation-duration: 2s; }
-.duration-150{ animation-duration: 1.5s; }
-.duration-100{ animation-duration: 1s; }
-.duration-50{ animation-duration: 0.5s; }
-.duration-40{ animation-duration: 0.4s; }
-.duration-30{ animation-duration: 0.3s; }
-.duration-20{ animation-duration: 0.2s; }
+@each $key, $value in $timings {
+    .duration-#{$key} {
+        animation-duration: $value;
+    }
 
-.delay-400{ animation-delay: 4s; }
-.delay-350{ animation-delay: 3.5s; }
-.delay-300{ animation-delay: 3s; }
-.delay-250{ animation-delay: 2.5s; }
-.delay-200{ animation-delay: 2s; }
-.delay-150{ animation-delay: 1.5s; }
-.delay-100{ animation-delay: 1s; }
-.delay-50{ animation-delay: 0.5s; }
-.delay-40{ animation-delay: 0.4s; }
-.delay-30{ animation-delay: 0.3s; }
-.delay-20{ animation-delay: 0.3s; }
+    .delay-#{$key} {
+        animation-delay: $value;
+    }
+}

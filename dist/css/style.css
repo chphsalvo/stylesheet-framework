@@ -4005,6 +4005,18 @@ button:focus {
   to {
     opacity: 1; } }
 
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
 @-webkit-keyframes scaleUp {
   from {
     -webkit-transform: scale(0.9);
@@ -4072,8 +4084,8 @@ button:focus {
             transform: translateX(-20px); }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
 
 @keyframes slideLeft {
   from {
@@ -4082,8 +4094,8 @@ button:focus {
             transform: translateX(-20px); }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
 
 @-webkit-keyframes slideRight {
   from {
@@ -4092,8 +4104,8 @@ button:focus {
             transform: translateX(20px); }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
 
 @keyframes slideRight {
   from {
@@ -4102,8 +4114,8 @@ button:focus {
             transform: translateX(20px); }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
 
 /**
  * animations/_animations.scss Animations - Animations
@@ -4112,6 +4124,7 @@ button:focus {
  */
 /**
  * INDEX
+ * - vars
  * - animation
  * - viewport
  */
@@ -4121,7 +4134,11 @@ button:focus {
 .animation-slideBottom,
 .animation-slideLeft,
 .animation-slideRight {
-  opacity: 0;
+  opacity: 0; }
+
+.animation-fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-timing-function: cubic-bezier(0.43, 0.2, 0.02, 1);
@@ -4131,29 +4148,77 @@ button:focus {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.animation-fadeIn {
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn; }
+.animation-fadeOut {
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.43, 0.2, 0.02, 1);
+          animation-timing-function: cubic-bezier(0.43, 0.2, 0.02, 1);
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 
 .animation-scaleUp {
   -webkit-animation-name: scaleUp;
-          animation-name: scaleUp; }
+          animation-name: scaleUp;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.43, 0.2, 0.02, 1);
+          animation-timing-function: cubic-bezier(0.43, 0.2, 0.02, 1);
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 
 .animation-slideTop {
   -webkit-animation-name: slideTop;
-          animation-name: slideTop; }
+          animation-name: slideTop;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.43, 0.2, 0.02, 1);
+          animation-timing-function: cubic-bezier(0.43, 0.2, 0.02, 1);
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 
 .animation-slideBottom {
   -webkit-animation-name: slideBottom;
-          animation-name: slideBottom; }
+          animation-name: slideBottom;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.43, 0.2, 0.02, 1);
+          animation-timing-function: cubic-bezier(0.43, 0.2, 0.02, 1);
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 
 .animation-slideLeft {
   -webkit-animation-name: slideLeft;
-          animation-name: slideLeft; }
+          animation-name: slideLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.43, 0.2, 0.02, 1);
+          animation-timing-function: cubic-bezier(0.43, 0.2, 0.02, 1);
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 
 .animation-slideRight {
   -webkit-animation-name: slideRight;
-          animation-name: slideRight; }
+          animation-name: slideRight;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.43, 0.2, 0.02, 1);
+          animation-timing-function: cubic-bezier(0.43, 0.2, 0.02, 1);
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 
 .viewport {
   -webkit-animation-name: none;
@@ -4164,6 +4229,10 @@ button:focus {
 .viewport.is-in-viewport.animation-fadeIn {
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn; }
+
+.viewport.is-in-viewport.animation-fadeOut {
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut; }
 
 .viewport.is-in-viewport.animation-scaleUp {
   -webkit-animation-name: scaleUp;
@@ -7580,93 +7649,117 @@ button:focus {
   .va-s-b {
     vertical-align: bottom; } }
 
+.duration-500 {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s; }
+
+.delay-500 {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s; }
+
+.duration-450 {
+  -webkit-animation-duration: 4.5s;
+          animation-duration: 4.5s; }
+
+.delay-450 {
+  -webkit-animation-delay: 4.5s;
+          animation-delay: 4.5s; }
+
 .duration-400 {
   -webkit-animation-duration: 4s;
           animation-duration: 4s; }
-
-.duration-350 {
-  -webkit-animation-duration: 3.5s;
-          animation-duration: 3.5s; }
-
-.duration-300 {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s; }
-
-.duration-250 {
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s; }
-
-.duration-200 {
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s; }
-
-.duration-150 {
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s; }
-
-.duration-100 {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s; }
-
-.duration-50 {
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s; }
-
-.duration-40 {
-  -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s; }
-
-.duration-30 {
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s; }
-
-.duration-20 {
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s; }
 
 .delay-400 {
   -webkit-animation-delay: 4s;
           animation-delay: 4s; }
 
+.duration-350 {
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s; }
+
 .delay-350 {
   -webkit-animation-delay: 3.5s;
           animation-delay: 3.5s; }
+
+.duration-300 {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s; }
 
 .delay-300 {
   -webkit-animation-delay: 3s;
           animation-delay: 3s; }
 
+.duration-250 {
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s; }
+
 .delay-250 {
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s; }
+
+.duration-200 {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s; }
 
 .delay-200 {
   -webkit-animation-delay: 2s;
           animation-delay: 2s; }
 
+.duration-150 {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s; }
+
 .delay-150 {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s; }
+
+.duration-100 {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s; }
 
 .delay-100 {
   -webkit-animation-delay: 1s;
           animation-delay: 1s; }
 
+.duration-50 {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s; }
+
 .delay-50 {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s; }
+
+.duration-40 {
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s; }
 
 .delay-40 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s; }
 
+.duration-30 {
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s; }
+
 .delay-30 {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s; }
 
+.duration-20 {
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s; }
+
 .delay-20 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s; }
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+.duration-10 {
+  -webkit-animation-duration: 0.1s;
+          animation-duration: 0.1s; }
+
+.delay-10 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
 
 /**
  * elements/_buttons.scss Elements - Buttons
