@@ -621,7 +621,7 @@ $gutter: 20px; // Define columns gutter
       }
     }
 
-    .col{
+    > .col{
       flex-grow: unset;
       flex-basis: unset;
       flex-shrink: unset;
@@ -632,7 +632,7 @@ $gutter: 20px; // Define columns gutter
     @for $i from 0 through 12 {
       $width: 100% / 12 * $i;
   
-      .col-#{$i} {
+      > .col-#{$i} {
         width: $width;
       }
     }
@@ -640,8 +640,8 @@ $gutter: 20px; // Define columns gutter
       @for $i from 0 through 12 {
         $width: 100% / 12 * $i;
   
-        .col-xb-#{$i},
-        .xb\:col-#{$i} {
+        > .col-xb-#{$i},
+        > .xb\:col-#{$i} {
           width: $width;
         }
       }
@@ -650,8 +650,8 @@ $gutter: 20px; // Define columns gutter
       @for $i from 0 through 12 {
         $width: 100% / 12 * $i;
   
-        .col-l-#{$i},
-        .lg\:col-#{$i} {
+        > .col-l-#{$i},
+        > .lg\:col-#{$i} {
           width: $width;
         }
       }
@@ -660,8 +660,8 @@ $gutter: 20px; // Define columns gutter
       @for $i from 0 through 12 {
         $width: 100% / 12 * $i;
   
-        .col-m-#{$i},
-        .md\:col-#{$i} {
+        > .col-m-#{$i},
+        > .md\:col-#{$i} {
           width: $width;
         }
       }
@@ -670,8 +670,8 @@ $gutter: 20px; // Define columns gutter
       @for $i from 0 through 12 {
         $width: 100% / 12 * $i;
   
-        .col-s-#{$i},
-        .sm\:col-#{$i}{
+        > .col-s-#{$i},
+        > .sm\:col-#{$i}{
           width: $width;
         }
       }
@@ -680,7 +680,7 @@ $gutter: 20px; // Define columns gutter
     @for $i from 1 through 8 {
       $width: 100% / $i;
 
-      .col-x#{$i} {
+      > .col-x#{$i} {
         width: $width;
       }
     }
@@ -688,8 +688,8 @@ $gutter: 20px; // Define columns gutter
       @for $i from 1 through 8 {
         $width: 100% / $i;
       
-        .col-xb-x#{$i},
-        .xb\:col-x#{$i}{
+        > .col-xb-x#{$i},
+        > .xb\:col-x#{$i}{
           width: $width;
         }
       }
@@ -698,8 +698,8 @@ $gutter: 20px; // Define columns gutter
       @for $i from 1 through 8 {
         $width: 100% / $i;
       
-        .col-l-x#{$i},
-        .lg\:col-x#{$i} {
+        > .col-l-x#{$i},
+        > .lg\:col-x#{$i} {
           width: $width;
         }
       }
@@ -708,8 +708,8 @@ $gutter: 20px; // Define columns gutter
       @for $i from 1 through 8 {
         $width: 100% / $i;
       
-        .col-m-x#{$i},
-        .md\:col-x#{$i}{
+        > .col-m-x#{$i},
+        > .md\:col-x#{$i}{
           width: $width;
         }
       }
@@ -718,8 +718,8 @@ $gutter: 20px; // Define columns gutter
       @for $i from 1 through 8 {
         $width: 100% / $i;
       
-        .col-s-x#{$i},
-        .sm\:col-x#{$i}{
+        > .col-s-x#{$i},
+        > .sm\:col-x#{$i}{
           width: $width;
         }
       }
