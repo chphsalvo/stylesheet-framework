@@ -10,6 +10,7 @@
  * - display
  * - opacity
  * - position
+ * - width
  */
 
 /**
@@ -284,4 +285,46 @@
     .p-s-relative, .sm\:relative{position: relative;}
     .p-s-absolute, .sm\:absolute{position: absolute;}
     .p-s-fixed, .sm\:fixed{position: fixed;}
+}
+
+/**
+ * width
+ */
+.max-w-full{
+    max-width: 100%;
+}
+.max-w-hg{
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 2560px;
+}
+.max-w-xb{
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: 1600px;
+}
+.max-w-bg{
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: 1440px;
+}
+.max-w-xl{
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 1366px;
+}
+.max-w-lg{
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 1024px;
+}
+.max-w-md{
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: 768px;
+}
+.max-w-sm{
+    margin-left: auto; 
+    margin-right: auto;  
+    max-width: 640px;
 }

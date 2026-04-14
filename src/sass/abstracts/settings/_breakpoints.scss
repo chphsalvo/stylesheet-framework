@@ -13,3 +13,23 @@ $breakpoints: (
 	'medium': (max-width: 768px),
 	'small': (max-width: 640px),
 );
+
+$breakpoints_shorts_legacy: (
+  	'-h-': '(max-width: 2560px)', // huge
+  	'-xb-': '(max-width: 1600px)', // xbig
+  	'-b-': '(max-width: 1440px)', // big
+  	'-xl-': '(max-width: 1366px)', // xlarge
+  	'-l-': '(max-width: 1024px)', // large
+    '-m-': '(max-width: 768px)', // medium
+	'-s-': '(max-width: 640px)', // small
+);
+
+$breakpoints_shorts: (
+  	'.hg\\:': '(max-width: 2560px)', // huge
+  	'.xb\\:': '(max-width: 1600px)', // xbig
+  	'.bg\\:': '(max-width: 1440px)', // big
+  	'.xl\\:': '(max-width: 1366px)', // xlarge
+  	'.lg\\:': '(max-width: 1024px)', // large
+    '.md\\:': '(max-width: 768px)', // medium
+	'.sm\\:': '(max-width: 640px)', // small
+);

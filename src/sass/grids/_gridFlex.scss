@@ -25,201 +25,63 @@
   flex-flow: row wrap; /* flex-direction: row; + flex-wrap: wrap; */
   
   @for $i from 0 through 12 {
+    // .item.item-1
+    // <div class="item item-1">
     .item.item-#{$i} {
       flex-grow: #{$i};
       flex-basis: 0;
     }
   }
 
-  @include responsive("xbig") {
-    @for $i from 0 through 12 {
-      .item.item-xb-#{$i} {
-        flex-grow: #{$i};
-        flex-basis: 0;
+  @each $class, $media in $breakpoints_shorts_legacy {
+    @media #{$media} {
+      @for $i from 0 through 12 {
+        // .item.item-s-1
+        // <div class="item item-s-1">
+        .item.item#{$class}#{$i} {
+          flex-grow: #{$i};
+          flex-basis: 0;
+        }
       }
     }
   }
-  @include responsive("large") {
-    @for $i from 0 through 12 {
-      .item.item-l-#{$i} {
-        flex-grow: #{$i};
-        flex-basis: 0;
-      }
-    }
-  }
-  @include responsive("medium") {
-    @for $i from 0 through 12 {
-      .item.item-m-#{$i} {
-        flex-grow: #{$i};
-        flex-basis: 0;
-      }
-    }
-  }
-  @include responsive("small") {
-    @for $i from 0 through 12 {
-      .item.item-s-#{$i} {
-        flex-grow: #{$i};
-        flex-basis: 0;
-      }
-    }
-  }
+
 }
 
 /**
  * flex wrap
  */
 
-.flex.nowrap {
-  flex-wrap: nowrap;
-}
+.flex.nowrap { flex-wrap: nowrap; }
 
 /**
  * flex alignments
  */
 
-.flex.top {
-  align-items: flex-start;
-}
-.flex.middle {
-  align-items: center;
-}
-.flex.bottom {
-  align-items: flex-end;
-}
-.flex.stretch {
-  align-items: stretch;
-}
-.flex.left {
-  justify-content: flex-start;
-}
-.flex.center {
-  justify-content: center;
-}
-.flex.right {
-  justify-content: flex-end;
-}
-.flex.justify {
-  justify-content: space-between;
-}
-.flex.space {
-  justify-content: space-around;
-}
+.flex.top { align-items: flex-start; }
+.flex.middle { align-items: center; }
+.flex.bottom { align-items: flex-end; }
+.flex.stretch { align-items: stretch; }
+.flex.left { justify-content: flex-start; }
+.flex.center { justify-content: center; }
+.flex.right { justify-content: flex-end; }
+.flex.justify { justify-content: space-between; }
+.flex.space { justify-content: space-around; }
 
-@include responsive ('xbig'){
-  .flex.xb\:top{align-items: flex-start;}
-}
-@include responsive ('large'){
-  .flex.lg\:top{align-items: flex-start;}
-}
-@include responsive ('medium'){
-  .flex.md\:top{align-items: flex-start;}
-}
-@include responsive ('small'){
-  .flex.sm\:top{align-items: flex-start;}
-}
-
-@include responsive ('xbig'){
-  .flex.xb\:middle{align-items: center;}
-}
-@include responsive ('large'){
-  .flex.lg\:middle{align-items: center;}
-}
-@include responsive ('medium'){
-  .flex.md\:middle{align-items: center;}
-}
-@include responsive ('small'){
-  .flex.sm\:middle{align-items: center;}
-}
-
-@include responsive ('xbig'){
-  .flex.xb\:bottom{align-items: flex-end;}
-}
-@include responsive ('large'){
-  .flex.lg\:bottom{align-items: flex-end;}
-}
-@include responsive ('medium'){
-  .flex.md\:bottom{align-items: flex-end;}
-}
-@include responsive ('small'){
-  .flex.sm\:bottom{align-items: flex-end;}
-}
-
-@include responsive ('xbig'){
-  .flex.xb\:stretch{align-items: stretch;}
-}
-@include responsive ('large'){
-  .flex.lg\:stretch{align-items: stretch;}
-}
-@include responsive ('medium'){
-  .flex.md\:stretch{align-items: stretch;}
-}
-@include responsive ('small'){
-  .flex.sm\:stretch{align-items: stretch;}
-}
-
-@include responsive ('xbig'){
-  .flex.xb\:left{justify-content: flex-start;}
-}
-@include responsive ('large'){
-  .flex.lg\:left{justify-content: flex-start;}
-}
-@include responsive ('medium'){
-  .flex.md\:left{justify-content: flex-start;}
-}
-@include responsive ('small'){
-  .flex.sm\:left{justify-content: flex-start;}
-}
-
-@include responsive ('xbig'){
-  .flex.xb\:center{justify-content: center;}
-}
-@include responsive ('large'){
-  .flex.lg\:center{justify-content: center;}
-}
-@include responsive ('medium'){
-  .flex.md\:center{justify-content: center;}
-}
-@include responsive ('small'){
-  .flex.sm\:center{justify-content: center;}
-}
-
-@include responsive ('xbig'){
-  .flex.xb\:right{justify-content: flex-end;}
-}
-@include responsive ('large'){
-  .flex.lg\:right{justify-content: flex-end;}
-}
-@include responsive ('medium'){
-  .flex.md\:right{justify-content: flex-end;}
-}
-@include responsive ('small'){
-  .flex.sm\:right{justify-content: flex-end;}
-}
-
-@include responsive ('xbig'){
-  .flex.xb\:justify{justify-content: space-between;}
-}
-@include responsive ('large'){
-  .flex.lg\:justify{justify-content: space-between;}
-}
-@include responsive ('medium'){
-  .flex.md\:justify{justify-content: space-between;}
-}
-@include responsive ('small'){
-  .flex.sm\:justify{justify-content: space-between;}
-}
-
-@include responsive ('xbig'){
-  .flex.xb\:space{justify-content: space-around;}
-}
-@include responsive ('large'){
-  .flex.lg\:space{justify-content: space-around;}
-}
-@include responsive ('medium'){
-  .flex.md\:space{justify-content: space-around;}
-}
-@include responsive ('small'){
-  .flex.sm\:space{justify-content: space-around;}
+@each $class, $media in $breakpoints_shorts {
+  @media #{$media} {
+    // .flex.sm:top
+    // <div class="flex sm:top">
+    .flex#{$class}top{ align-items: flex-start; }
+    .flex#{$class}middle{ align-items: center; }
+    .flex#{$class}bottom{align-items: flex-end;}
+    .flex#{$class}stretch{align-items: stretch;}
+    .flex#{$class}left{justify-content: flex-start;}
+    .flex#{$class}center{justify-content: center;}
+    .flex#{$class}right{justify-content: flex-end;}
+    .flex#{$class}justify{justify-content: space-between;}
+    .flex#{$class}space{justify-content: space-around;}
+  }
 }
 
 /**
@@ -231,32 +93,15 @@
 .flex.column{flex-direction: column}
 .flex.column-reverse{flex-direction: column-reverse}
 
-@include responsive ('xbig'){
-  .flex.xb\:row{flex-direction: row}
-  .flex.xb\:row-reverse{flex-direction: row-reverse}
-  .flex.xb\:column{flex-direction: column}
-  .flex.xb\:column-reverse{flex-direction: column-reverse}
-}
-
-@include responsive ('large'){
-  .flex.lg\:row{flex-direction: row}
-  .flex.lg\:row-reverse{flex-direction: row-reverse}
-  .flex.lg\:column{flex-direction: column}
-  .flex.lg\:column-reverse{flex-direction: column-reverse}
-}
-
-@include responsive ('medium'){
-  .flex.md\:row{flex-direction: row}
-  .flex.md\:row-reverse{flex-direction: row-reverse}
-  .flex.md\:column{flex-direction: column}
-  .flex.md\:column-reverse{flex-direction: column-reverse}
-}
-
-@include responsive ('small'){
-  .flex.sm\:row{flex-direction: row}
-  .flex.sm\:row-reverse{flex-direction: row-reverse}
-  .flex.sm\:column{flex-direction: column}
-  .flex.sm\:column-reverse{flex-direction: column-reverse}
+@each $class, $media in $breakpoints_shorts {
+  @media #{$media} {
+    // .flex.sm:column
+    // <div class="flex sm:column">
+    .flex#{$class}row{flex-direction: row}
+    .flex#{$class}row-reverse{flex-direction: row-reverse}
+    .flex#{$class}column{flex-direction: column}
+    .flex#{$class}column-reverse{flex-direction: column-reverse}
+  }
 }
 
 /**
@@ -265,33 +110,27 @@
 
 $gutter: 20px; // Define columns gutter
 
-.flex {
-  .col {
-    min-height: 1px;
-  }
+.flex .col{ min-height: 1px; }
 
-  @for $i from 0 through 12 {
-    $width: 100% / 12 * $i;
-
-    .col-#{$i} {
-      flex: 0 0 $width;
-      @if $i == 12 {
-        padding-left: 0px;
-        padding-right: 0px;
-      } @else {
-        padding-left: $gutter / 2;
-        padding-right: $gutter / 2;
-      }
-
-      &:first-of-type {
-        padding-left: 0px;
-      }
-      &:last-of-type {
-        padding-right: 0px;
-      }
+@for $i from 0 through 12 {
+  // .col-1
+  // <div class="col-1">
+  .flex .col-#{$i} {
+    flex: 0 0 (100% / 12 * $i);
+    @if $i == 12 {
+      padding-left: 0px;
+      padding-right: 0px;
+    } @else {
+      padding-left: $gutter / 2;
+      padding-right: $gutter / 2;
     }
-  }
 
+    &:first-of-type { padding-left: 0px; }
+    &:last-of-type { padding-right: 0px; }
+  }
+}
+
+.flex {
   @include responsive("xbig") {
     @for $i from 0 through 12 {
       $width: 100% / 12 * $i;
@@ -397,45 +236,29 @@ $gutter: 20px; // Define columns gutter
  * flex gutter
  */
 
-.flex {
-  &.gutter-0 .col{
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  @include responsive("xbig") {
-    &.xb\:gutter-0,
-    &.gutter-xb-0{
-      .col{
-        padding-left: 0px;
-        padding-right: 0px;
-      }
+.flex.gutter-0 .col{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@each $class, $media in $breakpoints_shorts_legacy {
+  @media #{$media} {
+    // .flex.gutter-s-0 .col
+    // <div class="flex .gutter-s-0">
+    .flex.gutter#{$class}0 .col{
+      padding-left: 0px;
+      padding-right: 0px;
     }
   }
-  @include responsive("large") {
-    &.lg\:gutter-0,
-    &.gutter-l-0{
-      .col{
-        padding-left: 0px;
-        padding-right: 0px;
-      }
-    }
-  }
-  @include responsive("medium") {
-    &.md\:gutter-0,
-    &.gutter-m-0{
-      .col{
-        padding-left: 0px;
-        padding-right: 0px;
-      }
-    }
-  }
-  @include responsive("small") {
-    &.sm\:gutter-0,
-    &.gutter-s-0{
-      .col{
-        padding-left: 0px;
-        padding-right: 0px;
-      }
+}
+
+@each $class, $media in $breakpoints_shorts {
+  @media #{$media} {
+    // .flex.sm:gutter-0 .col
+    // <div class="flex sm:gutter-0">
+    .flex#{$class}gutter-0 .col{
+      padding-left: 0px;
+      padding-right: 0px;
     }
   }
 }
@@ -444,71 +267,22 @@ $gutter: 20px; // Define columns gutter
  * flex offset
  */
 
-.flex {
-  @for $i from 0 through 12 {
-    $marginLeft: 100% / 12 * $i;
+@for $i from 0 through 12 {
+  .flex .offset-#{$i} { margin-left: ($i / 12) * 100%; }
+}
 
-    .offset-#{$i} {
-      margin-left: $marginLeft;
-
-      //&:first-of-type{padding-left: 0px;}
-      //&:last-of-type{padding-right: 0px;}
+@each $class, $media in $breakpoints_shorts_legacy {
+  @media #{$media} {
+    @for $i from 0 through 12 {
+      .flex .offset#{$class}#{$i} { margin-left: ($i / 12) * 100%; }
     }
   }
+}
 
-  @include responsive("xbig") {
+@each $class, $media in $breakpoints_shorts {
+  @media #{$media} {
     @for $i from 0 through 12 {
-      $marginLeft: 100% / 12 * $i;
-
-      .offset-xb-#{$i},
-      .xb\:offset-#{$i} {
-        margin-left: $marginLeft;
-
-        //&:first-of-type{padding-left: 0px;}
-        //&:last-of-type{padding-right: 0px;}
-      }
-    }
-  }
-
-  @include responsive("large") {
-    @for $i from 0 through 12 {
-      $marginLeft: 100% / 12 * $i;
-
-      .offset-l-#{$i},
-      .lg\:offset-#{$i} {
-        margin-left: $marginLeft;
-
-        //&:first-of-type{padding-left: 0px;}
-        //&:last-of-type{padding-right: 0px;}
-      }
-    }
-  }
-
-  @include responsive("medium") {
-    @for $i from 0 through 12 {
-      $marginLeft: 100% / 12 * $i;
-
-      .offset-m-#{$i},
-      .md\:offset-#{$i} {
-        margin-left: $marginLeft;
-
-        //&:first-of-type{padding-left: 0px;}
-        //&:last-of-type{padding-right: 0px;}
-      }
-    }
-  }
-
-  @include responsive("small") {
-    @for $i from 0 through 12 {
-      $marginLeft: 100% / 12 * $i;
-
-      .offset-s-#{$i},
-      .sm\:offset-#{$i}{
-        margin-left: $marginLeft;
-
-        //&:first-of-type{padding-left: 0px;}
-        //&:last-of-type{padding-right: 0px;}
-      }
+      .flex #{$class}offset-#{$i} { margin-left: ($i / 12) * 100%; }
     }
   }
 }
@@ -518,50 +292,21 @@ $gutter: 20px; // Define columns gutter
  */
 
 @for $i from 1 through 8 {
-  $width: 100% / $i;
-
-  .col-x#{$i} {
-    flex: 0 0 $width;
-  }
+    .col-x#{$i} { flex: 0 0 100% / $i; }
 }
 
-@include responsive("xbig") {
-  @for $i from 1 through 8 {
-    $width: 100% / $i;
-  
-    .col-xb-x#{$i},
-    .xb\:col-x#{$i}{
-      flex: 0 0 $width;
+@each $class, $media in $breakpoints_shorts_legacy {
+  @media #{$media} {
+    @for $i from 0 through 8 {
+      .col#{$class}x#{$i} { flex: 0 0 100% / $i; }
     }
   }
 }
-@include responsive("large") {
-  @for $i from 1 through 8 {
-    $width: 100% / $i;
-  
-    .col-l-x#{$i},
-    .lg\:col-x#{$i} {
-      flex: 0 0 $width;
-    }
-  }
-}
-@include responsive("medium") {
-  @for $i from 1 through 8 {
-    $width: 100% / $i;
-  
-    .col-m-x#{$i},
-    .md\:col-x#{$i}{
-      flex: 0 0 $width;
-    }
-  }
-}
-@include responsive("small") {
-  @for $i from 1 through 8 {
-    $width: 100% / $i;
-  
-    .col-s-x#{$i},
-    .sm\:col-x#{$i}{
-      flex: 0 0 $width;
+
+@each $class, $media in $breakpoints_shorts {
+  @media #{$media} {
+    @for $i from 0 through 8 {
+      #{$class}col-x#{$i} { flex: 0 0 100% / $i; }
     }
   }
 }
@@ -570,160 +315,81 @@ $gutter: 20px; // Define columns gutter
  * flex gap
  */
 
-.flex{
-  &.gap{
-    flex-wrap: nowrap;
+.flex.gap{ flex-wrap: nowrap; }
 
+@for $i from 0 through 12 {
+  .flex.gap.gap-#{$i * 5}{
+    gap: #{$i * 5}px;
+    @if $i == 0 { flex-wrap: wrap; }
+  }
+}
+
+@each $class, $media in $breakpoints_shorts_legacy {
+  @media #{$media} {
     @for $i from 0 through 12 {
-      &.gap-#{$i * 5} {
+      .flex.gap.gap#{$class}#{$i * 5}{
         gap: #{$i * 5}px;
         @if $i == 0 { flex-wrap: wrap; }
       }
     }
+  }
+}
 
-    @include responsive("xbig") {
-      @for $i from 0 through 12 {
-        &.gap-xb-#{$i * 5},
-        &.xb\:gap-#{$i * 5}{
-          gap: #{$i * 5}px;
-          @if $i == 0 { flex-wrap: wrap; }
-        }
-      }
-    }
-
-    @include responsive("large") {
-      @for $i from 0 through 12 {
-        &.gap-l-#{$i * 5},
-        &.lg\:gap-#{$i * 5}{
-          gap: #{$i * 5}px;
-          @if $i == 0 { flex-wrap: wrap; }
-        }
-      }
-    }
-
-    @include responsive("medium") {
-      @for $i from 0 through 12 {
-        &.gap-m-#{$i * 5},
-        &.md\:gap-#{$i * 5}{
-          gap: #{$i * 5}px;
-          @if $i == 0 { flex-wrap: wrap; }
-        }
-      }
-    }
-
-    @include responsive("small") {
-      @for $i from 0 through 12 {
-        &.gap-s-#{$i * 5},
-        &.sm\:gap-#{$i * 5}{
-          gap: #{$i * 5}px;
-          @if $i == 0 { flex-wrap: wrap; }
-        }
-      }
-    }
-
-    > .col{
-      flex-grow: unset;
-      flex-basis: unset;
-      flex-shrink: unset;
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-
+@each $class, $media in $breakpoints_shorts {
+  @media #{$media} {
     @for $i from 0 through 12 {
-      $width: 100% / 12 * $i;
-  
-      > .col-#{$i} {
-        width: $width;
+      .flex.gap#{$class}gap-#{$i * 5}{
+        gap: #{$i * 5}px;
+        @if $i == 0 { flex-wrap: wrap; }
       }
     }
-    @include responsive("xbig") {
-      @for $i from 0 through 12 {
-        $width: 100% / 12 * $i;
-  
-        > .col-xb-#{$i},
-        > .xb\:col-#{$i} {
-          width: $width;
-        }
-      }
-    }
-    @include responsive("large") {
-      @for $i from 0 through 12 {
-        $width: 100% / 12 * $i;
-  
-        > .col-l-#{$i},
-        > .lg\:col-#{$i} {
-          width: $width;
-        }
-      }
-    }
-    @include responsive("medium") {
-      @for $i from 0 through 12 {
-        $width: 100% / 12 * $i;
-  
-        > .col-m-#{$i},
-        > .md\:col-#{$i} {
-          width: $width;
-        }
-      }
-    }
-    @include responsive("small") {
-      @for $i from 0 through 12 {
-        $width: 100% / 12 * $i;
-  
-        > .col-s-#{$i},
-        > .sm\:col-#{$i}{
-          width: $width;
-        }
-      }
-    }
+  }
+}
 
+.flex.gap > .col{
+  flex-grow: unset;
+  flex-basis: unset;
+  flex-shrink: unset;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@for $i from 0 through 12 {
+  .flex.gap > .col-#{$i} { width: 100% / 12 * $i; }
+}
+
+@each $class, $media in $breakpoints_shorts_legacy {
+  @media #{$media} {
+    @for $i from 0 through 12 {
+      .flex.gap > .col#{$class}#{$i}{ width: 100% / 12 * $i; }
+    }
+  }
+}
+
+@each $class, $media in $breakpoints_shorts {
+  @media #{$media} {
+    @for $i from 0 through 12 {
+      .flex.gap > #{$class}col-#{$i}{ width: 100% / 12 * $i; }
+    }
+  }
+}
+
+@for $i from 1 through 8 {
+  .flex.gap > .col-x#{$i} { width: 100% / $i; }
+}
+
+@each $class, $media in $breakpoints_shorts_legacy {
+  @media #{$media} {
     @for $i from 1 through 8 {
-      $width: 100% / $i;
+      .flex.gap > .col#{$class}x#{$i} { width: 100% / $i; }
+    }
+  }
+}
 
-      > .col-x#{$i} {
-        width: $width;
-      }
+@each $class, $media in $breakpoints_shorts {
+  @media #{$media} {
+    @for $i from 1 through 8 {
+      .flex.gap > #{$class}col-x#{$i} { width: 100% / $i; }
     }
-    @include responsive("xbig") {
-      @for $i from 1 through 8 {
-        $width: 100% / $i;
-      
-        > .col-xb-x#{$i},
-        > .xb\:col-x#{$i}{
-          width: $width;
-        }
-      }
-    }
-    @include responsive("large") {
-      @for $i from 1 through 8 {
-        $width: 100% / $i;
-      
-        > .col-l-x#{$i},
-        > .lg\:col-x#{$i} {
-          width: $width;
-        }
-      }
-    }
-    @include responsive("medium") {
-      @for $i from 1 through 8 {
-        $width: 100% / $i;
-      
-        > .col-m-x#{$i},
-        > .md\:col-x#{$i}{
-          width: $width;
-        }
-      }
-    }
-    @include responsive("small") {
-      @for $i from 1 through 8 {
-        $width: 100% / $i;
-      
-        > .col-s-x#{$i},
-        > .sm\:col-x#{$i}{
-          width: $width;
-        }
-      }
-    }
-
   }
 }
